@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=K2D&display=swap');
+@font-face{
+    font-family: fonts;
+    src: url(../fonts/fonts/ttf/OtomanopeeOne-Regular.ttf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+  --primary-font:fonts;
+  --secondary-font:K2D;
+  --border-and-color:1px solid rgba(38, 160, 218, 1);
+  --text-color-black:black;
+  --background-color:rgba(38, 160, 218, 1);
+  --text-color-white:rgba(255, 255, 255, 1);
+  --text-color-blue:rgba(38, 160, 218, 1);
+  --item-color:rgba(255, 184, 0, 1);
+  
+}
+
+
+/* Topbar Start */
+#topbar{
+  font-family: var(--secondary-font);
+  background: rgba(49, 71, 85, 1);
+}
+.topbar_item ul{
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  align-items: center;
+}
+.topbar_item ul a{
+  text-decoration: none;
+  color: var(--text-color-white);
+}
+.topbar_item ul li{
+  padding: 10px;
+}
+.topbar_item ul li img{
+  width: 25px;
+  height: 25px;
+}
+.topbar_item .vertical_bar{
+  width: 1px;
+  height: 20px;
+  background-color: white;
+}
+/* Topbar End */
+
+/* Header Start */
+  /* #header .search_bar{
+    width: 730px;
+    height: 45px;
+    margin-top: 12px;
+    border:var(--border-and-color);
+    border-radius: 3px;
+    justify-content: space-between;
+  }
+  #header .search_bar img{
+    width: 62px;
+    height: 62px;
+   margin-top: -9px;
+  }
+  #header .header{
+    justify-content: space-between;
+  }
+  #header .logo img{
+    width: 200px;
+   
+  }
+  .search_bar input{
+    width: 638px;
+    margin-left: 20px;
+    border: none;
+    outline: none;
+    font-family: var(--secondary-font);
+  }
+
+
+
+  .header .header_contact{
+    width: 170px;
+    height: 60px;
+    margin-top: 5px;
+    margin-right: -60px;
+    border-radius: 3px;
+    text-align: center;
+    border: var(--border-and-color);
+  }
+  .header .header_contact p{
+    color: var(--text-color-blue);
+  }
+  .header .header_contact img{
+    width: 30px;
+    height: 30px;
+  }
+  .header .header_contact .call_us{
+    margin-top: -16px;
+  }
+  .header .header_contact .call_us a{
+    text-decoration: none;
+    color: var(--text-color-black);
+  }
+  .header .add_to_cart img{
+    width: 50px;
+    height: 45px;
+    margin-top: 12px;
+  } */
+
+/* Header End */
+
+
+  
