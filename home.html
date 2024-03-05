@@ -3,10 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>GOOZEN</title>
+    <title>Goozen</title>
     <!-- Css Link -->
     <link rel="stylesheet" href="./assets/css/home.css" />
     <!-- Css Link -->
+    <!-- Swiper Css Link -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- Swiper Css Link -->
     <!-- Fontawesome link-->
     <script
       src="https://kit.fontawesome.com/476ec20884.js"
@@ -36,7 +39,7 @@
           <div class="vertical_bar"></div>
           <li>
             <a style="color: rgba(38, 160, 218, 1)" href="#"
-              ><img src="./assets/img/home img/sign-in.svg" alt="" />Sign In</a
+              ><img src="./assets/img/home-img/sign-in.svg" alt="" />Sign In</a
             >
           </li>
         </ul>
@@ -50,13 +53,13 @@
       <div class="container">
         <div class="header_item row">
           <div class="logo col-lg-3">
-            <img src="./assets/img/home img/logo/logo.svg" width="190px" alt="logo" />
+            <img src="./assets/img/home-img/logo/logo.svg" width="190px" alt="logo" />
           </div>
           <div class="search_bar col-lg-6">
             <div class="search_bar_item">
                 <input type="text" placeholder="Search heare" />
                 <div class="search_btn">
-                   <a href="#"><img src="./assets/img/home img/search.svg" alt="" /></a>
+                   <a href="#"><img src="./assets/img/home-img/search.svg" alt="" /></a>
                 </div>
             </div>
           </div>
@@ -65,13 +68,13 @@
               <p>Call Us</p>
               <div class="call_us">
                 <a href="#"
-                  ><img src="./assets/img/home img/call.svg" alt="" />+112 4125
+                  ><img src="./assets/img/home-img/call.svg" alt="" />+112 4125
                   5125</a
                 >
               </div>
             </div>
             <div class="add_to_cart">
-              <a href="#"><img src="./assets/img/home img/add to cart.svg" alt="" /></a>
+              <a href="#"><img src="./assets/img/home-img/add to cart.svg" alt="" /></a>
             </div>
           </div>
         </div>
@@ -85,7 +88,7 @@
         <div class="navbar">
           <div class="logo">
             <img
-              src="./assets/img/home img/logo/logo2.svg"
+              src="./assets/img/home-img/logo/logo2.svg"
               width="130px"
               alt="logo"
             />
@@ -195,12 +198,90 @@
     <!-- navbar end -->
 
 
+    <!-- Hero Slider Start -->
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img src="./assets/img/home-img/hero-slider/slider-bg.png" alt="">
+          <div class="hero-slider-header px-5">
+            <div class="hero-slider-item">
+              <h1>The New Experience With Our</h1>
+              <h1>Best Collection</h1>
+              <p>It is a long established fact that a reader will be distracted by the <br>
+               readable content of a page when looking at its layout.</p>
+               
+            </div>
+            <img src="./assets/img/home-img/hero-slider/slider.png" alt="">
+          </div>
+        </div>
+        <!-- <div class="swiper-slide">
+          <img src="./assets/img/home-img/hero-slider/Group 1087.jpg" alt="">
+          <div class="hero-slider-header container">
+            <div class="hero-slider-item">
+              <h1>The New Experience With Our</h1>
+            <h1>Best Collection</h1>
+            <p>It is a long established fact that a reader will be distracted by the <br>
+               readable content of a page when looking at its layout.</p>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <img src="./assets/img/home-img/hero-slider/Group 1087.jpg" alt="">
+          <div class="hero-slider-header container">
+            <div class="hero-slider-item">
+              <h1>The New Experience With Our</h1>
+            <h1>Best Collection</h1>
+            <p>It is a long established fact that a reader will be distracted by the <br>
+               readable content of a page when looking at its layout.</p>
+            </div>
+          </div>
+        </div> -->
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+    <!-- <div class="slider">
+      <div class="list">
+          <div class="item">
+            <div class="slider-img1">
+              <h1>wwwwww</h1>
+              
+            </div>
+          </div>
+          <div class="item">
+            <div class="slider-img2">
+             <h1>yyyy</h1>
+              
+            </div>
+          </div>
+          <div class="item">
+            <div class="slider-img3">
+              <h1>rrrrr</h1>
+              
+            </div>
+          </div>
+         
+      </div>
+      <div class="buttons">
+          <button id="prev"><</button>
+          <button id="next">></button>
+      </div>
+      <ul class="dots">
+          <li class="active"></li>
+          <li></li>
+          <li></li>
+      </ul>
+    </div> -->
+    <!-- Hero Slider End -->
 
 
+
+    
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
       crossorigin="anonymous"
     ></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="app.js"></script>
   </body>
 </html>
