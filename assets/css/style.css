@@ -58,19 +58,19 @@
 /* Topbar End */
 
 /* Header Start */
-header .logo img {
+.header .logo img {
   align-items: center;
   justify-content: center;
   text-align: center;
   padding: 20px 0;
 }
 
-header .search_bar {
+.header .search_bar {
   padding: 0px 12px;
   margin: auto;
 }
 
-header .search_bar_item {
+.header .search_bar_item {
   align-items: center;
   height: 45px;
   border-radius: 3px;
@@ -79,14 +79,14 @@ header .search_bar_item {
   border: 1px solid rgba(38, 160, 218, 1);
 }
 
-header .search_bar img {
+.header .search_bar img {
   padding-top: 9px;
   width: 60px;
   margin-top: -9px;
   margin-right: 5px;
 }
 
-header .header {
+.header .header {
   justify-content: space-between;
 }
 
@@ -98,13 +98,13 @@ header .header {
   font-family: var(--secondary-font);
 }
 
-header .contact {
+.header .contact {
   justify-content: flex-end;
   display: flex;
   align-items: center;
 }
 
-header .header_contact {
+.header .header_contact {
   width: 70%;
   margin-right: 10px;
   border-radius: 3px;
@@ -140,25 +140,25 @@ header .header_contact {
 }
 
 @media screen and (max-width: 990px) {
-  header .contact {
+  .header .contact {
     margin-top: 20px;
     justify-content: space-between;
   }
 
-  header {
+  .header {
     margin: 20px 0;
   }
 }
 /* Header End */
 
 /* Navbar Start*/
-nav {
+.navbar {
   font-family: var(--secondary-font);
   width: 100%;
   background: var(--text-color-blue);
 }
 
-nav .navbar {
+.navbar .navbar {
   position: relative;
   height: 62px;
   margin: auto;
@@ -167,7 +167,7 @@ nav .navbar {
   justify-content: space-between;
 }
 
-nav .logo {
+.navbar .logo {
   display: none;
 }
 
@@ -183,10 +183,10 @@ nav .logo {
   display: inline-block;
   color: #f2f2f2;
   text-decoration: none;
-  font-size: 18px;
+  font-size: 20px;
   font-weight: 500;
-  padding: 9px 15px 20px 18px;
-  border-radius: 2px;
+  padding: 9px 15px 26px 18px;
+  border-radius: 3px;
   transition: all 0.3s ease;
 }
 
@@ -236,6 +236,7 @@ nav .logo {
 
 .nav-links li:hover .drop-menu,
 .nav-links li:hover .mega-box {
+  z-index: 555;
   transition: all 0.3s ease;
   top: 62px;
   opacity: 1;
@@ -341,11 +342,11 @@ nav .logo {
     display: block;
   }
 
-  nav .logo {
+  .navbar .logo {
     display: block;
   }
 
-  nav .logo img {
+  .navbar .logo img {
     width: 120px;
   }
 
@@ -496,7 +497,7 @@ nav .logo {
   }
 }
 
-nav input {
+.navbar input {
   display: none;
 }
 /* Navbar End */
@@ -593,7 +594,8 @@ nav input {
 
 @media screen and (max-width: 600px) {
   .hero-slider-header h1 {
-    font-size: 30px;
+    width: 370px;
+    font-size: 28px;
   }
   .hero-slider-item .swiper-img img {
     margin-top: 0px;
@@ -611,9 +613,12 @@ nav input {
 
 /* Feature Categories Start */
 .slide-container {
-  padding: 100px 0;
+  padding: 100px 0px 110px 0px;
   text-align: center;
   overflow: hidden;
+}
+.card-wrapper{
+  margin-bottom: 20px !important;
 }
 .swiper {
   position: relative;
@@ -629,11 +634,11 @@ nav input {
 }
 .feature-heading .bottom-border {
   margin: 0px 80px;
-  border-bottom: 4px solid #26a0da;
+  border-bottom: 3px solid #26a0da;
 }
 .feature-heading .bottom-border2 {
   margin: 10px 110px 0px 110px;
-  border-bottom: 4px solid #26a0da;
+  border-bottom: 3px solid #26a0da;
 }
 .card {
   font-family: var(--secondary-font);
@@ -662,28 +667,39 @@ nav input {
   padding: 15px;
 }
 .card-details .name {
+  margin-top: -30px !important;
   font-size: 15px;
   font-weight: 500;
 }
 .swiper-navBtn {
   position: absolute;
-  top: 600px !important;
-  color: #000;
+  top: 620px !important;
   height: 40px;
   width: 40px;
   background: #fff;
-  border-radius: 50%;
 }
 .swiper-navBtn::before,
 .swiper-navBtn::after {
   font-size: 18px;
 }
-.swiper-pagination-bullet {
-  background-color: #000;
+.slide-container .rectangle {
+  margin-top: 40px;
 }
 
 .swiper-button-next {
-  right: 50% !important;
+  right: 44% !important;
+}
+.swiper-button-next svg {
+  width: 50px !important;
+  height: 50px !important;
+  right: 44% !important;
+}
+.swiper-button-prev {
+  left: 44% !important;
+}
+
+.swiper-button-prev::after {
+  display: none;
 }
 
 .swiper-button-next::after {
@@ -692,6 +708,17 @@ nav input {
 @media screen and (max-width: 768px) {
   .swiper-navBtn {
     display: none;
+  }
+  .swiper-button-next {
+    right: 8% !important;
+  }
+  .swiper-button-prev {
+    left: 8% !important;
+  }
+}
+@media screen and (max-width: 600px) {
+  .slide-container .rectangle {
+    margin-top: 45px;
   }
 }
 /* Feature Categories End */
