@@ -1,261 +1,396 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Goozen</title>
+    <!-- Css Link -->
+    <link rel="stylesheet" href="./assets/css/home.css" />
+    <!-- Css Link -->
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Goozen</title>
-  <!-- Css Link -->
-  <link rel="stylesheet" href="./assets/css/home.css" />
-  <!-- Css Link -->
-  <!-- Swiper Css Link -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-  <!-- Swiper Css Link -->
-  <!-- Fontawesome link-->
-  <script src="https://kit.fontawesome.com/476ec20884.js" crossorigin="anonymous"></script>
-  <!-- FontAwesome Link -->
-  <!-- Bootstrap CND Link -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
-  <!-- Bootstrap CDN Link -->
-</head>
+    <!-- Swiper Css Link -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <!-- Swiper Css Link -->
 
-<body>
-  <!-- Topbar Start -->
-  <section id="topbar">
-    <div class="topbar_item justify-contant-center">
-      <ul class="justify-content-center d-flex">
-        <li><a href="#">Offers</a></li>
-        <div class="vertical_bar"></div>
-        <li><a href="#">Gift Card</a></li>
-        <div class="vertical_bar"></div>
-        <li><a href="#">My Wishlist</a></li>
-        <div class="vertical_bar"></div>
-        <li>
-          <a style="color: rgba(38, 160, 218, 1)" href="#"><img src="./assets/img/home-img/sign-in.svg" alt="" />Sign
-            In</a>
-        </li>
-      </ul>
-    </div>
-  </section>
-  <!-- Topbar End -->
+    <!-- Fontawesome link-->
+    <script
+      src="https://kit.fontawesome.com/476ec20884.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- FontAwesome Link -->
 
+    <!-- Bootstrap CND Link -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <!-- Bootstrap CDN Link -->
+  </head>
 
-  <!-- Header Start -->
-  <header>
-    <div class="container">
-      <div class="header_item row">
-        <div class="logo col-lg-3">
-          <img src="./assets/img/home-img/logo/logo.svg" width="190px" alt="logo" />
-        </div>
-        <div class="search_bar col-lg-6">
-          <div class="search_bar_item">
-            <input type="text" placeholder="Search heare" />
-            <div class="search_btn">
-              <a href="#"><img src="./assets/img/home-img/search.svg" alt="" /></a>
-            </div>
-          </div>
-        </div>
-        <div class="contact col-lg-3">
-          <div class="header_contact">
-            <p>Call Us</p>
-            <div class="call_us">
-              <a href="#"><img src="./assets/img/home-img/call.svg" alt="" />+112 4125
-                5125</a>
-            </div>
-          </div>
-          <div class="add_to_cart">
-            <a href="#"><img src="./assets/img/home-img/add to cart.svg" alt="" /></a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </header>
-  <!-- Header End -->
-
-  <!-- navbar start -->
-  <nav>
-    <div class="container">
-      <div class="navbar">
-        <div class="logo">
-          <img src="./assets/img/home-img/logo/logo2.svg" width="130px" alt="logo" />
-        </div>
-        <input type="radio" name="slider" id="menu-btn" />
-        <input type="radio" name="slider" id="close-btn" />
-        <ul class="nav-links m-auto">
-          <label for="close-btn" class="btn close-btn"><i class="fas fa-times"></i></label>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Shop</a></li>
+  <body>
+    <!-- Topbar Start -->
+    <section id="topbar">
+      <div class="topbar_item justify-contant-center">
+        <ul class="justify-content-center d-flex">
+          <li><a href="#">Offers</a></li>
+          <div class="vertical_bar"></div>
+          <li><a href="#">Gift Card</a></li>
+          <div class="vertical_bar"></div>
+          <li><a href="#">My Wishlist</a></li>
+          <div class="vertical_bar"></div>
           <li>
-            <a href="#" class="desktop-item">Categories
-              <svg width="22" height="13" viewBox="0 0 22 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M2 2L11 11L20 2" stroke="white" stroke-width="3" stroke-linecap="round"
-                  stroke-linejoin="round" />
-              </svg>
-            </a>
-            <input type="checkbox" id="showMega" />
-            <label for="showMega" class="mobile-item">Categories</label>
-            <div class="mega-box">
-              <div class="content">
-                <div class="row">
-                  <ul class="mega-links">
-                    <li><a href="#">Laptop & Computers</a></li>
-                    <li><a href="#">TV & Audio</a></li>
-                    <li><a href="#">Video Games</a></li>
-                    <li><a href="#">Printer & Ink</a></li>
-                    <li><a href="#">Gaming & Headsets</a></li>
-                  </ul>
-                </div>
-                <div class="row">
-                  <ul class="mega-links">
-                    <li><a href="#">Gadgets</a></li>
-                    <li><a href="#">Drone & Helicopter</a></li>
-                    <li><a href="#">PC Accessories</a></li>
-                    <li><a href="#">Camera</a></li>
-                  </ul>
-                </div>
-                <div class="row">
-                  <ul class="mega-links">
-                    <li><a href="#">Sports & Fitness</a></li>
-                    <li><a href="#">Laptop & Mobile</a></li>
-                    <li><a href="#">Laptop & Computers</a></li>
-                    <li><a href="#">Printer</a></li>
-                    <li><a href="#">Others</a></li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </li>
-          <li>
-            <a href="#" class="desktop-item">Pages
-              <svg width="22" height="13" viewBox="0 0 22 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M2 2L11 11L20 2" stroke="white" stroke-width="3" stroke-linecap="round"
-                  stroke-linejoin="round" />
-              </svg>
-            </a>
-            <input type="checkbox" id="showDrop">
-            <label for="showDrop" class="mobile-item">Pages</label>
-            <ul class="drop-menu">
-              <li><a href="#">About Us</a></li>
-              <li><a href="#">Coming Soon</a></li>
-              <li><a href="#">Terms & Conditions</a></li>
-              <li><a href="#">Privacy Policy</a></li>
-            </ul>
-          </li>
-          <li>
-            <a href="#">Blog</a>
-          </li>
-          <li>
-            <a href="#">Contact us</a>
+            <a style="color: rgba(38, 160, 218, 1)" href="#"
+              ><img src="./assets/img/home-img/sign-in.svg" alt="" />Sign In</a
+            >
           </li>
         </ul>
-        <label for="menu-btn" class="btn menu-btn"><i class="fas fa-bars"></i></label>
       </div>
+    </section>
+    <!-- Topbar End -->
+
+    <!-- Header Start -->
+    <header>
+      <div class="container">
+        <div class="header_item row">
+          <div class="logo col-lg-3">
+            <img
+              src="./assets/img/home-img/logo/logo.svg"
+              width="190px"
+              alt="logo"
+            />
+          </div>
+          <div class="search_bar col-lg-6">
+            <div class="search_bar_item">
+              <input type="text" placeholder="Search heare" />
+              <div class="search_btn">
+                <a href="#"
+                  ><img src="./assets/img/home-img/search.svg" alt=""
+                /></a>
+              </div>
+            </div>
+          </div>
+          <div class="contact col-lg-3">
+            <div class="header_contact">
+              <p>Call Us</p>
+              <div class="call_us">
+                <a href="#"
+                  ><img src="./assets/img/home-img/call.svg" alt="" />+112 4125
+                  5125</a
+                >
+              </div>
+            </div>
+            <div class="add_to_cart">
+              <a href="#"
+                ><img src="./assets/img/home-img/add to cart.svg" alt=""
+              /></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- Header End -->
+
+    <!-- navbar start -->
+    <nav>
+      <div class="container">
+        <div class="navbar">
+          <div class="logo">
+            <img
+              src="./assets/img/home-img/logo/logo2.svg"
+              width="130px"
+              alt="logo"
+            />
+          </div>
+          <input type="radio" name="slider" id="menu-btn" />
+          <input type="radio" name="slider" id="close-btn" />
+          <ul class="nav-links m-auto">
+            <label for="close-btn" class="btn close-btn"
+              ><i class="fas fa-times"></i
+            ></label>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Shop</a></li>
+            <li>
+              <a href="#" class="desktop-item"
+                >Categories
+                <svg
+                  width="22"
+                  height="13"
+                  viewBox="0 0 22 13"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M2 2L11 11L20 2"
+                    stroke="white"
+                    stroke-width="3"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </a>
+              <input type="checkbox" id="showMega" />
+              <label for="showMega" class="mobile-item">Categories</label>
+              <div class="mega-box">
+                <div class="content">
+                  <div class="row">
+                    <ul class="mega-links">
+                      <li><a href="#">Laptop & Computers</a></li>
+                      <li><a href="#">TV & Audio</a></li>
+                      <li><a href="#">Video Games</a></li>
+                      <li><a href="#">Printer & Ink</a></li>
+                      <li><a href="#">Gaming & Headsets</a></li>
+                    </ul>
+                  </div>
+                  <div class="row">
+                    <ul class="mega-links">
+                      <li><a href="#">Gadgets</a></li>
+                      <li><a href="#">Drone & Helicopter</a></li>
+                      <li><a href="#">PC Accessories</a></li>
+                      <li><a href="#">Camera</a></li>
+                    </ul>
+                  </div>
+                  <div class="row">
+                    <ul class="mega-links">
+                      <li><a href="#">Sports & Fitness</a></li>
+                      <li><a href="#">Laptop & Mobile</a></li>
+                      <li><a href="#">Laptop & Computers</a></li>
+                      <li><a href="#">Printer</a></li>
+                      <li><a href="#">Others</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <a href="#" class="desktop-item"
+                >Pages
+                <svg
+                  width="22"
+                  height="13"
+                  viewBox="0 0 22 13"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M2 2L11 11L20 2"
+                    stroke="white"
+                    stroke-width="3"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </a>
+              <input type="checkbox" id="showDrop" />
+              <label for="showDrop" class="mobile-item">Pages</label>
+              <ul class="drop-menu">
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Coming Soon</a></li>
+                <li><a href="#">Terms & Conditions</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">Blog</a>
+            </li>
+            <li>
+              <a href="#">Contact us</a>
+            </li>
+          </ul>
+          <label for="menu-btn" class="btn menu-btn"
+            ><i class="fas fa-bars"></i
+          ></label>
+        </div>
+      </div>
+    </nav>
+    <!-- navbar end -->
+
+    <!-- Hero Slider Start -->
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="swiper-item container">
+            <div class="hero-slider-header row">
+              <div class="header col-12">
+                <h1>The New <span>Experience</span> With Our</h1>
+                <h1><span>Best</span> Collection</h1>
+              </div>
+            </div>
+            <div class="hero-slider-item row">
+              <div class="header-2 col-lg-6">
+                <p>
+                  It is a long established fact that a reader will be distracted
+                  by the readable content of a page when looking at its layout.
+                </p>
+                <button>
+                  <a href="#">Discover Now</a>
+                </button>
+              </div>
+              <div class="swiper-img col-lg-6">
+                <img
+                  src="./assets/img/home-img/hero-slider/slider.png"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="container swiper-item">
+            <div class="hero-slider-header row">
+              <div class="col-12 header">
+                <h1>The New <span>Experience</span> With Our</h1>
+                <h1><span>Best</span> Collection</h1>
+              </div>
+            </div>
+            <div class="hero-slider-item row">
+              <div class="col-lg-6 header-2">
+                <p>
+                  It is a long established fact that a reader will be distracted
+                  by the readable content of a page when looking at its layout.
+                </p>
+                <button>
+                  <a href="#">Discover Now</a>
+                </button>
+              </div>
+              <div class="col-lg-6 swiper-img">
+                <img
+                  src="./assets/img/home-img/hero-slider/slider.png"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="swiper-item container">
+            <div class="row hero-slider-header">
+              <div class="col-12 header">
+                <h1>The New <span>Experience</span> With Our</h1>
+                <h1><span>Best</span> Collection</h1>
+              </div>
+            </div>
+            <div class="hero-slider-item row">
+              <div class="col-lg-6 header-2">
+                <p>
+                  It is a long established fact that a reader will be distracted
+                  by the readable content of a page when looking at its layout.
+                </p>
+                <button>
+                  <a href="#">Discover Now</a>
+                </button>
+              </div>
+              <div class="col-lg-6 swiper-img">
+                <img
+                  src="./assets/img/home-img/hero-slider/slider.png"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-pagination"></div>
     </div>
-  </nav>
-  <!-- navbar end -->
+    <!-- Hero Slider End -->
 
-
-  <!-- Hero Slider Start -->
-  <div class="swiper mySwiper">
-    <div class="swiper-wrapper">
-      <div class="swiper-slide">
-        <div class="swiper-item container">
-          <div class="hero-slider-header row">
-            <div class="header col-12">
-              <h1>The New <span>Experience</span> With Our</h1>
-              <h1><span>Best</span> Collection</h1>
-            </div>
-
+    <!-- Featured Categories Start -->
+    <div class="container swiper">
+      <div class="slide-container">
+        <div class="feature-heading">
+          <div class="heading">
+            <h1>Featured Categories</h1>
+            <div class="bottom-border"><div></div></div>
+            <div class="bottom-border2"></div>
           </div>
-          <div class="hero-slider-item row">
-            <div class="header-2 col-lg-6">
-              <p>It is a long established fact that a reader will be distracted by the readable content of a page when
-                looking at its layout.
-              </p>
-              <button>
-                <a href="#">Discover Now</a>
-              </button>
+        </div>
+        <div class="card-wrapper swiper-wrapper">
+          <div class="card swiper-slide">
+            <div class="image-box">
+              <img
+                src="./assets/img/home-img/featured-categories-img/feature1.svg"
+                alt=""
+              />
             </div>
-
-            <div class="swiper-img col-lg-6">
-              <img src="./assets/img/home-img/hero-slider/slider.png" alt="">
+            <div class="card-details">
+              <div class="name">
+                <h3>Laptop & Computers</h3>
+              </div>
             </div>
-
+          </div>
+          <div class="card swiper-slide">
+            <div class="image-box">
+              <img
+                src="./assets/img/home-img/featured-categories-img/feature2.svg"
+                alt=""
+              />
+            </div>
+            <div class="card-details">
+              <div class="name">
+                <h3>TV & Audio</h3>
+              </div>
+            </div>
+          </div>
+          <div class="card swiper-slide">
+            <div class="image-box">
+              <img
+                src="./assets/img/home-img/featured-categories-img/feature3.svg"
+                alt=""
+              />
+            </div>
+            <div class="card-details">
+              <div class="name">
+                <h3>Video Games & Consoles</h3>
+              </div>
+            </div>
+          </div>
+          <div class="card swiper-slide">
+            <div class="image-box">
+              <img
+                src="./assets/img/home-img/featured-categories-img/feature4.svg"
+                alt=""
+              />
+            </div>
+            <div class="card-details">
+              <div class="name">
+                <h3>Printer & Ink</h3>
+              </div>
+            </div>
+          </div>
+          <div class="card swiper-slide">
+            <div class="image-box">
+              <img
+                src="./assets/img/home-img/featured-categories-img/feature5.svg"
+                alt=""
+              />
+            </div>
+            <div class="card-details">
+              <div class="name">
+                <h3>Gaming & Headsets</h3>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-      <div class="swiper-slide">
-        <div class="swiper-item container">
-          <div class="hero-slider-header row">
-            <div class="header col-12">
-              <h1>The New <span>Experience</span> With Our</h1>
-              <h1><span>Best</span> Collection</h1>
-            </div>
-
-          </div>
-          <div class="hero-slider-item row">
-            <div class="header-2 col-lg-6">
-              <p>It is a long established fact that a reader will be distracted by the readable content of a page when
-                looking at its layout.
-              </p>
-              <button>
-                <a href="#">Discover Now</a>
-              </button>
-            </div>
-            <div class="swiper-img col-lg-6">
-              <img src="./assets/img/home-img/hero-slider/slider.png" alt="">
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="swiper-slide">
-        <div class="swiper-item container">
-          <div class="hero-slider-header row">
-            <div class="header col-12">
-              <h1>The New <span>Experience</span> With Our</h1>
-              <h1><span>Best</span> Collection</h1>
-            </div>
-          </div>
-          <div class="hero-slider-item row">
-            <div class="header-2 col-lg-6">
-              <p>It is a long established fact that a reader will be distracted by the readable content of a page when
-                looking at its layout.
-              </p>
-              <button>
-                <a href="#">Discover Now</a>
-              </button>
-            </div>
-            <div class="swiper-img col-lg-6">
-              <img src="./assets/img/home-img/hero-slider/slider.png" alt="">
-            </div>
-          </div>
-        </div>
-      </div>
+      <div class="swiper-button-next swiper-navBtn"></div>
+      <div class="swiper-button-prev swiper-navBtn"></div>
+      <div class="swiper-pagination"></div>
     </div>
-    <div class="swiper-pagination"></div>
-  </div>
-  <!-- Hero Slider End -->
 
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Swiper js Start -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./js/app.js"></script>
+    <!--  -->
 
-
-
-
-
-
-  
-
-
-  wwwwwwww
-
-
-
-
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-    crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-  <script src="app.js"></script>
-</body>
-
+    <script src="./assets/css/bootstrap/bootstrap.min.js"></script>
+  </body>
 </html>
