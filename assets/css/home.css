@@ -195,18 +195,30 @@ nav .logo {
   color: var(--text-color-blue);
 }
 
-.nav-links li a:hover svg {
-  fill: #017efc;
+.nav-links li a:hover path {
+  stroke: var(--text-color-blue);
 }
 
-.nav-links svg {
-  width: 17px;
-  fill: #017efc;
+.nav-links li a svg {
+  width: 15px;
+  transition: 0.4s;
+  -webkit-transition: 0.4s;
+  -moz-transition: 0.4s;
+  -ms-transition: 0.4s;
+  -o-transition: 0.4s;
+}
+
+.nav-links li a svg path {
+  stroke: #fff;
+  transition: 0.4s;
+  -webkit-transition: 0.4s;
+  -moz-transition: 0.4s;
+  -ms-transition: 0.4s;
+  -o-transition: 0.4s;
 }
 
 .nav-links li a:hover svg {
   transform: rotate(180deg);
-  fill: var(--text-color-blue);
 }
 
 .nav-links .drop-menu {
@@ -597,16 +609,14 @@ nav input {
 }
 /* Hero Slider End */
 
-
-
 /* Feature Categories Start */
 .slide-container {
   padding: 100px 0;
   text-align: center;
   overflow: hidden;
 }
-.swiper{
-  position: relative;;
+.swiper {
+  position: relative;
 }
 .slide-container .feature-heading {
   font-family: var(--primary-font);
@@ -671,10 +681,17 @@ nav input {
 .swiper-pagination-bullet {
   background-color: #000;
 }
+
+.swiper-button-next {
+  right: 50% !important;
+}
+
+.swiper-button-next::after {
+  display: none;
+}
 @media screen and (max-width: 768px) {
   .swiper-navBtn {
     display: none;
   }
 }
 /* Feature Categories End */
-
