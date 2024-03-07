@@ -1027,19 +1027,22 @@
 
 /* Get Many offers Start */
 #get-offer{
+  margin: 100px 0;
   background: var(--background-color);
 }
 #get-offer .offer{
-  
+  padding-top: 80px;
+  align-items: center;
 }
 
 #get-offer .offer-img{
   position: relative;
+  display: inline-block;
   
 }
 #get-offer .offer-img img{
   width: 100%;
-  margin: 50px 0;
+  margin: 0px 0;
   
 }
 #get-offer .offer-img a img{
@@ -1052,8 +1055,8 @@
 }
 #get-offer .offer-img .img-text{
   position: absolute;
-  transform: translateY(-180px);
-  left: 50px;
+  transform: translateY(-50%) translateX(-50%);
+
   
 }
 #get-offer .offer-img a{
@@ -1064,11 +1067,11 @@
 }
 .sign-up h1{
   color: var(--text-color-black);
-  font-family: var(--secondary-font);
+  font-family: var(--primary-font);
 }
 .sign-up h2{
   color: var(--item-color);
-  font-family: var(--secondary-font);
+  font-family:var(--primary-font);
 }
 .sign-up p{
   color: var(--text-color-white);
@@ -1080,21 +1083,23 @@
   color: var(--item-color);
 }
 #get-offer .sign-up form{
+  display: flex;
+  justify-content: space-between;
   background: white;
   border-radius: 5px;
 }
 #get-offer .sign-up form a{
   font-family: var(--secondary-font);
-  font-size: 28px;
+  padding: 10px;
+  font-size: 22px;
   text-decoration: none;
   background: var(--item-color);
   color: var(--text-color-white);
   border-radius: 5px;
-  padding: 10px 10px 16px 10px;
+  margin: 10px;
 }
 #get-offer .sign-up input{
   font-family: var(--secondary-font);
- 
   font-size: 22px;
   background: none;
   border: none;
