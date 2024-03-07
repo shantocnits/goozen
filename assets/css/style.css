@@ -388,15 +388,15 @@
     background: #3a3b3c;
   }
 
-  #menu-btn:checked~.nav-links {
+  #menu-btn:checked ~ .nav-links {
     left: 0%;
   }
 
-  #menu-btn:checked~.btn.menu-btn {
+  #menu-btn:checked ~ .btn.menu-btn {
     display: none;
   }
 
-  #close-btn:checked~.btn.menu-btn {
+  #close-btn:checked ~ .btn.menu-btn {
     display: block;
   }
 
@@ -423,8 +423,8 @@
     transition: all 0.3s ease;
   }
 
-  #showDrop:checked~.drop-menu,
-  #showMega:checked~.mega-box {
+  #showDrop:checked ~ .drop-menu,
+  #showMega:checked ~ .mega-box {
     max-height: 100%;
   }
 
@@ -756,9 +756,6 @@
 
 /* Feature Categories End */
 
-
-
-
 /* Offer Sec Start */
 .offer {
   padding: 0px 0px 100px 0px;
@@ -774,7 +771,6 @@
 
 .offer .offer-item2 .offer-title2 {
   padding: 50px 30px 0px 0px;
-
 }
 
 .offer .offer-item2 .offer-title2 p {
@@ -871,8 +867,7 @@
   background-image: url(../img/home-img/hero-slider/slider-bg.png);
 }
 
-@media screen and (max-width:1200px) {
-
+@media screen and (max-width: 1200px) {
   .offer .offer-item2 .offer-title2 h2,
   .offer .offer-item2 .offer-title2 h1 {
     font-family: var(--primary-font);
@@ -888,31 +883,24 @@
   }
 
   .offer .offer-item2 {
-    max-width: 97.60%;
+    max-width: 97.6%;
   }
-
 }
 
-@media screen and (max-width:768px) {
-
+@media screen and (max-width: 768px) {
   .offer .offer-item2 {
-    max-width: 94.60%;
+    max-width: 94.6%;
   }
-
 }
 
-@media screen and (max-width:1200px) {
-
+@media screen and (max-width: 1200px) {
   .offer .offer-item2 {
     margin: 0px 10px;
     padding: 0px 0px;
   }
-
 }
 
 /* Offer Sec End */
-
-
 
 /* All Products Sec Start */
 #product-cards .card img {
@@ -934,7 +922,6 @@
   font-family: var(--primary-font);
   color: var(--text-color-black);
 }
-
 
 #product-cards .heading-bottom-bar {
   width: 180px;
@@ -961,7 +948,7 @@
 #product-cards h5 {
   font-family: var(--primary-font);
   font-size: 25px;
-  color: #FFB800;
+  color: #ffb800;
   cursor: pointer;
 }
 
@@ -1000,11 +987,11 @@
 }
 
 .viewmorebtn:hover {
-  background-color: #26A0DA;
+  background-color: #26a0da;
   color: white;
 }
 
-@media screen and (max-width:600px) {
+@media screen and (max-width: 600px) {
   #product-cards h1 {
     padding-left: 10px;
   }
@@ -1024,71 +1011,73 @@
 
 /* All Products Sec End */
 
-
 /* Get Many offers Start */
-#get-offer{
+#get-offer {
   margin: 100px 0;
   background: var(--background-color);
 }
-#get-offer .offer{
+#get-offer .offer {
   padding-top: 80px;
   align-items: center;
 }
 
-#get-offer .offer-img{
+#get-offer .offer-img {
   position: relative;
   display: inline-block;
-  
 }
-#get-offer .offer-img img{
+#get-offer .offer-img img {
   width: 100%;
   margin: 0px 0;
-  
 }
-#get-offer .offer-img a img{
-  width: 30px; 
+#get-offer .offer-img a img {
+  width: 30px;
   height: 30px;
 }
-#get-offer .offer-img .img-text h1{
+#get-offer .offer-img .img-text h1 {
   font-family: var(--primary-font);
+  white-space: nowrap;
   font-size: 28px;
 }
-#get-offer .offer-img .img-text{
+#get-offer .offer-img .img-text {
   position: absolute;
-  transform: translateY(-50%) translateX(-50%);
-
-  
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
 }
-#get-offer .offer-img a{
+#get-offer .offer-img a {
   text-decoration: none;
   font-size: 18px;
   color: var(--text-color-white);
   font-family: var(--secondary-font);
 }
-.sign-up h1{
+.sign-up h1 {
   color: var(--text-color-black);
   font-family: var(--primary-font);
 }
-.sign-up h2{
+.sign-up h2 {
   color: var(--item-color);
-  font-family:var(--primary-font);
+  font-family: var(--primary-font);
 }
-.sign-up p{
+.sign-up p {
   color: var(--text-color-white);
   font-family: var(--primary-font);
   font-size: 18px;
 }
-.sign-up p span{
+.sign-up p span {
   font-size: 28px;
   color: var(--item-color);
 }
-#get-offer .sign-up form{
+#get-offer .sign-up form {
   display: flex;
   justify-content: space-between;
   background: white;
   border-radius: 5px;
 }
-#get-offer .sign-up form a{
+#get-offer .sign-up form a {
   font-family: var(--secondary-font);
   padding: 10px;
   font-size: 22px;
@@ -1098,12 +1087,13 @@
   border-radius: 5px;
   margin: 10px;
 }
-#get-offer .sign-up input{
+#get-offer .sign-up input {
+  width: 100%;
+  padding: 15px;
   font-family: var(--secondary-font);
   font-size: 22px;
   background: none;
   border: none;
   outline: none;
-  padding: 22px 0px  22px 30px;
 }
 /* Get Many offers End */
