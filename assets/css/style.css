@@ -984,7 +984,7 @@
   text-align: center;
   align-items: center;
   padding: 10px 0;
-  top: -20px;
+  top: -25px;
   font-family: var(--secondary-font);
   justify-content: center;
   margin: auto;
@@ -1023,3 +1023,82 @@
 }
 
 /* All Products Sec End */
+
+
+/* Get Many offers Start */
+#get-offer{
+  background: var(--background-color);
+}
+#get-offer .offer{
+  
+}
+
+#get-offer .offer-img{
+  position: relative;
+  
+}
+#get-offer .offer-img img{
+  width: 100%;
+  margin: 50px 0;
+  
+}
+#get-offer .offer-img a img{
+  width: 30px; 
+  height: 30px;
+}
+#get-offer .offer-img .img-text h1{
+  font-family: var(--primary-font);
+  font-size: 28px;
+}
+#get-offer .offer-img .img-text{
+  position: absolute;
+  transform: translateY(-180px);
+  left: 50px;
+  
+}
+#get-offer .offer-img a{
+  text-decoration: none;
+  font-size: 18px;
+  color: var(--text-color-white);
+  font-family: var(--secondary-font);
+}
+.sign-up h1{
+  color: var(--text-color-black);
+  font-family: var(--secondary-font);
+}
+.sign-up h2{
+  color: var(--item-color);
+  font-family: var(--secondary-font);
+}
+.sign-up p{
+  color: var(--text-color-white);
+  font-family: var(--primary-font);
+  font-size: 18px;
+}
+.sign-up p span{
+  font-size: 28px;
+  color: var(--item-color);
+}
+#get-offer .sign-up form{
+  background: white;
+  border-radius: 5px;
+}
+#get-offer .sign-up form a{
+  font-family: var(--secondary-font);
+  font-size: 28px;
+  text-decoration: none;
+  background: var(--item-color);
+  color: var(--text-color-white);
+  border-radius: 5px;
+  padding: 10px 10px 16px 10px;
+}
+#get-offer .sign-up input{
+  font-family: var(--secondary-font);
+ 
+  font-size: 22px;
+  background: none;
+  border: none;
+  outline: none;
+  padding: 22px 0px  22px 30px;
+}
+/* Get Many offers End */
