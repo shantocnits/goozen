@@ -1,847 +1,720 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Goozen</title>
 
-    <!-- CSS Link -->
-    <link rel="stylesheet" href="./assets/css/style.css" />
-    <!-- CSS Link -->
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Goozen</title>
 
-    <!-- Swiper Css Link -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-    />
-    <!-- Swiper Css Link -->
+  <!-- CSS Link -->
+  <link rel="stylesheet" href="./assets/css/style.css" />
+  <link rel="stylesheet" href="./assets/css/navbar-footer.css">
+  <!-- CSS Link -->
 
-    <!-- Fontawesome link-->
-    <script
-      src="https://kit.fontawesome.com/476ec20884.js"
-      crossorigin="anonymous"
-    ></script>
-    <!-- FontAwesome Link -->
+  <!-- Swiper Css Link -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <!-- Swiper Css Link -->
 
-    <!-- Bootstrap CSS CDN Link Start -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
-      crossorigin="anonymous"
-    />
-    <!-- Bootstrap CSS CDN Link End -->
-  </head>
+  <!-- Fontawesome link-->
+  <script src="https://kit.fontawesome.com/476ec20884.js" crossorigin="anonymous"></script>
+  <!-- FontAwesome Link -->
 
-  <body>
-    <!-- Topbar Start -->
-    <section id="topbar">
-      <div class="topbar_item justify-contant-center">
-        <ul class="justify-content-center d-flex">
-          <li><a href="#">Offers</a></li>
-          <div class="vertical_bar"></div>
-          <li><a href="#">Gift Card</a></li>
-          <div class="vertical_bar"></div>
-          <li><a href="#">My Wishlist</a></li>
-          <div class="vertical_bar"></div>
+  <!-- Bootstrap CSS CDN Link Start -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+  <!-- Bootstrap CSS CDN Link End -->
+</head>
+
+<body>
+  <!-- Topbar Start -->
+  <section id="topbar">
+    <div class="topbar_item justify-contant-center">
+      <ul class="justify-content-center d-flex">
+        <li><a href="#">Offers</a></li>
+        <div class="vertical_bar"></div>
+        <li><a href="#">Gift Card</a></li>
+        <div class="vertical_bar"></div>
+        <li><a href="#">My Wishlist</a></li>
+        <div class="vertical_bar"></div>
+        <li>
+          <a style="color: rgba(38, 160, 218, 1)" href="#"><img src="./assets/img/home-img/sign-in.svg" alt="" />Sign
+            In</a>
+        </li>
+      </ul>
+    </div>
+  </section>
+  <!-- Topbar End -->
+
+  <!-- Header Start -->
+  <header class="header">
+    <div class="container">
+      <div class="header_item row">
+        <div class="logo col-lg-3">
+          <img src="./assets/img/home-img/logo/logo.svg" width="190px" alt="logo" />
+        </div>
+        <div class="search_bar col-lg-6">
+          <div class="search_bar_item">
+            <input type="text" placeholder="Search heare" />
+            <div class="search_btn">
+              <a href="#"><img src="./assets/img/home-img/search.svg" alt="" /></a>
+            </div>
+          </div>
+        </div>
+        <div class="contact col-lg-3">
+          <div class="header_contact">
+            <p>Call Us</p>
+            <div class="call_us">
+              <a href="#"><img src="./assets/img/home-img/call.svg" alt="" />+112 4125
+                5125</a>
+            </div>
+          </div>
+          <div class="add_to_cart">
+            <a href="#"><img src="./assets/img/home-img/add to cart.svg" alt="" /></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- Header End -->
+
+  <!-- navbar start -->
+  <nav class="navbar">
+    <div class="container">
+      <div class="navbar">
+        <div class="logo">
+          <img src="./assets/img/home-img/logo/logo2.svg" width="130px" alt="logo" />
+        </div>
+        <input type="radio" name="slider" id="menu-btn" />
+        <input type="radio" name="slider" id="close-btn" />
+        <ul class="nav-links m-auto">
+          <label for="close-btn" class="btn close-btn"><i class="fas fa-times"></i></label>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Shop</a></li>
           <li>
-            <a style="color: rgba(38, 160, 218, 1)" href="#"
-              ><img src="./assets/img/home-img/sign-in.svg" alt="" />Sign In</a
-            >
+            <a href="#" class="desktop-item">Categories
+              <svg width="22" height="13" viewBox="0 0 22 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M2 2L11 11L20 2" stroke="white" stroke-width="3" stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </svg>
+            </a>
+            <input type="checkbox" id="showMega" />
+            <label for="showMega" class="mobile-item">Categories</label>
+            <div class="mega-box">
+              <div class="content">
+                <div class="row">
+                  <ul class="mega-links">
+                    <li><a href="#">Laptop & Computers</a></li>
+                    <li><a href="#">TV & Audio</a></li>
+                    <li><a href="#">Video Games</a></li>
+                    <li><a href="#">Printer & Ink</a></li>
+                    <li><a href="#">Gaming & Headsets</a></li>
+                  </ul>
+                </div>
+                <div class="row">
+                  <ul class="mega-links">
+                    <li><a href="#">Gadgets</a></li>
+                    <li><a href="#">Drone & Helicopter</a></li>
+                    <li><a href="#">PC Accessories</a></li>
+                    <li><a href="#">Camera</a></li>
+                  </ul>
+                </div>
+                <div class="row">
+                  <ul class="mega-links">
+                    <li><a href="#">Sports & Fitness</a></li>
+                    <li><a href="#">Laptop & Mobile</a></li>
+                    <li><a href="#">Laptop & Computers</a></li>
+                    <li><a href="#">Printer</a></li>
+                    <li><a href="#">Others</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <a href="#" class="desktop-item">Pages
+              <svg width="22" height="13" viewBox="0 0 22 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M2 2L11 11L20 2" stroke="white" stroke-width="3" stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </svg>
+            </a>
+            <input type="checkbox" id="showDrop" />
+            <label for="showDrop" class="mobile-item">Pages</label>
+            <ul class="drop-menu">
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Coming Soon</a></li>
+              <li><a href="#">Terms & Conditions</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">Blog</a>
+          </li>
+          <li>
+            <a href="#">Contact us</a>
           </li>
         </ul>
-      </div>
-    </section>
-    <!-- Topbar End -->
-
-    <!-- Header Start -->
-    <header class="header">
-      <div class="container">
-        <div class="header_item row">
-          <div class="logo col-lg-3">
-            <img
-              src="./assets/img/home-img/logo/logo.svg"
-              width="190px"
-              alt="logo"
-            />
-          </div>
-          <div class="search_bar col-lg-6">
-            <div class="search_bar_item">
-              <input type="text" placeholder="Search heare" />
-              <div class="search_btn">
-                <a href="#"
-                  ><img src="./assets/img/home-img/search.svg" alt=""
-                /></a>
-              </div>
-            </div>
-          </div>
-          <div class="contact col-lg-3">
-            <div class="header_contact">
-              <p>Call Us</p>
-              <div class="call_us">
-                <a href="#"
-                  ><img src="./assets/img/home-img/call.svg" alt="" />+112 4125
-                  5125</a
-                >
-              </div>
-            </div>
-            <div class="add_to_cart">
-              <a href="#"
-                ><img src="./assets/img/home-img/add to cart.svg" alt=""
-              /></a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </header>
-    <!-- Header End -->
-
-    <!-- navbar start -->
-    <nav class="navbar">
-      <div class="container">
-        <div class="navbar">
-          <div class="logo">
-            <img
-              src="./assets/img/home-img/logo/logo2.svg"
-              width="130px"
-              alt="logo"
-            />
-          </div>
-          <input type="radio" name="slider" id="menu-btn" />
-          <input type="radio" name="slider" id="close-btn" />
-          <ul class="nav-links m-auto">
-            <label for="close-btn" class="btn close-btn"
-              ><i class="fas fa-times"></i
-            ></label>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Shop</a></li>
-            <li>
-              <a href="#" class="desktop-item"
-                >Categories
-                <svg
-                  width="22"
-                  height="13"
-                  viewBox="0 0 22 13"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M2 2L11 11L20 2"
-                    stroke="white"
-                    stroke-width="3"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                </svg>
-              </a>
-              <input type="checkbox" id="showMega" />
-              <label for="showMega" class="mobile-item">Categories</label>
-              <div class="mega-box">
-                <div class="content">
-                  <div class="row">
-                    <ul class="mega-links">
-                      <li><a href="#">Laptop & Computers</a></li>
-                      <li><a href="#">TV & Audio</a></li>
-                      <li><a href="#">Video Games</a></li>
-                      <li><a href="#">Printer & Ink</a></li>
-                      <li><a href="#">Gaming & Headsets</a></li>
-                    </ul>
-                  </div>
-                  <div class="row">
-                    <ul class="mega-links">
-                      <li><a href="#">Gadgets</a></li>
-                      <li><a href="#">Drone & Helicopter</a></li>
-                      <li><a href="#">PC Accessories</a></li>
-                      <li><a href="#">Camera</a></li>
-                    </ul>
-                  </div>
-                  <div class="row">
-                    <ul class="mega-links">
-                      <li><a href="#">Sports & Fitness</a></li>
-                      <li><a href="#">Laptop & Mobile</a></li>
-                      <li><a href="#">Laptop & Computers</a></li>
-                      <li><a href="#">Printer</a></li>
-                      <li><a href="#">Others</a></li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </li>
-            <li>
-              <a href="#" class="desktop-item"
-                >Pages
-                <svg
-                  width="22"
-                  height="13"
-                  viewBox="0 0 22 13"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M2 2L11 11L20 2"
-                    stroke="white"
-                    stroke-width="3"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                </svg>
-              </a>
-              <input type="checkbox" id="showDrop" />
-              <label for="showDrop" class="mobile-item">Pages</label>
-              <ul class="drop-menu">
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">Coming Soon</a></li>
-                <li><a href="#">Terms & Conditions</a></li>
-                <li><a href="#">Privacy Policy</a></li>
-              </ul>
-            </li>
-            <li>
-              <a href="#">Blog</a>
-            </li>
-            <li>
-              <a href="#">Contact us</a>
-            </li>
-          </ul>
-          <label for="menu-btn" class="btn menu-btn"
-            ><i class="fas fa-bars"></i
-          ></label>
-        </div>
-      </div>
-    </nav>
-    <!-- navbar end -->
-
-    <!-- Hero Slider Start -->
-    <div class="swiper mySwiper">
-      <div class="swiper-wrapper">
-        <div class="swiper-slide">
-          <div class="swiper-item container">
-            <div class="hero-slider-header row">
-              <div class="header col-12">
-                <h1>The New <span>Experience</span> With Our</h1>
-                <h1><span>Best</span> Collection</h1>
-              </div>
-            </div>
-            <div class="hero-slider-item row">
-              <div class="header-2 col-lg-6">
-                <p>
-                  It is a long established fact that a reader will be distracted
-                  by the readable content of a page when looking at its layout.
-                </p>
-                <button>
-                  <a href="#">Discover Now</a>
-                </button>
-              </div>
-              <div class="swiper-img col-lg-6">
-                <img
-                  src="./assets/img/home-img/hero-slider/slider.png"
-                  alt=""
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="swiper-slide">
-          <div class="container swiper-item">
-            <div class="hero-slider-header row">
-              <div class="col-12 header">
-                <h1>The New <span>Experience</span> With Our</h1>
-                <h1><span>Best</span> Collection</h1>
-              </div>
-            </div>
-            <div class="hero-slider-item row">
-              <div class="col-lg-6 header-2">
-                <p>
-                  It is a long established fact that a reader will be distracted
-                  by the readable content of a page when looking at its layout.
-                </p>
-                <button>
-                  <a href="#">Discover Now</a>
-                </button>
-              </div>
-              <div class="col-lg-6 swiper-img">
-                <img
-                  src="./assets/img/home-img/hero-slider/slider.png"
-                  alt=""
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="swiper-slide">
-          <div class="swiper-item container">
-            <div class="row hero-slider-header">
-              <div class="col-12 header">
-                <h1>The New <span>Experience</span> With Our</h1>
-                <h1><span>Best</span> Collection</h1>
-              </div>
-            </div>
-            <div class="hero-slider-item row">
-              <div class="col-lg-6 header-2">
-                <p>
-                  It is a long established fact that a reader will be distracted
-                  by the readable content of a page when looking at its layout.
-                </p>
-                <button>
-                  <a href="#">Discover Now</a>
-                </button>
-              </div>
-              <div class="col-lg-6 swiper-img">
-                <img
-                  src="./assets/img/home-img/hero-slider/slider.png"
-                  alt=""
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="swiper-pagination"></div>
-    </div>
-    <!-- Hero Slider End -->
-
-    <!-- Featured Categories Start -->
-    <div class="container swiper">
-      <div class="slide-container">
-        <div class="feature-heading">
-          <div class="heading">
-            <h1>Featured Categories</h1>
-            <div class="bottom-border">
-              <div></div>
-            </div>
-            <div class="bottom-border2"></div>
-          </div>
-        </div>
-        <div class="card-wrapper swiper-wrapper">
-          <div class="card swiper-slide">
-            <div class="image-box">
-              <img
-                src="./assets/img/home-img/featured-categories-img/feature1.svg"
-                alt=""
-              />
-            </div>
-            <div class="card-details">
-              <div class="name">
-                <h3>Laptop & Computers</h3>
-              </div>
-            </div>
-          </div>
-          <div class="card swiper-slide">
-            <div class="image-box">
-              <img
-                src="./assets/img/home-img/featured-categories-img/feature2.svg"
-                alt=""
-              />
-            </div>
-            <div class="card-details">
-              <div class="name">
-                <h3>TV & Audio</h3>
-              </div>
-            </div>
-          </div>
-          <div class="card swiper-slide">
-            <div class="image-box">
-              <img
-                src="./assets/img/home-img/featured-categories-img/feature3.svg"
-                alt=""
-              />
-            </div>
-            <div class="card-details">
-              <div class="name">
-                <h3>Video Games & Consoles</h3>
-              </div>
-            </div>
-          </div>
-          <div class="card swiper-slide">
-            <div class="image-box">
-              <img
-                src="./assets/img/home-img/featured-categories-img/feature4.svg"
-                alt=""
-              />
-            </div>
-            <div class="card-details">
-              <div class="name">
-                <h3>Printer & Ink</h3>
-              </div>
-            </div>
-          </div>
-          <div class="card swiper-slide">
-            <div class="image-box">
-              <img
-                src="./assets/img/home-img/featured-categories-img/feature5.svg"
-                alt=""
-              />
-            </div>
-            <div class="card-details">
-              <div class="name">
-                <h3>Gaming & Headsets</h3>
-              </div>
-            </div>
-          </div>
-          <div class="card swiper-slide">
-            <div class="image-box">
-              <img
-                src="./assets/img/home-img/featured-categories-img/feature1.svg"
-                alt=""
-              />
-            </div>
-            <div class="card-details">
-              <div class="name">
-                <h3>Laptop & Computers</h3>
-              </div>
-            </div>
-          </div>
-          <div class="card swiper-slide">
-            <div class="image-box">
-              <img
-                src="./assets/img/home-img/featured-categories-img/feature2.svg"
-                alt=""
-              />
-            </div>
-            <div class="card-details">
-              <div class="name">
-                <h3>TV & Audio</h3>
-              </div>
-            </div>
-          </div>
-          <div class="card swiper-slide">
-            <div class="image-box">
-              <img
-                src="./assets/img/home-img/featured-categories-img/feature3.svg"
-                alt=""
-              />
-            </div>
-            <div class="card-details">
-              <div class="name">
-                <h3>Gaming & Headsets</h3>
-              </div>
-            </div>
-          </div>
-        </div>
-        <img
-          class="rectangle"
-          src="./assets/img/home-img/Rectangle 26.svg"
-          alt=""
-        />
-      </div>
-      <div class="prev-next-button">
-        <div class="swiper-button-next swiper-navBtn">
-          <img src="./assets/img/home-img/right-arrow.svg" alt="" />
-        </div>
-        <div class="swiper-button-prev swiper-navBtn">
-          <img src="./assets/img/home-img/left-arrow.svg" alt="" />
-        </div>
+        <label for="menu-btn" class="btn menu-btn"><i class="fas fa-bars"></i></label>
       </div>
     </div>
-    <div class="swiper-pagination"></div>
-    <!-- Featured Categories End -->
+  </nav>
+  <!-- navbar end -->
 
-    <!-- Offer Sec Start -->
-    <section class="offer">
-      <div class="container">
-        <div class="row offer-items">
-          <div class="col-xl-6">
-            <div class="offer-item1">
-              <div class="row">
-                <div class="col-md-6">
-                  <div class="offer-title1">
-                    <p>Exclusive Offers- 15% Off This Week</p>
-                    <h2>Keyboards</h2>
-                    <h1>Up To 15% Off</h1>
-                    <h6>Start at: <span>$49.99</span></h6>
-                    <div class="offer-button1">
-                      <a href="#">Shop Now</a>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-6">
-                  <img
-                    src="./assets/img/home-img/offer-img/offer1.png"
-                    alt=""
-                  />
-                </div>
-              </div>
+  <!-- Hero Slider Start -->
+  <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <div class="swiper-item container">
+          <div class="hero-slider-header row">
+            <div class="header col-12">
+              <h1>The New <span>Experience</span> With Our</h1>
+              <h1><span>Best</span> Collection</h1>
             </div>
           </div>
-          <div class="col-xl-6 offer-item2">
-            <div class="row">
-              <div class="col-md-6">
-                <img src="./assets/img/home-img/offer-img/offer2.png" alt="" />
-              </div>
-              <div class="col-md-6">
-                <div class="offer-title2">
-                  <p>Exclusive Offers- 20% Off This Week</p>
-                  <h2>GEFORCE GTX</h2>
-                  <h1>Up To 20% Off</h1>
-                  <h6>Start at: <span>$149.50</span></h6>
-                  <div class="offer-button2">
-                    <a href="#">Shop Now</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- Offer Sec End -->
-
-    <!-- All Products Sec Start -->
-    <div class="container" id="product-cards">
-      <h1>All Products</h1>
-      <div class="heading-bottom-bar"></div>
-      <div class="heading-bottom-bar2"></div>
-      <div class="row">
-        <div class="col-md-6 col-lg-3">
-          <div class="card">
-            <img
-              src="./assets/img/home-img/all-products-img/product1.svg"
-              alt=""
-            />
-            <div class="card-body">
-              <div class="star">
-                <a href="#">
-                  <i class="fas fa-star checked"></i>
-                  <i class="fas fa-star checked"></i>
-                  <i class="fas fa-star checked"></i>
-                  <i class="fas fa-star checked"></i>
-                  <i class="fa-regular fa-star" style="color: #ffd43b"></i>
-                </a>
-              </div>
-              <h3>Adico- Smart Watch</h3>
-              <h5>$10.25</h5>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-6 col-lg-3">
-          <div class="card">
-            <img
-              src="./assets/img/home-img/all-products-img/product2.svg"
-              alt=""
-            />
-            <div class="card-body">
-              <div class="star">
-                <a href="#">
-                  <i class="fas fa-star checked"></i>
-                  <i class="fas fa-star checked"></i>
-                  <i class="fas fa-star checked"></i>
-                  <i class="fas fa-star checked"></i>
-                  <i class="fa-regular fa-star" style="color: #ffd43b"></i>
-                </a>
-              </div>
-              <h3>CAUGAR- Gaming Headphones</h3>
-              <h5>$19.50</h5>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-6 col-lg-3">
-          <div class="card">
-            <img
-              src="./assets/img/home-img/all-products-img/product3.svg"
-              alt=""
-            />
-            <div class="card-body">
-              <div class="star">
-                <a href="#">
-                  <i class="fas fa-star checked"></i>
-                  <i class="fas fa-star checked"></i>
-                  <i class="fas fa-star checked"></i>
-                  <i class="fas fa-star checked"></i>
-                  <i class="fa-regular fa-star" style="color: #ffd43b"></i>
-                </a>
-              </div>
-              <h3>BG R- FORCE Keyboard</h3>
-              <h5>$13.25</h5>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-6 col-lg-3">
-          <div class="card">
-            <img
-              src="./assets/img/home-img/all-products-img/product4.svg"
-              alt=""
-            />
-            <div class="card-body">
-              <div class="star">
-                <a href="#">
-                  <i class="fas fa-star checked"></i>
-                  <i class="fas fa-star checked"></i>
-                  <i class="fas fa-star checked"></i>
-                  <i class="fas fa-star checked"></i>
-                  <i class="fa-regular fa-star" style="color: #ffd43b"></i>
-                </a>
-              </div>
-              <h3>SCARD IDUARD- Flash Drive- 32 GB</h3>
-              <h5>$10.25</h5>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-md-6 col-lg-3">
-          <div class="card">
-            <img
-              src="./assets/img/home-img/all-products-img/product5.svg"
-              alt=""
-            />
-            <div class="card-body">
-              <div class="star">
-                <a href="#">
-                  <i class="fas fa-star checked"></i>
-                  <i class="fas fa-star checked"></i>
-                  <i class="fas fa-star checked"></i>
-                  <i class="fas fa-star checked"></i>
-                  <i class="fa-regular fa-star" style="color: #ffd43b"></i>
-                </a>
-              </div>
-              <h3>Canon- 50 mm lens</h3>
-              <h5>$109.25</h5>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-6 col-lg-3">
-          <div class="card">
-            <img
-              src="./assets/img/home-img/all-products-img/product6.svg"
-              alt=""
-            />
-            <div class="card-body">
-              <div class="star">
-                <a href="#">
-                  <i class="fas fa-star checked"></i>
-                  <i class="fas fa-star checked"></i>
-                  <i class="fas fa-star checked"></i>
-                  <i class="fas fa-star checked"></i>
-                  <i class="fa-regular fa-star" style="color: #ffd43b"></i>
-                </a>
-              </div>
-              <h3>MSI- Gaming Case</h3>
-              <h5>$40.50</h5>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-6 col-lg-3">
-          <div class="card">
-            <img
-              src="./assets/img/home-img/all-products-img/product7.svg"
-              alt=""
-            />
-            <div class="card-body">
-              <div class="star">
-                <a href="#">
-                  <i class="fas fa-star checked"></i>
-                  <i class="fas fa-star checked"></i>
-                  <i class="fas fa-star checked"></i>
-                  <i class="fas fa-star checked"></i>
-                  <i class="fa-regular fa-star" style="color: #ffd43b"></i>
-                </a>
-              </div>
-              <h3>DJI Mavic Pro Drone</h3>
-              <h5>$59.99</h5>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-6 col-lg-3">
-          <div class="card">
-            <img
-              src="./assets/img/home-img/all-products-img/product8.svg"
-              alt=""
-            />
-            <div class="card-body">
-              <div class="star">
-                <a href="#">
-                  <i class="fas fa-star checked"></i>
-                  <i class="fas fa-star checked"></i>
-                  <i class="fas fa-star checked"></i>
-                  <i class="fas fa-star checked"></i>
-                  <i class="fa-regular fa-star" style="color: #ffd43b"></i>
-                </a>
-              </div>
-              <h3>Play Station 4 VR Headset</h3>
-              <h5>$39.25</h5>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-md-6 col-lg-3">
-          <div class="card">
-            <img
-              src="./assets/img/home-img/all-products-img/product9.svg"
-              alt=""
-            />
-            <div class="card-body">
-              <div class="star">
-                <a href="#">
-                  <i class="fas fa-star checked"></i>
-                  <i class="fas fa-star checked"></i>
-                  <i class="fas fa-star checked"></i>
-                  <i class="fas fa-star checked"></i>
-                  <i class="fa-regular fa-star" style="color: #ffd43b"></i>
-                </a>
-              </div>
-              <h3>JBL- Bluetooth Speaker</h3>
-              <h5>$99.99</h5>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-6 col-lg-3">
-          <div class="card">
-            <img
-              src="./assets/img/home-img/all-products-img/product10.svg"
-              alt=""
-            />
-            <div class="card-body">
-              <div class="star">
-                <a href="#">
-                  <i class="fas fa-star checked"></i>
-                  <i class="fas fa-star checked"></i>
-                  <i class="fas fa-star checked"></i>
-                  <i class="fas fa-star checked"></i>
-                  <i class="fa-regular fa-star" style="color: #ffd43b"></i>
-                </a>
-              </div>
-              <h3>Yeti RODE NT- USB Microphones</h3>
-              <h5>$29.99</h5>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-6 col-lg-3">
-          <div class="card">
-            <img
-              src="./assets/img/home-img/all-products-img/product11.svg"
-              alt=""
-            />
-            <div class="card-body">
-              <div class="star">
-                <a href="#">
-                  <i class="fas fa-star checked"></i>
-                  <i class="fas fa-star checked"></i>
-                  <i class="fas fa-star checked"></i>
-                  <i class="fas fa-star checked"></i>
-                  <i class="fa-regular fa-star" style="color: #ffd43b"></i>
-                </a>
-              </div>
-              <h3>DJI Osmo Gimbal- Mobile Phones</h3>
-              <h5>$13.25</h5>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-6 col-lg-3">
-          <div class="card">
-            <img
-              src="./assets/img/home-img/all-products-img/product12.svg"
-              alt=""
-            />
-            <div class="card-body">
-              <div class="star">
-                <a href="#">
-                  <i class="fas fa-star checked"></i>
-                  <i class="fas fa-star checked"></i>
-                  <i class="fas fa-star checked"></i>
-                  <i class="fas fa-star checked"></i>
-                  <i class="fa-regular fa-star" style="color: #ffd43b"></i>
-                </a>
-              </div>
-              <h3>SAMSUNG 850 Evo 2TB SSD</h3>
-              <h5>$99.99</h5>
-            </div>
-          </div>
-        </div>
-      </div>
-      <br /><br />
-      <div class="button">
-        <a href="#" class="viewmorebtn">More</a>
-      </div>
-    </div>
-    <!-- All Products Sec End -->
-
-    <!-- Get Many Offers Start -->
-    <section id="get-offer">
-      <div class="container">
-        <div class="row offer">
-          <div class="col-lg-6">
-            <div class="offer-img">
-              <img
-                src="./assets/img/home-img/get-many-offers/getoffer.png"
-                alt=""
-              />
-              <div class="img-text">
-                <h1>Festive Deals On</h1>
-                <a href="#"
-                  >View Product
-                  <img
-                    src="./assets/img/home-img/get-many-offers/right-arrow.svg"
-                    alt=""
-                /></a>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-6">
-            <div class="sign-up">
-              <h2>Sign Up and</h2>
-              <h1>Get Many Offers</h1>
-              <p>
-                <span>*</span> Offer is valid only for new customer on new
-                Registration
-              </p>
-              <form action="#">
-                <input type="text" placeholder="Email hear..." /><a href="#"
-                  >Subscribe</a
-                >
-              </form>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- Get Many Offers Start -->
-
-    <!-- Footer Start -->
-    <footer class="footer">
-      <div class="container footer-item">
-        <div class="row">
-          <div class="col-lg-4 logo-item">
-            <div class="logo-text">
-              <img src="./assets/img/home-img/logo/footer-logo.svg" alt="" />
+          <div class="hero-slider-item row">
+            <div class="header-2 col-lg-6">
               <p>
                 It is a long established fact that a reader will be distracted
                 by the readable content of a page when looking at its layout.
               </p>
-              <div class="links">
-                <ul>
-                  <h1>Follow Us:</h1>
-                  <a href="#"><i class="fab fa-facebook-f"></i></a>
-                  <a href="#"><i class="fab fa-twitter"></i></a>
-                  <a href="#"><i class="fab fa-instagram"></i></a>
-                  <a href="#"><i class="fa-brands fa-pinterest"></i></a>
-                </ul>
+              <button>
+                <a href="#">Discover Now</a>
+              </button>
+            </div>
+            <div class="swiper-img col-lg-6">
+              <img src="./assets/img/home-img/hero-slider/slider.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="container swiper-item">
+          <div class="hero-slider-header row">
+            <div class="col-12 header">
+              <h1>The New <span>Experience</span> With Our</h1>
+              <h1><span>Best</span> Collection</h1>
+            </div>
+          </div>
+          <div class="hero-slider-item row">
+            <div class="col-lg-6 header-2">
+              <p>
+                It is a long established fact that a reader will be distracted
+                by the readable content of a page when looking at its layout.
+              </p>
+              <button>
+                <a href="#">Discover Now</a>
+              </button>
+            </div>
+            <div class="col-lg-6 swiper-img">
+              <img src="./assets/img/home-img/hero-slider/slider.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="swiper-item container">
+          <div class="row hero-slider-header">
+            <div class="col-12 header">
+              <h1>The New <span>Experience</span> With Our</h1>
+              <h1><span>Best</span> Collection</h1>
+            </div>
+          </div>
+          <div class="hero-slider-item row">
+            <div class="col-lg-6 header-2">
+              <p>
+                It is a long established fact that a reader will be distracted
+                by the readable content of a page when looking at its layout.
+              </p>
+              <button>
+                <a href="#">Discover Now</a>
+              </button>
+            </div>
+            <div class="col-lg-6 swiper-img">
+              <img src="./assets/img/home-img/hero-slider/slider.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="swiper-pagination"></div>
+  </div>
+  <!-- Hero Slider End -->
+
+  <!-- Featured Categories Start -->
+  <div class="container swiper">
+    <div class="slide-container">
+      <div class="feature-heading">
+        <div class="heading">
+          <h1>Featured Categories</h1>
+          <div class="bottom-border">
+            <div></div>
+          </div>
+          <div class="bottom-border2"></div>
+        </div>
+      </div>
+      <div class="card-wrapper swiper-wrapper">
+        <div class="card swiper-slide">
+          <div class="image-box">
+            <img src="./assets/img/home-img/featured-categories-img/feature1.svg" alt="" />
+          </div>
+          <div class="card-details">
+            <div class="name">
+              <h3>Laptop & Computers</h3>
+            </div>
+          </div>
+        </div>
+        <div class="card swiper-slide">
+          <div class="image-box">
+            <img src="./assets/img/home-img/featured-categories-img/feature2.svg" alt="" />
+          </div>
+          <div class="card-details">
+            <div class="name">
+              <h3>TV & Audio</h3>
+            </div>
+          </div>
+        </div>
+        <div class="card swiper-slide">
+          <div class="image-box">
+            <img src="./assets/img/home-img/featured-categories-img/feature3.svg" alt="" />
+          </div>
+          <div class="card-details">
+            <div class="name">
+              <h3>Video Games & Consoles</h3>
+            </div>
+          </div>
+        </div>
+        <div class="card swiper-slide">
+          <div class="image-box">
+            <img src="./assets/img/home-img/featured-categories-img/feature4.svg" alt="" />
+          </div>
+          <div class="card-details">
+            <div class="name">
+              <h3>Printer & Ink</h3>
+            </div>
+          </div>
+        </div>
+        <div class="card swiper-slide">
+          <div class="image-box">
+            <img src="./assets/img/home-img/featured-categories-img/feature5.svg" alt="" />
+          </div>
+          <div class="card-details">
+            <div class="name">
+              <h3>Gaming & Headsets</h3>
+            </div>
+          </div>
+        </div>
+        <div class="card swiper-slide">
+          <div class="image-box">
+            <img src="./assets/img/home-img/featured-categories-img/feature1.svg" alt="" />
+          </div>
+          <div class="card-details">
+            <div class="name">
+              <h3>Laptop & Computers</h3>
+            </div>
+          </div>
+        </div>
+        <div class="card swiper-slide">
+          <div class="image-box">
+            <img src="./assets/img/home-img/featured-categories-img/feature2.svg" alt="" />
+          </div>
+          <div class="card-details">
+            <div class="name">
+              <h3>TV & Audio</h3>
+            </div>
+          </div>
+        </div>
+        <div class="card swiper-slide">
+          <div class="image-box">
+            <img src="./assets/img/home-img/featured-categories-img/feature3.svg" alt="" />
+          </div>
+          <div class="card-details">
+            <div class="name">
+              <h3>Gaming & Headsets</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img class="rectangle" src="./assets/img/home-img/Rectangle 26.svg" alt="" />
+    </div>
+    <div class="prev-next-button">
+      <div class="swiper-button-next swiper-navBtn">
+        <img src="./assets/img/home-img/right-arrow.svg" alt="" />
+      </div>
+      <div class="swiper-button-prev swiper-navBtn">
+        <img src="./assets/img/home-img/left-arrow.svg" alt="" />
+      </div>
+    </div>
+  </div>
+  <div class="swiper-pagination"></div>
+  <!-- Featured Categories End -->
+
+  <!-- Offer Sec Start -->
+  <section class="offer">
+    <div class="container">
+      <div class="row offer-items">
+        <div class="col-xl-6">
+          <div class="offer-item1">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="offer-title1">
+                  <p>Exclusive Offers- 15% Off This Week</p>
+                  <h2>Keyboards</h2>
+                  <h1>Up To 15% Off</h1>
+                  <h6>Start at: <span>$49.99</span></h6>
+                  <div class="offer-button1">
+                    <a href="#">Shop Now</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <img src="./assets/img/home-img/offer-img/offer1.png" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-6 offer-item2">
+          <div class="row">
+            <div class="col-md-6">
+              <img src="./assets/img/home-img/offer-img/offer2.png" alt="" />
+            </div>
+            <div class="col-md-6">
+              <div class="offer-title2">
+                <p>Exclusive Offers- 20% Off This Week</p>
+                <h2>GEFORCE GTX</h2>
+                <h1>Up To 20% Off</h1>
+                <h6>Start at: <span>$149.50</span></h6>
+                <div class="offer-button2">
+                  <a href="#">Shop Now</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Offer Sec End -->
+
+  <!-- All Products Sec Start -->
+  <div class="container" id="product-cards">
+    <h1>All Products</h1>
+    <div class="heading-bottom-bar"></div>
+    <div class="heading-bottom-bar2"></div>
+    <div class="row">
+      <div class="col-md-6 col-lg-3">
+        <div class="card">
+          <img src="./assets/img/home-img/all-products-img/product1.svg" alt="" />
+          <div class="card-body">
+            <div class="star">
+              <a href="#">
+                <i class="fas fa-star checked"></i>
+                <i class="fas fa-star checked"></i>
+                <i class="fas fa-star checked"></i>
+                <i class="fas fa-star checked"></i>
+                <i class="fa-regular fa-star" style="color: #ffd43b"></i>
+              </a>
+            </div>
+            <h3>Adico- Smart Watch</h3>
+            <h5>$10.25</h5>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3">
+        <div class="card">
+          <img src="./assets/img/home-img/all-products-img/product2.svg" alt="" />
+          <div class="card-body">
+            <div class="star">
+              <a href="#">
+                <i class="fas fa-star checked"></i>
+                <i class="fas fa-star checked"></i>
+                <i class="fas fa-star checked"></i>
+                <i class="fas fa-star checked"></i>
+                <i class="fa-regular fa-star" style="color: #ffd43b"></i>
+              </a>
+            </div>
+            <h3>CAUGAR- Gaming Headphones</h3>
+            <h5>$19.50</h5>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3">
+        <div class="card">
+          <img src="./assets/img/home-img/all-products-img/product3.svg" alt="" />
+          <div class="card-body">
+            <div class="star">
+              <a href="#">
+                <i class="fas fa-star checked"></i>
+                <i class="fas fa-star checked"></i>
+                <i class="fas fa-star checked"></i>
+                <i class="fas fa-star checked"></i>
+                <i class="fa-regular fa-star" style="color: #ffd43b"></i>
+              </a>
+            </div>
+            <h3>BG R- FORCE Keyboard</h3>
+            <h5>$13.25</h5>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3">
+        <div class="card">
+          <img src="./assets/img/home-img/all-products-img/product4.svg" alt="" />
+          <div class="card-body">
+            <div class="star">
+              <a href="#">
+                <i class="fas fa-star checked"></i>
+                <i class="fas fa-star checked"></i>
+                <i class="fas fa-star checked"></i>
+                <i class="fas fa-star checked"></i>
+                <i class="fa-regular fa-star" style="color: #ffd43b"></i>
+              </a>
+            </div>
+            <h3>SCARD IDUARD- Flash Drive- 32 GB</h3>
+            <h5>$10.25</h5>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-6 col-lg-3">
+        <div class="card">
+          <img src="./assets/img/home-img/all-products-img/product5.svg" alt="" />
+          <div class="card-body">
+            <div class="star">
+              <a href="#">
+                <i class="fas fa-star checked"></i>
+                <i class="fas fa-star checked"></i>
+                <i class="fas fa-star checked"></i>
+                <i class="fas fa-star checked"></i>
+                <i class="fa-regular fa-star" style="color: #ffd43b"></i>
+              </a>
+            </div>
+            <h3>Canon- 50 mm lens</h3>
+            <h5>$109.25</h5>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3">
+        <div class="card">
+          <img src="./assets/img/home-img/all-products-img/product6.svg" alt="" />
+          <div class="card-body">
+            <div class="star">
+              <a href="#">
+                <i class="fas fa-star checked"></i>
+                <i class="fas fa-star checked"></i>
+                <i class="fas fa-star checked"></i>
+                <i class="fas fa-star checked"></i>
+                <i class="fa-regular fa-star" style="color: #ffd43b"></i>
+              </a>
+            </div>
+            <h3>MSI- Gaming Case</h3>
+            <h5>$40.50</h5>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3">
+        <div class="card">
+          <img src="./assets/img/home-img/all-products-img/product7.svg" alt="" />
+          <div class="card-body">
+            <div class="star">
+              <a href="#">
+                <i class="fas fa-star checked"></i>
+                <i class="fas fa-star checked"></i>
+                <i class="fas fa-star checked"></i>
+                <i class="fas fa-star checked"></i>
+                <i class="fa-regular fa-star" style="color: #ffd43b"></i>
+              </a>
+            </div>
+            <h3>DJI Mavic Pro Drone</h3>
+            <h5>$59.99</h5>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3">
+        <div class="card">
+          <img src="./assets/img/home-img/all-products-img/product8.svg" alt="" />
+          <div class="card-body">
+            <div class="star">
+              <a href="#">
+                <i class="fas fa-star checked"></i>
+                <i class="fas fa-star checked"></i>
+                <i class="fas fa-star checked"></i>
+                <i class="fas fa-star checked"></i>
+                <i class="fa-regular fa-star" style="color: #ffd43b"></i>
+              </a>
+            </div>
+            <h3>Play Station 4 VR Headset</h3>
+            <h5>$39.25</h5>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-6 col-lg-3">
+        <div class="card">
+          <img src="./assets/img/home-img/all-products-img/product9.svg" alt="" />
+          <div class="card-body">
+            <div class="star">
+              <a href="#">
+                <i class="fas fa-star checked"></i>
+                <i class="fas fa-star checked"></i>
+                <i class="fas fa-star checked"></i>
+                <i class="fas fa-star checked"></i>
+                <i class="fa-regular fa-star" style="color: #ffd43b"></i>
+              </a>
+            </div>
+            <h3>JBL- Bluetooth Speaker</h3>
+            <h5>$99.99</h5>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3">
+        <div class="card">
+          <img src="./assets/img/home-img/all-products-img/product10.svg" alt="" />
+          <div class="card-body">
+            <div class="star">
+              <a href="#">
+                <i class="fas fa-star checked"></i>
+                <i class="fas fa-star checked"></i>
+                <i class="fas fa-star checked"></i>
+                <i class="fas fa-star checked"></i>
+                <i class="fa-regular fa-star" style="color: #ffd43b"></i>
+              </a>
+            </div>
+            <h3>Yeti RODE NT- USB Microphones</h3>
+            <h5>$29.99</h5>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3">
+        <div class="card">
+          <img src="./assets/img/home-img/all-products-img/product11.svg" alt="" />
+          <div class="card-body">
+            <div class="star">
+              <a href="#">
+                <i class="fas fa-star checked"></i>
+                <i class="fas fa-star checked"></i>
+                <i class="fas fa-star checked"></i>
+                <i class="fas fa-star checked"></i>
+                <i class="fa-regular fa-star" style="color: #ffd43b"></i>
+              </a>
+            </div>
+            <h3>DJI Osmo Gimbal- Mobile Phones</h3>
+            <h5>$13.25</h5>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3">
+        <div class="card">
+          <img src="./assets/img/home-img/all-products-img/product12.svg" alt="" />
+          <div class="card-body">
+            <div class="star">
+              <a href="#">
+                <i class="fas fa-star checked"></i>
+                <i class="fas fa-star checked"></i>
+                <i class="fas fa-star checked"></i>
+                <i class="fas fa-star checked"></i>
+                <i class="fa-regular fa-star" style="color: #ffd43b"></i>
+              </a>
+            </div>
+            <h3>SAMSUNG 850 Evo 2TB SSD</h3>
+            <h5>$99.99</h5>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br /><br />
+    <div class="button">
+      <a href="#" class="viewmorebtn">More</a>
+    </div>
+  </div>
+  <!-- All Products Sec End -->
+
+  <!-- Get Many Offers Start -->
+  <section id="get-offer">
+    <div class="container">
+      <div class="row offer">
+        <div class="col-lg-6">
+          <div class="offer-img">
+            <img src="./assets/img/home-img/get-many-offers/getoffer.png" alt="" />
+            <div class="img-text">
+              <h1>Festive Deals On</h1>
+              <a href="#">View Product
+                <img src="./assets/img/home-img/get-many-offers/right-arrow.svg" alt="" /></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="sign-up">
+            <h2>Sign Up and</h2>
+            <h1>Get Many Offers</h1>
+            <p>
+              <span>*</span> Offer is valid only for new customer on new
+              Registration
+            </p>
+            <form action="#">
+              <input type="text" placeholder="Email hear..." /><a href="#">Subscribe</a>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Get Many Offers Start -->
+
+  <!-- Footer Start -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-item">
+        <div class="row">
+          <div class="col-lg-4">
+            <div class="logo-item">
+              <div class="logo-text">
+                <img src="./assets/img/home-img/logo/footer-logo.svg" alt="" />
+                <p>
+                  It is a long established fact that a reader will be distracted
+                  by the readable content of a page when looking at its layout.
+                </p>
+                <div class="links">
+                  <ul>
+                    <h1>Follow Us:</h1>
+                    <div class="icon">
+                      <a href="#"><i class="fab fa-facebook-f"></i></a>
+                      <a href="#"><i class="fab fa-twitter"></i></a>
+                      <a href="#"><i class="fab fa-instagram"></i></a>
+                      <a href="#"><i class="fa-brands fa-pinterest"></i></a>
+                    </div>
+                  </ul>
+                </div>
               </div>
             </div>
           </div>
           <div class="col-lg-2 col-6">
-            <h4>Our Link</h4>
-            <ul>
-              <li><a href="#">Specials</a></li>
-              <li><a href="#">My Account</a></li>
-              <li><a href="#">Order History</a></li>
-              <li><a href="#">Whish List</a></li>
-              <li><a href="#">Brands</a></li>
-            </ul>
+            <div class="items">
+              <h4>Our Link</h4>
+              <ul>
+                <li><a href="#">Specials</a></li>
+                <li><a href="#">My Account</a></li>
+                <li><a href="#">Order History</a></li>
+                <li><a href="#">Whish List</a></li>
+                <li><a href="#">Brands</a></li>
+              </ul>
+            </div>
           </div>
           <div class="col-lg-2 col-6">
-            <h4>Categories</h4>
-            <ul>
-              <li><a href="#">Laptop & Computers</a></li>
-              <li><a href="#">Drone & Helicopter</a></li>
-              <li><a href="#">Table & Chair</a></li>
-              <li><a href="#">PC Accessories</a></li>
-              <li><a href="#">Gadgets</a></li>
-              <li><a href="#">Cameras</a></li>
-            </ul>
+            <div class="items">
+              <h4>Categories</h4>
+              <ul>
+                <li><a href="#">Laptop & Computers</a></li>
+                <li><a href="#">Drone & Helicopter</a></li>
+                <li><a href="#">Table & Chair</a></li>
+                <li><a href="#">PC Accessories</a></li>
+                <li><a href="#">Gadgets</a></li>
+                <li><a href="#">Cameras</a></li>
+              </ul>
+            </div>
           </div>
           <div class="col-lg-2 col-6">
-            <div class="">
+            <div class="items">
               <h4>Information</h4>
               <ul>
                 <li><a href="#">About</a></li>
@@ -854,44 +727,49 @@
             </div>
           </div>
           <div class="col-lg-2 col-6">
-            <h4>Contact Us</h4>
-            <ul>
-              <li>
-                <a href="#">
-                  <img src="./assets/img/home-img/footer-locate.svg" alt="" />
-                </a>
-                <a href="#">
-                  3000 E 1st Ave <br />#129 Denver, Colorado, <br />
-                  United States
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <img src="./assets/img/home-img/footer-contact.svg" alt="" />
-                </a>
-                <a href="#"> (303) 370-6935 </a>
-              </li>
-              <li>
-                <a href="#">
-                  <img src="./assets/img/home-img/footer-email.svg" alt="" />
-                </a>
-                <a href="#"> demo@gmail.com </a>
-              </li>
-            </ul>
+            <div class="items">
+              <h4>Contact Us</h4>
+              <div class="footer-icon">
+                <ul>
+                  <li>
+                    <a href="#">
+                      <img src="./assets/img/home-img/footer-locate.svg" alt="" />
+                    </a>
+                    <a href="#">
+                      3000 E 1st Ave <br />#129 Denver, Colorado, <br />
+                      United States
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <img src="./assets/img/home-img/footer-contact.svg" alt="" />
+                    </a>
+                    <a href="#"> (303) 370-6935 </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <img src="./assets/img/home-img/footer-email.svg" alt="" />
+                    </a>
+                    <a href="#"> demo@gmail.com </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
           </div>
         </div>
+        <div class="copyright">wwww</div>
       </div>
-    </footer>
-    <!-- Footer End -->
+    </div>
+  </footer>
+  <!-- Footer End -->
 
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-      crossorigin="anonymous"
-    ></script>
-    <!-- Swiper js Start -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script src="./js/app.js"></script>
-    <!--  -->
-  </body>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <!-- Swiper js Start -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="./js/app.js"></script>
+  <!--  -->
+</body>
+
 </html>
