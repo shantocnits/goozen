@@ -23,8 +23,6 @@
   --shadow: 0px 15px 15px rgba(0, 0, 0, 0.18);
 }
 
-
-
 /* Hero Slider Start */
 .mySwiper {
   height: 790px;
@@ -220,26 +218,33 @@
 
 .swiper-navBtn {
   position: absolute;
-  top: 620px !important;
-  height: 40px;
-  width: 40px;
+  margin-top: 250px !important;
   background: #fff;
 }
 
-.swiper-navBtn::before,
-.swiper-navBtn::after {
-  font-size: 18px;
+.swiper-navBtn {
+  position: absolute;
+  margin-top: 230px !important;
+  height: 20px;
+  width: 20px;
+  background: #fff;
 }
 
 .slide-container .rectangle {
   margin-top: 40px;
 }
 
-.swiper-button-next {
+.swiper-button-prev img {
+  width: 50px !important;
+  height: 50px !important;
   right: 44% !important;
 }
 
-.swiper-button-next svg {
+.swiper-button {
+  margin-top: 50px;
+}
+
+.swiper-button-next img {
   width: 50px !important;
   height: 50px !important;
   right: 44% !important;
@@ -247,6 +252,10 @@
 
 .swiper-button-prev {
   left: 44% !important;
+}
+
+.swiper-button-next {
+  right: 44% !important;
 }
 
 .swiper-button-prev::after {
@@ -258,7 +267,7 @@
 }
 
 @media screen and (max-width: 768px) {
-  .swiper-navBtn {
+  /* .swiper-navBtn {
     display: none;
   }
 
@@ -271,10 +280,29 @@
   }
   .slide-container .rectangle {
     display: none;
+  } */
+}
+
+@media screen and (max-width: 1200px) {
+  .swiper-navBtn {
+
+    top: 380px !important;
+
   }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 568px) {
+  .swiper-navBtn {
+
+    top: 400px !important;
+
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .swiper-navBtn {
+    top: 350px !important;
+  }
 }
 
 /* Feature Categories End */
@@ -391,6 +419,7 @@
 }
 
 @media screen and (max-width: 1200px) {
+
   .offer .offer-item2 .offer-title2 h2,
   .offer .offer-item2 .offer-title2 h1 {
     font-family: var(--primary-font);
@@ -424,6 +453,151 @@
 }
 
 /* Offer Sec End */
+
+
+
+/* Trending Product Start */
+.trending-product {
+  padding: 100px 0;
+}
+
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 50px 50px;
+  flex-wrap: nowrap;
+}
+.trending-product .product{
+  position: relative;
+  padding: 50px 20px;
+  position: relative;
+  text-align: center;
+  background: var(--text-color-white);
+  box-shadow: 0 0 10px hsl(0, 0%, 0%, 0.15);
+}
+
+.product-img-box {
+  
+  overflow: hidden;
+}
+
+.product-img {
+  max-width: 65%;
+  display: block;
+  margin: auto;
+  transition: transform 0.3s ease;
+}
+.product:hover .product-img {
+  transform: translateX(-10px);
+}
+.review-star a{
+  text-decoration: none;
+  
+}
+.review-star {
+  padding-top: 20px;
+}
+.product-title{
+  margin: 25px 0 15px;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.3;
+}
+.product-title a{
+  font-size: 20px;
+  font-family: var(--primary-font);
+  text-decoration: none;
+  color: var(--text-color-black);
+}
+.product-price {
+  position: absolute;
+  bottom: 20px;
+  left: 35%;
+  font-size: 28px;
+  line-height: 1;
+  font-weight: 500;
+  color: var(--item-color);
+}
+.product-icon-btns{
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  flex-direction: column;
+  display: flex;
+
+}
+.product-icon-btns a{
+  display: flex;
+  width: 30px;
+  height: 30px;
+  background-color: #af6565;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 6px;
+  border-radius: 50%;
+  color: #af6565;
+  transition: all 0.3s ease;
+  position: relative;
+
+}
+.product-icon-btns .product:hover .product-icon-btns a:nth-child(2) {
+  transition-delay:0.1s;
+}
+.product-icon-btns .product:hover .product-icon-btns a:nth-child(3) {
+  transition-delay:0.2s;
+}
+
+.product-icon-btns .product-tooltip{
+ position: absolute;
+ top: 50%;
+ right: 100%;
+ transform: translateY(-50%);
+ background: #26a0da;
+ color: #443131;
+ font-size: 12px;
+ padding: 4px 8px;
+ white-space: nowrap;
+ opacity: 0;
+ transition: all 0.3s ease;
+}
+.product-icon-btns .product-tooltip::before{
+  content: '';
+ position: absolute;
+ top: 50%;
+ left: 100%;
+ transform: rotate(50deg);
+ border-width: 6px;
+ border-style: solid;
+ border-color: antiquewhite;
+ 
+}
+@media(min-width:992px){
+  .product-icon-btns a:hover .product-tooltip{
+    opacity: 1;
+    transform: translate(-10px, 50%);
+  }
+}
+@media(min-width:992px){
+  .product-icon-btns a{
+    opacity: 0;
+    transform: translate(-10px);
+  }
+  .trending-product .product:hover .product-icon-btns a{
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+  
+
+/* Trendind Product End */
+
+
+
+
+
+
+
+
 
 /* All Products Sec Start */
 #product-cards .card img {
@@ -543,6 +717,7 @@
   margin: 100px 0px 0px 0px;
   background: var(--background-color);
 }
+
 #get-offer .offer {
   padding-top: 100px !important;
   align-items: center;
@@ -553,19 +728,23 @@
   position: relative;
   display: inline-block;
 }
+
 #get-offer .offer-img img {
   width: 100%;
   margin: 0px 0;
 }
+
 #get-offer .offer-img a img {
   width: 30px;
   height: 30px;
 }
+
 #get-offer .offer-img .img-text h1 {
   font-family: var(--primary-font);
   white-space: nowrap;
   font-size: 28px;
 }
+
 #get-offer .offer-img .img-text {
   position: absolute;
   left: 50%;
@@ -576,35 +755,42 @@
   -ms-transform: translate(-50%, -50%);
   -o-transform: translate(-50%, -50%);
 }
+
 #get-offer .offer-img a {
   text-decoration: none;
   font-size: 18px;
   color: var(--text-color-white);
   font-family: var(--secondary-font);
 }
+
 .sign-up h1 {
   color: var(--text-color-black);
   font-family: var(--primary-font);
 }
+
 .sign-up h2 {
   color: var(--item-color);
   font-family: var(--primary-font);
 }
+
 .sign-up p {
   color: var(--text-color-white);
   font-family: var(--primary-font);
   font-size: 18px;
 }
+
 .sign-up p span {
   font-size: 28px;
   color: var(--item-color);
 }
+
 #get-offer .sign-up form {
   display: flex;
   justify-content: space-between;
   background: white;
   border-radius: 5px;
 }
+
 #get-offer .sign-up form a {
   font-family: var(--secondary-font);
   padding: 10px;
@@ -615,9 +801,11 @@
   border-radius: 5px;
   margin: 10px;
 }
+
 #get-offer .sign-up {
   margin-bottom: 50px;
 }
+
 #get-offer .sign-up input {
   width: 100%;
   padding: 15px;
@@ -627,8 +815,5 @@
   border: none;
   outline: none;
 }
+
 /* Get Many offers End */
-
-
-
-
