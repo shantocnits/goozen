@@ -12,6 +12,7 @@
 }
 
 :root {
+  --box-shadow: box-shadow: 0 0 10px hsl(0, 0%, 0%, 0.15);
   --primary-font: fonts;
   --secondary-font: K2D;
   --border-and-color: 1px solid rgba(38, 160, 218, 1);
@@ -461,54 +462,62 @@
   padding: 100px 0;
 }
 
-.products-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 50px 50px;
-  flex-wrap: nowrap;
-}
-.trending-product .product{
+.trending-product .product {
+  margin: 20px 0;
   position: relative;
   padding: 50px 20px;
   position: relative;
   text-align: center;
+  transition: all 0.3s ease;
   background: var(--text-color-white);
-  box-shadow: 0 0 10px hsl(0, 0%, 0%, 0.15);
+  border: 1px solid skyblue;
+  border-radius: 5px;
 }
 
 .product-img-box {
-  
   overflow: hidden;
 }
 
 .product-img {
+  transition: all 0.3s ease;
   max-width: 65%;
   display: block;
   margin: auto;
   transition: transform 0.3s ease;
 }
+
 .product:hover .product-img {
-  transform: translateX(-10px);
+  transform: translateX(-5px);
+  opacity: 0.4;
 }
-.review-star a{
+
+.product:hover {
+  box-shadow: 0 0 10px hsl(0, 0%, 0%, 0.15);
+}
+
+.review-star a {
   text-decoration: none;
-  
+
 }
+
 .review-star {
   padding-top: 20px;
 }
-.product-title{
+
+.product-title {
   margin: 25px 0 15px;
   font-size: 18px;
   font-weight: 400;
   line-height: 1.3;
 }
-.product-title a{
+
+.product-title a {
   font-size: 20px;
   font-family: var(--primary-font);
   text-decoration: none;
   color: var(--text-color-black);
 }
+
 .product-price {
   position: absolute;
   bottom: 20px;
@@ -518,76 +527,76 @@
   font-weight: 500;
   color: var(--item-color);
 }
-.product-icon-btns{
+
+.product-icon-btns {
+  z-index: 44444;
   position: absolute;
   top: 15px;
-  right: 15px;
+  right: 1px;
   flex-direction: column;
   display: flex;
 
 }
-.product-icon-btns a{
+
+.product-icon-btns a {
+  z-index: 6666;
+  text-decoration: none;
+  border: 1px solid skyblue;
+  box-shadow: var(--box-shadow);
   display: flex;
   width: 30px;
   height: 30px;
-  background-color: #af6565;
+  background-color: transparent;
   align-items: center;
   justify-content: center;
   margin-bottom: 6px;
-  border-radius: 50%;
-  color: #af6565;
+  border-radius: 5px;
+  color: var(--text-color-blue);
   transition: all 0.3s ease;
   position: relative;
 
 }
-.product-icon-btns .product:hover .product-icon-btns a:nth-child(2) {
-  transition-delay:0.1s;
-}
-.product-icon-btns .product:hover .product-icon-btns a:nth-child(3) {
-  transition-delay:0.2s;
+.product-icon-btns a:hover .product-tooltip {
+  opacity: 1;
+  transform: translate(23px);
 }
 
-.product-icon-btns .product-tooltip{
- position: absolute;
- top: 50%;
- right: 100%;
- transform: translateY(-50%);
- background: #26a0da;
- color: #443131;
- font-size: 12px;
- padding: 4px 8px;
- white-space: nowrap;
- opacity: 0;
- transition: all 0.3s ease;
+.product-icon-btns .product:hover .product-icon-btns a:nth-child(2) {
+  transition-delay: 0.1s;
 }
-.product-icon-btns .product-tooltip::before{
-  content: '';
- position: absolute;
- top: 50%;
- left: 100%;
- transform: rotate(50deg);
- border-width: 6px;
- border-style: solid;
- border-color: antiquewhite;
- 
+
+.product-icon-btns .product:hover .product-icon-btns a:nth-child(3) {
+  transition-delay: 0.2s;
 }
-@media(min-width:992px){
-  .product-icon-btns a:hover .product-tooltip{
-    opacity: 1;
-    transform: translate(-10px, 50%);
-  }
+
+.product-icon-btns .product-tooltip {
+  font-family: var(--secondary-font);
+  position: absolute;
+  top: 1px;
+  right: 52px;
+  border-radius: 5px;
+  transform: translateX(50%);
+  background: #314755;
+  color: var(--text-color-white);
+  font-size: 12px;
+  padding: 4px 8px;
+  white-space: nowrap;
+  opacity: 0;
+  transition: all 0.2s ease;
 }
-@media(min-width:992px){
-  .product-icon-btns a{
+
+@media(min-width:350px) {
+  .product-icon-btns a {
     opacity: 0;
     transform: translate(-10px);
   }
-  .trending-product .product:hover .product-icon-btns a{
+
+  .trending-product .product:hover .product-icon-btns a {
     opacity: 1;
-    transform: translateY(0);
+    transform: translateX(-80%);
   }
 }
-  
+
 
 /* Trendind Product End */
 
