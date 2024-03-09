@@ -14,7 +14,7 @@ var swiper = new Swiper(".mySwiper", {
 // Hero Slider End
 
 // Feature Categories Start
-var swiper = new Swiper(".slide-container", {
+var swiper = new Swiper(".feature", {
   slidesPerView: 5,
   spaceBetween: 20,
   sliderPerGroup: 5,
