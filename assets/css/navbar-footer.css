@@ -166,6 +166,7 @@
   transition: all 0.3s ease;
 }
 
+.nav-links .active,
 .nav-links li a:hover {
   background: var(--text-color-white);
   color: var(--text-color-blue);
@@ -219,11 +220,15 @@
   visibility: visible;
 }
 
+.drop-menu li {
+  text-wrap: nowrap;
+  border-left: 3px solid rgb(255, 255, 255);
+}
 .drop-menu li a {
   width: 100%;
   color: var(--text-color-black);
   display: block;
-  padding: 0px 0px 0px 20px;
+  padding: 0px 0px 0px 10px;
   font-size: 17px;
   font-weight: 400;
   border-radius: 0px;
@@ -537,12 +542,11 @@
 }
 
 .footer ul li a {
-  font-size: 18px;
+  font-size: 15px;
   text-transform: capitalize;
   color: #bdb6b6;
   text-decoration: none;
   transition: 0.4s;
-  flex-shrink: ;
 }
 
 .footer ul li a:hover {
@@ -583,7 +587,7 @@
   width: 100%;
   align-items: center;
   display: flex;
-  padding: 20px 0;
+  padding: 0px 0;
   border-top: 1px solid white;
 }
 
@@ -606,33 +610,35 @@
 
 .footer .copyright .swiper-button-next {
   align-items: center;
-  width: 35px;
-  height: 41px;
+  width: 25px;
+  height: 28px;
   border-radius: 5px;
   background: rgb(255, 255, 255);
-  margin-top: -20px;
-  margin-right: -175px;
+  margin-top: -22px;
+  margin-right: -110px;
 }
 .footer .copyright .swiper-button-next img {
-  width: 20px !important;
+  width: 10px !important;
 }
 
 .logo-slider {
   position: relative;
-  width: 368px;
+  width: 258px;
+  margin-top: 20px;
+  margin-right: -20px !important;
 }
 
 .footer-slider .logo {
-  width: 83px;
+  width: 93px;
   height: 45px;
   border-radius: 3px;
-  padding: 0;
+  padding-top: 0px 0;
   margin: 0;
 }
 
 .footer-slider .logo img {
-  width: 100%;
-  height: 100%;
+  width: 60%;
+  height: 60%;
   border-radius: 3px;
 }
 .swiper-button-next {
@@ -656,6 +662,13 @@
   .footer .copyright-text p {
     text-align: center;
     padding-bottom: 20px;
+  }
+  .logo-slider {
+    margin-top: 0px;
+    
+  }
+  .footer .copyright p {
+    padding-top: 20px;
   }
 }
 @media (max-width: 768px) {

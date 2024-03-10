@@ -1,0 +1,131 @@
+/* Google Fonts - Poppins */
+@import url("https://fonts.googleapis.com/css2?family=K2D&display=swap");
+
+@font-face {
+  font-family: fonts;
+  src: url(../fonts/fonts/ttf/OtomanopeeOne-Regular.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: K2D;
+}
+.container {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #989dad58;
+  column-gap: 30px;
+}
+.form {
+  position: absolute;
+  max-width: 430px;
+  width: 100%;
+  height: auto;
+  padding: 60px;
+  border-radius: 6px;
+  background: #fff;
+}
+.form.signup {
+  opacity: 0;
+  pointer-events: none;
+}
+.forms.show-signup .form.signup {
+  opacity: 1;
+  pointer-events: auto;
+}
+.forms.show-signup .form.login {
+  opacity: 0;
+  pointer-events: none;
+}
+header {
+  font-family: fonts;
+  padding-bottom: 20px;
+  border-bottom: 1px solid black;
+  font-size: 28px;
+  font-weight: 600;
+  color: #232836;
+  text-align: center;
+}
+form {
+  margin-top: 50px;
+}
+.form .field {
+  position: relative;
+  height: 50px;
+  width: 100%;
+  margin-top: 20px;
+  border-radius: 6px;
+}
+.field input,
+.field button {
+  height: 100%;
+  width: 100%;
+  border: none;
+  font-size: 16px;
+  font-weight: 400;
+  border-radius: 6px;
+}
+.field input {
+  outline: none;
+  padding: 0 15px;
+  border: 1px solid#CACACA;
+}
+.field input:focus {
+  border: 2px solid skyblue;
+  box-shadow: 0 0 10px hsl(0, 0%, 0%, 0.15);
+}
+
+.field button {
+  color: #fff;
+  background-color: #3e9ef3;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+.field button:hover {
+  background-color: #016dcb;
+}
+.form-link {
+  margin-top: 10px;
+}
+.form-link a {
+  font-size: 14px;
+  font-weight: 400;
+  color: #2799f7;
+}
+.form-link a {
+  text-decoration: none;
+}
+.form-content a:hover {
+  text-decoration: underline;
+}
+.media-options a {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.media-option img.google-img {
+  height: 25px;
+  width: 25px;
+  margin-right: 20px;
+  object-fit: cover;
+}
+a.google {
+  border: 1px solid #cacaca;
+}
+a.google span {
+  font-weight: 500;
+  opacity: 0.6;
+  color: #232836;
+}
+
+@media screen and (max-width: 400px) {
+  .form {
+    padding: 20px 10px;
+  }
+}

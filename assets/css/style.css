@@ -11,6 +11,33 @@
   box-sizing: border-box;
 }
 
+/* Back to btn Start */
+html {
+  scroll-behavior: smooth;
+}
+
+.back-button {
+  outline: 2px solid var(--item-color);
+  outline-offset: 4px;
+  border-radius: 3px;
+  align-items: center;
+  padding: 10px 10px 15px 10px;
+  z-index: 9999;
+  position: fixed;
+  background-color: var(--item-color);
+  border-radius: px;
+  height: 40px;
+  bottom: 25px;
+  right: 25px;
+  text-decoration: none;
+  align-items: center;
+  line-height: 50px;
+}
+.back-button img {
+  margin-bottom: 50px;
+}
+/* Back to btn End */
+
 :root {
   --box-shadow: 0 0 10px hsl(0, 0%, 0%, 0.15);
   --primary-font: fonts;
@@ -35,6 +62,7 @@
 }
 
 .hero-slider-header h1 {
+  margin: 0px;
   font-size: 55px;
   font-family: var(--primary-font);
 }
@@ -201,7 +229,7 @@
 }
 
 .card-wrapper .card:hover {
-  box-shadow: var(--shadow);
+  box-shadow: var(--box-shadow);
 }
 
 .card-wrapper .card .image-box {
@@ -209,7 +237,8 @@
 }
 
 .card-wrapper .card .image-box img {
-  width: 150px;
+  width: 80%;
+  aspect-ratio: 1/1 !important;
 }
 
 .card-wrapper .card .card-details {
@@ -219,9 +248,11 @@
   padding: 15px;
 }
 
+.card-wrapper .card-details .name h3{
+  font-size: 20px;
+}
 .card-wrapper .card-details .name {
   margin-top: -30px !important;
-  font-size: 15px;
   font-weight: 500;
 }
 
@@ -395,12 +426,11 @@
 
 .offer .offer-item2 img {
   margin-top: 20px;
-  margin-right: 50px;
   width: 100%;
 }
 
 .offer .offer-item1 {
-  padding: 0px 20px;
+  padding: 0px 10px;
   border-radius: 3px;
   margin: 20px 0;
   background: var(--background-color);
@@ -442,7 +472,7 @@
 
 @media screen and (max-width: 1200px) {
   .offer .offer-item2 {
-    margin: 0px 10px;
+    margin: 0px 0px;
     padding: 0px 0px;
   }
 }
@@ -483,6 +513,10 @@
 
 .all-product .product-img-box {
   overflow: hidden;
+}
+.all-product .product-img-box img {
+  width: 100%;
+  aspect-ratio: 1/1;
 }
 
 .all-product .product-img {
@@ -624,8 +658,8 @@
   position: absolute;
   text-align: center;
   align-items: center;
-  padding: 10px 0;
-  top: -25px;
+  padding: 7px 40px;
+  top: -20px;
   font-family: var(--secondary-font);
   justify-content: center;
   margin: auto;
@@ -671,13 +705,16 @@
 }
 /* All Product End */
 
+/* deal Section Start */
+
+/* deal Section Start */
+
 /* Latest Blog Start */
 .latest-blog {
-  padding: 100px 0;
+  padding: 100px 0px 0px 0px;
   text-align: center;
 }
 .latest-blog .blog-heading {
-  padding-bottom: 50px;
   font-family: var(--primary-font);
   margin: auto;
   display: flex;
@@ -782,7 +819,7 @@
   position: absolute;
   text-align: center;
   align-items: center;
-  padding: 10px 0;
+  padding: 7px 40px;
   top: -25px;
   font-family: var(--secondary-font);
   justify-content: center;
