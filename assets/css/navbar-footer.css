@@ -542,6 +542,7 @@
   color: #bdb6b6;
   text-decoration: none;
   transition: 0.4s;
+  flex-shrink: ;
 }
 
 .footer ul li a:hover {
