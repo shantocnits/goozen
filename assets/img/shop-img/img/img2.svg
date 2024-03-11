@@ -1,0 +1,20 @@
+<svg width="132" height="261" viewBox="0 0 132 261" fill="none" xmlns="http://www.w3.org/2000/svg">
+<mask id="path-1-inside-1_105_10103" fill="white">
+<path d="M129 73C129 78.5228 124.523 83 119 83L15 83C9.47715 83 5 78.5229 5 73L4.99999 1.08404e-05L129 0L129 73Z"/>
+</mask>
+<path d="M132 73C132 80.1797 126.18 86 119 86L15 86C7.8203 86 2 80.1797 2 73L8 73C8 76.866 11.134 80 15 80L119 80C122.866 80 126 76.866 126 73L132 73ZM4.99999 1.08404e-05L129 0L4.99999 1.08404e-05ZM132 -2.62268e-07L132 73C132 80.1797 126.18 86 119 86L119 80C122.866 80 126 76.866 126 73L126 2.62268e-07L132 -2.62268e-07ZM15 86C7.8203 86 2 80.1797 2 73L1.99999 1.11027e-05L7.99999 1.05782e-05L8 73C8 76.866 11.134 80 15 80L15 86Z" fill="#26A0DA" mask="url(#path-1-inside-1_105_10103)"/>
+<rect x="97" y="83" width="5" height="83" transform="rotate(180 97 83)" fill="#26A0DA"/>
+<rect x="88" y="226" width="38" height="24" rx="4" transform="rotate(180 88 226)" stroke="#26A0DA" stroke-width="2"/>
+<rect x="78" y="227" width="2" height="26" transform="rotate(180 78 227)" fill="#26A0DA"/>
+<rect x="132" y="144" width="73" height="48" rx="5" transform="rotate(180 132 144)" fill="#26A0DA"/>
+<rect x="80" y="144" width="3" height="48" transform="rotate(180 80 144)" fill="#BBE5FF"/>
+<circle cx="31.5" cy="150.5" r="20" transform="rotate(180 31.5 150.5)" stroke="#26A0DA" stroke-width="3"/>
+<rect x="14" y="163" width="3" height="35" transform="rotate(-90 14 163)" fill="#26A0DA"/>
+<rect x="30" y="160" width="3" height="11" fill="#26A0DA"/>
+<circle cx="101" cy="175" r="15" transform="rotate(180 101 175)" fill="#26A0DA"/>
+<path d="M87.5 181L86.5 178L115.5 178L114.5 181L87.5 181Z" fill="#BBE5FF"/>
+<path d="M100 178H103V189C103 189.552 102.552 190 102 190H101C100.448 190 100 189.552 100 189V178Z" fill="#BBE5FF"/>
+<path d="M21 261L16.9486 250.051L6 246L16.9486 241.949L21 231L25.0514 241.949L36 246L25.0514 250.051L21 261Z" fill="#26A0DA"/>
+<path d="M8 239L5.83927 233.161L-6.99382e-07 231L5.83927 228.839L8 223L10.1607 228.839L16 231L10.1607 233.161L8 239Z" fill="#26A0DA"/>
+<path d="M35.5 239L34.2846 235.715L31 234.5L34.2846 233.285L35.5 230L36.7154 233.285L40 234.5L36.7154 235.715L35.5 239Z" fill="#26A0DA"/>
+</svg>

@@ -51,6 +51,57 @@ html {
   --shadow: 0px 15px 15px rgba(0, 0, 0, 0.18);
 }
 
+/* Shop Hero Start */
+.shop-hero{
+  
+  background: rgba(187, 229, 255, 1);
+}
+.shop-hero .shop-item{
+ position: relative;
+ text-align: center;
+ height: 450px;
+
+  
+}
+
+.shop-hero .container .shop-title{ 
+  position: absolute;
+  top: 20%;
+  left: 40%;
+  transform: translate(-50% -50%);
+  margin: auto;
+  text-align: center;
+  
+}
+.shop-hero .img1{ 
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.shop-hero .img2{ 
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.shop-hero .background1{ 
+  position: absolute;
+  bottom: 50px;
+  left: 200px;
+}
+.shop-hero .background1 img{ 
+  width: 100%;
+}
+.shop-hero .background2{ 
+  position: absolute;
+  bottom: 40px;
+  right: 40px;
+}
+/* Shop Hero Start */
+
+
+
+
+
 /* Categories Start */
 .feature {
   padding: 100px 0px 110px 0px;
