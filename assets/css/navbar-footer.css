@@ -166,7 +166,6 @@
   transition: all 0.3s ease;
 }
 
-.nav-links .active,
 .nav-links li a:hover {
   background: var(--text-color-white);
   color: var(--text-color-blue);

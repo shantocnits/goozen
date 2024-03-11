@@ -248,7 +248,7 @@ html {
   padding: 15px;
 }
 
-.card-wrapper .card-details .name h3{
+.card-wrapper .card-details .name h3 {
   font-size: 20px;
 }
 .card-wrapper .card-details .name {
@@ -258,13 +258,7 @@ html {
 
 .swiper-navBtn {
   position: absolute;
-  margin-top: 250px !important;
-  background: #fff;
-}
-
-.swiper-navBtn {
-  position: absolute;
-  margin-top: 230px !important;
+  margin-top: 200px !important;
   height: 20px;
   width: 20px;
   background: #fff;
@@ -302,13 +296,13 @@ html {
 
 @media screen and (max-width: 1200px) {
   .swiper-navBtn {
-    margin-top: 250px !important;
+    margin-top: 180px !important;
   }
 }
 
 @media screen and (max-width: 992px) {
   .swiper-navBtn {
-    margin-top: 220px !important;
+    margin-top: 190px !important;
   }
   .swiper-button-prev {
     left: 40% !important;
@@ -320,10 +314,16 @@ html {
     margin-top: 55px;
   }
 }
+@media screen and (max-width: 768px) {
+  .swiper-navBtn {
+    margin-top: 200px !important;
+  }
+ 
+}
 
 @media screen and (max-width: 520px) {
   .swiper-navBtn {
-    margin-top: 200px !important;
+    margin-top: 220px !important;
   }
   .swiper-button-prev {
     left: 35% !important;
@@ -332,6 +332,7 @@ html {
     right: 35% !important;
   }
 }
+
 /* Feature Categories End */
 
 /* Offer Sec Start */
@@ -706,7 +707,6 @@ html {
 /* All Product End */
 
 /* deal Section Start */
-
 /* deal Section Start */
 
 /* Latest Blog Start */
@@ -840,6 +840,11 @@ html {
   color: white;
 }
 /* Latest Blog End */
+
+
+/* Top Rated & Selling Product Start */
+/* Top Rated & Selling Product End */
+
 
 /* Get Many offers Start */
 #get-offer {
