@@ -638,7 +638,8 @@ html {
   position: absolute;
   top: 1px;
   right: 52px;
-  
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
   transform: translateX(50%);
   background: #314755;
   color: var(--text-color-white);
