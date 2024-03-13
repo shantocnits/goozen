@@ -288,7 +288,7 @@ html {
 
 .swiper-navBtn {
   position: absolute;
-  margin-top: 200px !important;
+  margin-top: 195px !important;
   height: 20px;
   width: 20px;
   background: #fff;
@@ -332,7 +332,7 @@ html {
 
 @media screen and (max-width: 992px) {
   .swiper-navBtn {
-    margin-top: 190px !important;
+    margin-top: 185px !important;
   }
   .swiper-button-prev {
     left: 40% !important;
@@ -346,13 +346,14 @@ html {
 }
 @media screen and (max-width: 768px) {
   .swiper-navBtn {
-    margin-top: 200px !important;
+    margin-top: 195px !important;
   }
+ 
 }
 
 @media screen and (max-width: 520px) {
   .swiper-navBtn {
-    margin-top: 220px !important;
+    margin-top: 213px !important;
   }
   .swiper-button-prev {
     left: 35% !important;
@@ -367,16 +368,18 @@ html {
 #all-product h1 {
   font-family: var(--primary-font);
   color: var(--text-color-black);
+  padding: 0px 0px 0px 0px !important;
 }
 
 #all-product .heading-bottom-bar {
+  margin: 0px 0px 0px 0px !important;
   width: 180px;
   height: 2px;
   background: var(--background-color);
 }
 
 #all-product .heading-bottom-bar2 {
-  margin-top: 10px;
+  margin: 5px 0px 0px 0px !important;
   width: 140px;
   height: 2px;
   background: var(--background-color);
@@ -726,7 +729,7 @@ html {
 /* Brands End */
 
 /* Customer review Start */
-.brands {
+/* .brands {
   justify-content: center;
   width: 800px;
   padding: 100px 0px 100px 0px;
@@ -862,5 +865,5 @@ html {
   .brands .swiper-button-next {
     right: 35% !important;
   }
-}
+} */
 /* Customer Review End */

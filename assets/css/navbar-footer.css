@@ -149,6 +149,7 @@
 
 .navbar .nav-links {
   display: inline-flex;
+  z-index: 9999;
 }
 
 .nav-links li {
@@ -613,8 +614,8 @@
   height: 28px;
   border-radius: 5px;
   background: rgb(255, 255, 255);
-  margin-top: -22px;
-  margin-right: -110px;
+  margin-top: -24px;
+  margin-right: -8px;
 }
 .footer .copyright .swiper-button-next img {
   width: 10px !important;

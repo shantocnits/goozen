@@ -135,3 +135,155 @@ html {
 }
 /* Hero Start */
 
+
+/* About Us Start */
+#about-us {
+  padding: 100px 12px 110px 12px;
+  text-align: center !important;
+}
+#about-us .about-heading h1{
+  font-size: 40px;
+  font-family: var(--primary-font);
+  
+}
+#about-us .about-heading h1 span{
+  color: var(--item-color);
+  
+}
+#about-us .about-heading p{
+  font-size: 18px;
+  font-family: var(--secondary-font);
+  
+}
+
+.about-heading .bottom-border {
+  margin: 0px 580px;
+  border-bottom: 2px solid #26a0da;
+}
+
+.about-heading .bottom-border2 {
+  margin: 5px 600px 0px 600px;
+  border-bottom: 2px solid #26a0da;
+}
+/* About Us End */
+
+
+
+/* Achevement Start */
+#achievement{
+  padding: 0px 0px 100px 0px;
+}
+
+#achievement .achevement-item img{
+  width: 60px;
+}
+#achievement .achevement-item .item{
+  align-items: center;
+}
+#achievement .achevement-item h1{
+  font-size: 22px;
+  padding-left: 20px;
+  font-family: var(--primary-font);
+}
+#achievement .achevement-item p{
+  font-size: 18px;
+  padding: 20px 0px 40px 0px;
+  font-family: var(--secondary-font);
+}
+/* Achevement End */
+
+
+
+/* Provide service Start */
+#service{
+  padding: 100px 0px 110px 0px;
+  text-align: center !important;
+}
+#service .service-heading {
+  padding-bottom: 100px;
+  
+}
+#service .service-heading h1{
+  font-size: 40px;
+  font-family: var(--primary-font);
+  
+}
+#service .service-heading h1 span{
+  color: var(--item-color);
+  
+}
+#service .service-heading h1{
+  
+  
+}
+#service .service-heading p{
+  font-size: 18px;
+  font-family: var(--secondary-font);
+  
+}
+
+
+.service-heading .bottom-border {
+ 
+  border-bottom: 2px solid #26a0da;
+}
+
+/* .service-heading .bottom-border2 {
+ 
+  border-bottom: 2px solid #26a0da;
+} */
+/* Provide service Start End */
+
+#service .service-item{
+  padding: 50px 50px;
+}
+#service .service-item h1{
+  font-family: var(--primary-font);
+  font-size: 25px;
+}
+#service .service-item h1 span{
+  color: var(--item-color);
+}
+#service .service-item p{
+  font-family: var(--secondary-font);
+  font-size: 18px;
+}
+#service .success{
+  border-radius: 10px;
+  padding: 48px 60px;
+  text-align: left;
+  border: 1px solid rgb(60, 194, 247);
+}
+#service .success .border{
+  width: 100%;
+  height: 2px;
+  margin: 0px 35px;
+}
+
+#service .success .success-item:hover .count h1{
+  background: #26a0da;
+  color: var(--text-color-white);
+}
+#service .success .count h1{
+  transition: all 0.3s ease;
+  color: var(--text-color-black);
+  padding: 5px 20px 5px 20px;
+  border-radius: 5px;
+}
+#service .success .success-title{
+  margin-top: 10px;
+  margin-left: 40px;
+}
+#service .success .success-item{
+  margin-top: 20px;
+}
+#service .success .success-title h1{
+  padding-bottom: 15px;
+  font-size: 25px;
+  font-family: var(--primary-font);
+}
+#service .success .success-title p{
+  padding-bottom: 20px;
+  font-size: 18px;
+  font-family: var(--secondary-font);
+}
