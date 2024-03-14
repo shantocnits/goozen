@@ -536,7 +536,6 @@ html {
 }
 /* Navbar End */
 
-
 /* Hero Slider Start */
 .mySwiper {
   height: 790px;
@@ -663,8 +662,6 @@ html {
   }
 }
 /* Hero Slider End */
- 
-
 
 /* Feature Categories Start */
 .feature {
@@ -805,7 +802,6 @@ html {
   .swiper-navBtn {
     margin-top: 195px !important;
   }
- 
 }
 
 @media screen and (max-width: 520px) {
@@ -966,8 +962,6 @@ html {
 }
 /* Offer Sec End */
 
-
-
 /* All Product Start */
 #all-product h1 {
   font-family: var(--primary-font);
@@ -985,7 +979,7 @@ html {
   margin: 5px 0px 50px 0px !important;
   margin-top: 10px;
   width: 140px;
-  height: 2px;
+  height: 1px;
   background: var(--background-color);
   margin-bottom: 50px;
 }
@@ -1198,7 +1192,6 @@ html {
 }
 /* All Product End */
 
-
 /* Latest Blog Start */
 #latest-blog {
   padding: 100px 0px 0px 0px;
@@ -1331,10 +1324,8 @@ html {
 }
 /* Latest Blog End */
 
-
 /* Top Rated & Selling Product Start */
 /* Top Rated & Selling Product End */
-
 
 /* Get Many offers Start */
 #get-offer {
@@ -1441,7 +1432,6 @@ html {
 }
 
 /* Get Many offers End */
-
 
 /* Footer Start */
 .footer {
@@ -1625,7 +1615,6 @@ html {
   }
   .logo-slider {
     margin-top: 0px;
-    
   }
   .footer .copyright p {
     padding-top: 20px;
