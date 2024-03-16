@@ -1,3 +1,58 @@
+@import url("https://fonts.googleapis.com/css2?family=K2D&display=swap");
+
+@font-face {
+  font-family: fonts;
+  src: url(../fonts/fonts/ttf/OtomanopeeOne-Regular.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Back to btn Start */
+html {
+  scroll-behavior: smooth;
+}
+
+.back-button {
+  outline: 2px solid var(--item-color);
+  outline-offset: 4px;
+  border-radius: 3px;
+  align-items: center;
+  padding: 10px 10px 15px 10px;
+  z-index: 9999;
+  position: fixed;
+  background-color: var(--item-color);
+  border-radius: px;
+  height: 40px;
+  bottom: 25px;
+  right: 25px;
+  text-decoration: none;
+  align-items: center;
+  line-height: 50px;
+}
+.back-button img {
+  margin-bottom: 50px;
+}
+/* Back to btn End */
+
+/* Variable */
+:root {
+  --box-shadow: 0 0 10px hsl(0, 0%, 0%, 0.15);
+  --primary-font: fonts;
+  --secondary-font: K2D;
+  --border-and-color: 1px solid rgba(38, 160, 218, 1);
+  --text-color-black: black;
+  --background-color: rgba(38, 160, 218, 1);
+  --text-color-white: rgba(255, 255, 255, 1);
+  --text-color-blue: rgba(38, 160, 218, 1);
+  --item-color: rgba(255, 184, 0, 1);
+  --shadow: 0px 15px 15px rgba(0, 0, 0, 0.18);
+}
+
+
 /* Topbar Start */
 #topbar {
   font-family: var(--secondary-font);
@@ -608,15 +663,25 @@
   -o-transform: translateX(-30px) !important;
 }
 
-.footer .copyright .swiper-button-next {
+.footer .copyright .logo-next {
   align-items: center;
   width: 25px;
   height: 28px;
   border-radius: 5px;
   background: rgb(255, 255, 255);
-  margin-top: -24px;
-  margin-right: -8px;
+  margin-top: -23px !important;
+  margin-right: -5px !important;
 }
+.footer .copyright .logo-next-btn {
+  align-items: center;
+  width: 25px;
+  height: 28px;
+  border-radius: 5px;
+  background: rgb(255, 255, 255);
+  margin-top: -23px !important;
+  margin-right: -110px !important;
+}
+
 .footer .copyright .swiper-button-next img {
   width: 10px !important;
 }
@@ -625,8 +690,9 @@
   position: relative;
   width: 258px;
   margin-top: 20px;
-  margin-right: -20px !important;
+  margin-right: -0px !important;
 }
+
 
 .footer-slider .logo {
   width: 93px;
@@ -665,16 +731,31 @@
   }
   .logo-slider {
     margin-top: 0px;
+    margin-right: -25px !important;
     
   }
   .footer .copyright p {
     padding-top: 20px;
   }
+  .footer .copyright .logo-next-btn {
+    margin-right: -100px !important;
+  }
+  
 }
 @media (max-width: 768px) {
   .footer-item .items {
     border-left: none;
     margin-left: 0px !important;
+  }
+  .footer .copyright .logo-next-btn {
+   
+    margin-right: -99px !important;
+  }
+}
+@media (max-width: 520px) {
+  .footer .copyright .logo-next-btn {
+  
+    margin-right: -85px !important;
   }
 }
 /* Footer End */

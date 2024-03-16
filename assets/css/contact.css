@@ -38,6 +38,7 @@ html {
 }
 /* Back to btn End */
 
+/* Variable */
 :root {
   --box-shadow: 0 0 10px hsl(0, 0%, 0%, 0.15);
   --primary-font: fonts;
