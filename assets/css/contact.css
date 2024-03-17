@@ -202,8 +202,8 @@ html {
 #contact-us .send-mail .send-btn a {
   text-decoration: none;
   color: var(--text-color-blue);
-  font-size: 25px;
-  padding: 10px 25px;
+  font-size: 22px;
+  padding: 8px 23px;
   margin-right: 20px;
   border-radius: 5px;
   font-family: var(--secondary-font);
