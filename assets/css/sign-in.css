@@ -28,7 +28,7 @@
 
 /* Signin Form Start */
 .form_wrapper {
-  height: 100vh;
+  height: auto;
   width: 100%;
   display: flex;
   align-items: center;
@@ -60,7 +60,6 @@
   transform: translate(-50%, -50%);
   max-width: 630px;
   width: 100%;
-  height: auto;
   padding: 60px;
   border-radius: 6px;
   background: #fff;
@@ -80,14 +79,9 @@
   pointer-events: auto;
 }
 
-.forms.show-signup .form.login {
-  opacity: 0;
-  pointer-events: none;
-}
-
 .forms header {
   font-family: fonts;
-  padding-bottom: 20px;
+  padding-bottom: 10px;
   border-bottom: 1px solid black;
   font-size: 28px;
   font-weight: 600;
@@ -96,7 +90,7 @@
 }
 
 .forms form {
-  margin-top: 50px;
+  margin-top: 40px;
 }
 
 .forms .form .field {
@@ -119,7 +113,7 @@
 
 .forms .field input {
   outline: none;
-  padding: 0 15px;
+  padding: 0 15px !important;
   border: 1px solid#CACACA;
 }
 

@@ -484,6 +484,7 @@ html {
   text-align: center;
 }
 #apply-now h1 {
+  
   font-family: var(--primary-font);
   font-size: 40px;
   color: var(--text-color-white);

@@ -6,7 +6,7 @@
     <title>Goozen</title>
 
     <!-- CSS Link -->
-    <link rel="stylesheet" href="./assets/css/contact.css" />
+    <link rel="stylesheet" href="./assets/css/contact-via-form.css" />
     <link rel="stylesheet" href="./assets/css/navbar-footer.css" />
     <link rel="stylesheet" href="./assets/css/sign-in.css" />
     <!-- CSS Link -->
@@ -64,7 +64,7 @@
               </div>
 
               <div class="field button-field">
-                <button type="submit">Sign In</button>
+                <button>Sign In</button>
               </div>
             </form>
           </div>
@@ -139,7 +139,7 @@
               </div>
 
               <div class="field button-field">
-                <button type="submit">Create Account</button>
+                <button>Create Account</button>
               </div>
             </form>
 
@@ -445,8 +445,31 @@
               alteration in some form.
             </p>
             <div class="send-btn">
-              <a href="./contact-via-form.html">Contact Us via form</a>
+              <a href="#" class="form-btn">Contact Us via form</a>
+              <a href="./contact.html">Close</a>
             </div>
+          </div>
+          <div class="contact-form">
+            <form action="#">
+              <div class="row">
+                <div class="col-lg-6">
+                  <input type="text" placeholder="Your name" />
+                </div>
+                <div class="col-lg-6">
+                  <input type="text" placeholder="Your email" />
+                </div>
+              </div>
+              <input type="text" placeholder="Subject" />
+              <textarea
+                class=""
+                id="comment"
+                name="text"
+                placeholder="Your massage"
+              ></textarea>
+              <div class="contact-form-btn">
+                <a href="#">Send</a>
+              </div>
+            </form>
           </div>
         </div>
       </div>
@@ -633,6 +656,7 @@
       </div>
     </footer>
     <!-- Footer End -->
+
 
     <!-- Back to btn Start -->
     <a href="#" class="back-button">

@@ -211,9 +211,54 @@ html {
   transition: all 0.5s ease;
 }
 
-#contact-us .send-mail .send-btn a:hover {
+#contact-us .send-mail .send-btn .form-btn {
   background: rgba(38, 160, 218, 1);
   color: var(--text-color-white);
+}
+
+#contact-us .contact .contact-form {
+  display: flex;
+  justify-content: center;
+}
+
+#contact-us .contact .contact-form form {
+  width: 80%;
+}
+
+#contact-us .contact .contact-form form input {
+  font-family: var(--secondary-font);
+  width: 100%;
+  border-radius: 5px;
+  padding: 10px 0;
+  padding-left: 20px;
+  margin-bottom: 20px;
+  outline: none;
+  border: none;
+  border: 1px solid gray;
+}
+
+#contact-us .contact .contact-form form textarea {
+  width: 100%;
+  aspect-ratio: 4/1;
+  outline: none;
+  border-radius: 5px;
+  padding: 10px 0px 30px 20px;
+}
+
+#contact-us .contact .contact-form form .contact-form-btn {
+  display: flex;
+  justify-content: center;
+}
+
+#contact-us .contact .contact-form form .contact-form-btn a {
+  background: var(--background-color);
+  color: var(--text-color-white);
+  font-family: var(--secondary-font);
+  text-decoration: none;
+  border-radius: 5px;
+  margin: 20px 0px 70px 0px;
+  padding: 8px 90px;
+  font-size: 18px;
 }
 
 @media screen and (max-width: 768px) {
