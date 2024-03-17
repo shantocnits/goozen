@@ -10,19 +10,23 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: K2D;
 }
-/* .form_wrapper {
-  height: 100vh;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: #989dad58;
-  column-gap: 30px;
-  z-index: 999999 !important;
-   */
 
+/* Variable */
+:root {
+  --box-shadow: 0 0 10px hsl(0, 0%, 0%, 0.15);
+  --primary-font: fonts;
+  --secondary-font: K2D;
+  --border-and-color: 1px solid rgba(38, 160, 218, 1);
+  --text-color-black: black;
+  --background-color: rgba(38, 160, 218, 1);
+  --text-color-white: rgba(255, 255, 255, 1);
+  --text-color-blue: rgba(38, 160, 218, 1);
+  --item-color: rgba(255, 184, 0, 1);
+  --shadow: 0px 15px 15px rgba(0, 0, 0, 0.18);
+}
+
+/* Signin Form Start */
 .form_wrapper {
   height: 100vh;
   width: 100%;
@@ -37,6 +41,7 @@
   bottom: 0;
   background: rgba(0, 0, 0, 0.5);
   opacity: 0;
+  font-family: var(--secondary-font);
   visibility: hidden;
   user-select: none;
   transition: 0.5s;
@@ -53,25 +58,33 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  max-width: 430px;
+  max-width: 630px;
   width: 100%;
   height: auto;
   padding: 60px;
   border-radius: 6px;
   background: #fff;
 }
+
 .forms .form.signup {
   opacity: 0;
   pointer-events: none;
 }
+
+.forms .signup a {
+  text-decoration: none;
+}
+
 .forms.show-signup .form.signup {
   opacity: 1;
   pointer-events: auto;
 }
+
 .forms.show-signup .form.login {
   opacity: 0;
   pointer-events: none;
 }
+
 .forms header {
   font-family: fonts;
   padding-bottom: 20px;
@@ -81,9 +94,11 @@
   color: #232836;
   text-align: center;
 }
+
 .forms form {
   margin-top: 50px;
 }
+
 .forms .form .field {
   position: relative;
   height: 50px;
@@ -91,6 +106,7 @@
   margin-top: 20px;
   border-radius: 6px;
 }
+
 .forms .field input,
 .forms .field button {
   height: 100%;
@@ -100,11 +116,13 @@
   font-weight: 400;
   border-radius: 6px;
 }
+
 .forms .field input {
   outline: none;
   padding: 0 15px;
   border: 1px solid#CACACA;
 }
+
 .forms .field input:focus {
   border: 2px solid skyblue;
   box-shadow: 0 0 10px hsl(0, 0%, 0%, 0.15);
@@ -116,38 +134,55 @@
   transition: all 0.3s ease;
   cursor: pointer;
 }
+
 .forms .field button:hover {
   background-color: #016dcb;
 }
+
 .forms .form-link {
   margin-top: 10px;
 }
-.forms .form-link a {
+
+.forms .form-content .form-link a {
   font-size: 14px;
   font-weight: 400;
-  color: #2799f7;
+  color: #060606;
 }
+
+.forms .form-content .form-link .sign-link {
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--text-color-blue);
+}
+
+.forms .media-option .form-link a {
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--text-color-blue);
+}
+
 .forms .form-link a {
   text-decoration: none;
 }
-.forms .form-content a:hover {
-  text-decoration: underline;
-}
+
 .forms .media-options a {
   text-decoration: none;
   display: flex;
   align-items: center;
   justify-content: center;
 }
+
 .forms .media-option img.google-img {
   height: 25px;
   width: 25px;
   margin-right: 20px;
   object-fit: cover;
 }
+
 .forms a.google {
   border: 1px solid #cacaca;
 }
+
 .forms a.google span {
   font-weight: 500;
   opacity: 0.6;
@@ -159,3 +194,4 @@
     padding: 20px 10px;
   }
 }
+/* Sign in Form End */

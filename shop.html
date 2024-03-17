@@ -8,6 +8,7 @@
     <!-- CSS Link -->
     <link rel="stylesheet" href="./assets/css/shop.css" />
     <link rel="stylesheet" href="./assets/css/navbar-footer.css" />
+    <link rel="stylesheet" href="./assets/css/sign-in.css">
     <!-- CSS Link -->
 
     <!-- Swiper Css Link -->
@@ -39,6 +40,107 @@
   </head>
 
   <body>
+    <!-- Sign-in Start -->
+    <section class="form_wrapper">
+      <div class="forms">
+        <div class="form sign-in">
+          <div class="form-content">
+            <header>Sign In</header>
+            <form action="#">
+              <div class="field input-field">
+                <input type="email" placeholder="email address" class="input" />
+              </div>
+
+              <div class="field input-field">
+                <input
+                  type="password"
+                  placeholder="password"
+                  class="password"
+                />
+              </div>
+
+              <div class="form-link">
+                <a href="#" class="forgot-pass">Forgot password?</a>
+              </div>
+
+              <div class="field button-field">
+                <button>Sign In</button>
+              </div>
+            </form>
+          </div>
+
+          <div class="media-options">
+            <a href="#" class="field google">
+              <img
+                src="./assets/img/home-img/sign-in.img/google.svg"
+                alt=""
+                class="google-img"
+              />
+              <span>Sign In with Google</span>
+            </a>
+          </div>
+          <div class="form-link">
+            <span
+              >Don’t have an account?
+              <a href="#" class="link signup-link">Register Now</a></span
+            >
+          </div>
+        </div>
+        <!-- Sign in End -->
+
+        <!-- Register Form Start -->
+        <div class="form signup">
+          <div class="form-content">
+            <header>Create Account</header>
+            <form action="#">
+              <div class="field input-field">
+                <input type="email" placeholder="Email" class="input" />
+              </div>
+              <div class="field input-field">
+                <input type="email" placeholder="Email" class="input" />
+              </div>
+              <div class="field input-field">
+                <input type="email" placeholder="Email" class="input" />
+              </div>
+
+              <div class="field input-field">
+                <input type="email" placeholder="Email" class="input" />
+              </div>
+
+              <div class="field input-field">
+                <input
+                  type="password"
+                  placeholder="Create password"
+                  class="password"
+                />
+              </div>
+
+              <div class="field input-field">
+                <input
+                  type="password"
+                  placeholder="Confirm password"
+                  class="password"
+                />
+              </div>
+
+              <div class="field button-field">
+                <button>Create Account</button>
+              </div>
+            </form>
+
+            <div class="form-link">
+              <span
+                >Already have an account?
+                <a href="#" class="link login-link">Login</a></span
+              >
+            </div>
+          </div>
+        </div>
+        <!-- Register Form End -->
+      </div>
+    </section>
+    <!-- Sign-in End -->
+
     <!-- Topbar Start -->
     <section id="topbar">
       <div class="topbar_item justify-contant-center">
@@ -50,7 +152,7 @@
           <li><a href="#">My Wishlist</a></li>
           <div class="vertical_bar"></div>
           <li>
-            <a style="color: rgba(38, 160, 218, 1)" href="./sign-in.html"
+            <a class="signInBtn" style="color: rgba(38, 160, 218, 1)" href="#"
               ><img src="./assets/img/home-img/sign-in.svg" alt="" />Sign In</a
             >
           </li>
@@ -1315,9 +1417,10 @@
     <!-- Swiper js Start -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <!-- <script src="./js/app.js"></script> -->
-    <script src="./assets/css/js/app.js"></script>
-    <script src="./assets/css/js/shop-brand-slider.js"></script>
-    <script src="./assets/css/js/customer-rvw.js"></script>
-    <script src="./assets/css/js/logo-slider.js"></script>
+    <script src="./assets/js/app.js"></script>
+    <script src="./assets/js/shop-brand-slider.js"></script>
+    <script src="./assets/js/customer-rvw.js"></script>
+    <script src="./assets/js/logo-slider.js"></script>
+    <script src="./assets/js/sign-in.js"></script>
   </body>
 </html>

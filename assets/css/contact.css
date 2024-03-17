@@ -96,7 +96,7 @@ html {
   text-align: center;
 }
 
-.HOME {
+.pagination .HOME {
   font-family: var(--secondary-font);
   text-decoration: none;
   font-size: 22px;
@@ -106,10 +106,13 @@ html {
 .HOME:hover {
   color: var(--text-color-black);
 }
-.CONTACT {
+.pagination .CONTACT {
+  font-family: var(--secondary-font);
   color: var(--background-color);
-  text-decoration: none;
+  margin-top: 10px;
+  margin-left: 10px;
   font-size: 22px;
+  text-decoration: none;
 }
 
 @media screen and (max-width: 992px) {
@@ -131,3 +134,114 @@ html {
   }
 }
 /* Hero Start */
+
+
+/* Contact Us Start */
+#contact-us .contact {
+  margin: 70px 0;
+  border-radius: 3px;
+  border: var(--border-and-color);
+}
+
+#contact-us .contact .contact-items {
+  line-height: 25px;
+  display: flex;
+  padding: 50px 0;
+  text-align: center;
+  align-items: center;
+  justify-content: space-around;
+}
+
+#contact-us .contact .contact-items h1 {
+  text-wrap: nowrap;
+  padding-top: 20px;
+  font-size: 25px;
+  font-family: var(--primary-font);
+}
+
+#contact-us .contact .contact-items .item  {
+  padding: 10px 0;
+}
+#contact-us .contact .contact-items .item a {
+  border: 3px solid rgba(38, 160, 218, 1) ;
+  padding: 23px 10px;
+  border-radius: 10px;
+}
+#contact-us .contact .contact-items .item p {
+  text-wrap: nowrap;
+  font-size: 18px;
+  font-family: var(--secondary-font);
+  color: rgba(124, 137, 146, 1);
+}
+#contact-us .send-mail {
+  text-align: center;
+}
+#contact-us .send-mail h1 {
+ font-size: 40px;
+ font-family: var(--primary-font);
+}
+#contact-us .send-mail h1 span{
+ color: var(--item-color);
+}
+#contact-us .send-mail p{
+  font-size: 16px;
+  padding: 0px 20px;
+  font-family: var(--secondary-font);
+  color: rgba(124, 137, 146, 1);
+}
+#contact-us .send-mail .send-btn{
+  margin: 50px 0;
+}
+#contact-us .send-mail .send-btn a{
+  text-decoration: none;
+  color: var(--text-color-blue);
+  font-size: 25px;
+  padding: 12px 25px;
+  margin-right: 20px;
+  border-radius: 5px;
+  font-family: var(--secondary-font);
+  border: var(--border-and-color);
+  transition: all 0.5s ease;
+}
+#contact-us .send-mail .send-btn a:hover{
+  background: rgba(38, 160, 218, 1);
+  color: var(--text-color-white);
+}
+#contact-us .contact .contact-form form{
+  width: 100%;
+  
+}
+#contact-us .contact .contact-form form input{
+  width: 100%;
+  margin: 100px 0;
+}
+
+@media screen and (max-width:768px) {
+  #contact-us .contact .contact-items {
+    display: block;
+
+  }
+  #contact-us .send-mail h1 {
+    font-size: 35px;
+   }
+   #contact-us .send-mail .send-btn a{
+    
+    font-size: 20px;
+    padding: 8px 15px;
+    margin-right: 10px;
+    
+  }
+  
+}
+@media screen and (max-width:500px) {
+   #contact-us .send-mail .send-btn a{
+    font-size: 16px;
+    padding: 8px 15px;
+    margin-right: 10px;
+  }
+  #contact-us .send-mail h1 {
+    font-size: 32px;
+   }
+  
+}
+/* Contact Us End *
