@@ -904,6 +904,7 @@ html {
 
 #customer-review .review-details .rvw-item2 .like img {
   margin-right: 20px;
+  cursor: pointer;
 }
 
 .review .swiper-navBtns {
