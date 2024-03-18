@@ -1,7 +1,7 @@
 var swiper = new Swiper(".review", {
-  slidesPerView: 5,
-  spaceBetween: 20,
-  sliderPerGroup: 5,
+  slidesPerView: 1,
+  spaceBetween: 110,
+  sliderPerGroup: 1,
   loop: true,
   centerSlide: "true",
   fade: "true",
