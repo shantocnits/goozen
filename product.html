@@ -60,11 +60,11 @@
               </div>
 
               <div class="form-link">
-                <a href="#" class="forgot-pass">Forgot password?</a>
+                <a href="#" class="forgot-pass">Forgot your password?</a>
               </div>
 
               <div class="field button-field">
-                <button>Sign In</button>
+                <button type="submit">Sign In</button>
               </div>
             </form>
           </div>
@@ -82,7 +82,7 @@
           <div class="form-link">
             <span
               >Don’t have an account?
-              <a href="#" class="link signup-link">Register Now</a></span
+              <a href="#" class="link register-link">Register Now</a></span
             >
           </div>
         </div>
@@ -94,23 +94,27 @@
             <header>Create Account</header>
             <form action="#">
               <div class="field input-field">
-                <input type="email" placeholder="Email" class="input" />
+                <input type="email" placeholder="full name" class="input" />
               </div>
               <div class="field input-field">
-                <input type="email" placeholder="Email" class="input" />
+                <input type="email" placeholder="username" class="input" />
               </div>
               <div class="field input-field">
-                <input type="email" placeholder="Email" class="input" />
+                <input type="email" placeholder="email address" class="input" />
               </div>
 
               <div class="field input-field">
-                <input type="email" placeholder="Email" class="input" />
+                <input
+                  type="email"
+                  placeholder="select country"
+                  class="input"
+                />
               </div>
 
               <div class="field input-field">
                 <input
                   type="password"
-                  placeholder="Create password"
+                  placeholder="password"
                   class="password"
                 />
               </div>
@@ -118,20 +122,31 @@
               <div class="field input-field">
                 <input
                   type="password"
-                  placeholder="Confirm password"
+                  placeholder="confirm password"
                   class="password"
                 />
+              </div>
+
+              <div class="form-check mt-3">
+                <label class="form-check-label">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    name="remember"
+                  />
+                  Agree all <a href="#">Terms & Policy</a>
+                </label>
               </div>
 
               <div class="field button-field">
-                <button>Create Account</button>
+                <button type="submit">Create Account</button>
               </div>
             </form>
 
             <div class="form-link">
               <span
-                >Already have an account?
-                <a href="#" class="link login-link">Login</a></span
+                >Already Have account?
+                <a href="#" class="link sign-link">Sign in</a></span
               >
             </div>
           </div>
@@ -306,7 +321,7 @@
               <a href="blog.html">Blog</a>
             </li>
             <li>
-              <a href="./contact.html">Contact us</a>
+              <a href="contact.html">Contact us</a>
             </li>
           </ul>
           <label for="menu-btn" class="btn menu-btn"
@@ -360,7 +375,7 @@
     <section id="product-details">
       <div class="container">
         <div class="row">
-          <div class="col-lg-6">
+          <div class="col-lg-6 my-2">
             <div class="slider-item">
               <div class="product-item">
                 <div class="swiper mySwiper2 slide">
@@ -442,7 +457,7 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-6">
+          <div class="col-lg-6 my-2">
             <div class="details">
               <div class="heading">
                 <h1>Adico- Smart Watch</h1>
@@ -461,12 +476,12 @@
               </div>
 
               <div class="product-icon-btns">
-                <a href="#">
+                <a class="share" href="#">
                   <svg
                     width="30"
                     height="35"
                     viewBox="0 0 30 35"
-                    fill="black"
+                    fill="white"
                     xmlns="http://www.w3.org/2000/svg"
                   >
                     <path
@@ -492,14 +507,14 @@
                     />
                     <path
                       d="M19.5784 8.82178L10.3447 14.7554"
-                      stroke="red"
+                      stroke="white"
                       stroke-width="2"
                       stroke-linecap="round"
                       stroke-linejoin="round"
                     />
                     <path
                       d="M10.3447 20.2446L19.5784 26.1783"
-                      stroke="red"
+                      stroke="white"
                       stroke-width="2"
                       stroke-linecap="round"
                       stroke-linejoin="round"
@@ -524,34 +539,52 @@
                 </a>
               </div>
             </div>
-            
 
             <div class="name">
-              <h2>Brand Name: <span>Apple</span></h2>
-              <h2>Product Code: <span>0001</span></h2>
-              <h2>Availability: <span>In Stock</span></h2>
+              <div class="d-flex">
+                <h2>Brand Name:</h2>
+                <span>Apple</span>
+              </div>
+              <div class="d-flex">
+                <h2>Product Code:</h2>
+                <span>0001</span>
+              </div>
+              <div class="d-flex">
+                <h2>Availability:</h2>
+                <span style="color: rgba(3, 143, 0, 1)">In Stock</span>
+              </div>
             </div>
             <p>Free Shipping (Est. Delivery Time 2-3 Days)</p>
-            <div class="quantity">
+            <div class="quantity d-flex">
               <div class="quantity-name">
-                <h3>Quantity</h3>
+                <h2>Quantity:</h2>
               </div>
               <div class="box">
-                <section class="container">
-                  <div class="product-quantity">
-                    <h3>Quantity</h3>
-                    <input data-min="1" data-max="0" type="text" name="quantity" value="1" readonly="true"><div class="quantity-selectors-container">
-                      <div class="quantity-selectors">
-                        <button type="button" class="increment-quantity" aria-label="Add one" data-direction="1"><span>&#43;</span></button>
-                        <button type="button" class="decrement-quantity" aria-label="Subtract one" data-direction="-1" disabled="disabled"><span>&#8722;</span></button>
-                      </div>
-                    </div>
+                <div class="product-quantity">
+                  <div class="quantity_counter">
+                    <div class="quantity_count">0</div>
                   </div>
-                </section>
+                  <div class="quantity-btn">
+                    <button class="quantity_btn increment">
+                      <img
+                        src="./assets/img/product-page-img/up-arrow.svg"
+                        alt=""
+                      />
+                    </button>
+                    <button class="quantity_btn decrement">
+                      <img
+                        src="./assets/img/product-page-img/down-arrow.svg"
+                        alt=""
+                      />
+                    </button>
+                  </div>
+                  <button class="add-to-cart">Add to Cart</button>
+                </div>
               </div>
             </div>
-
-
+            <div class="buy-now">
+              <button class="buy-now">Buy It Now</button>
+            </div>
           </div>
         </div>
       </div>

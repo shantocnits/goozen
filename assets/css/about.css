@@ -329,6 +329,12 @@ html {
   font-size: 45px;
   text-align: center;
 }
+.team p {
+  color: rgba(124, 137, 146, 1);
+  text-align: center;
+  font-size: 18px;
+  margin-top: 20px;
+}
 
 .team h1 span {
   margin-left: 10px;
