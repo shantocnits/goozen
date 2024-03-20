@@ -139,8 +139,13 @@ html {
   .hero-title h1 {
     font-size: 40px;
   }
+  .bredcome a{
+    font-size: 18px !important;
+    
+  }
 }
-/* Hero Start */
+/* Hero End */
+
 
 /* Product Details Start */
 #product-details {
@@ -223,6 +228,10 @@ html {
   margin-bottom: 5px;
   margin-right: 10px;
 }
+#product-details .details .product-icon-btns a i {
+  z-index: 9999999;
+  margin-right: -39px;
+}
 #product-details .details .product-icon-btns a .product-tooltip {
   width: 80%;
   padding: 5px 40px;
@@ -230,6 +239,17 @@ html {
   color: var(--text-color-white);
   border-top-left-radius: 5px;
   border-bottom-left-radius: 5px;
+  z-index: 7777;
+  margin-right: -11px;
+  overflow: hidden;
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+#product-details .details .product-icon-btns a:hover .product-tooltip {
+  z-index: 7777;
+  opacity: 1;
+  transform: translateX(-10%);
+  
 }
 
 #product-details .details .product-icon-btns a i {
@@ -268,18 +288,6 @@ html {
   height: 29px;
   display: flex;
   justify-content: center;
-}
-
-#product-details
-  .details
-  .product-icon-btns
-  i:hover
-  #product-details
-  .details
-  .product-icon-btns
-  a
-  .product-tooltip {
-  background: red;
 }
 
 #product-details .details .product-icon-btns .share svg {
@@ -360,6 +368,8 @@ html {
   justify-content: left;
   width: 100%;
   padding: 8px 0px;
+  border-radius: 5px;
+  font-weight: bold;
   text-wrap: nowrap;
 }
 #product-details .buy-now button {
@@ -378,12 +388,27 @@ html {
     flex-wrap: wrap;
   }
 }
+
+@media screen and (max-width: 494px) {
+  #product-details .details .heading span {
+    font-size: 22px;
+  
+  }
+  #product-details .details .heading h1 {
+  
+    font-size: 25px;
+    margin-top: 30px;
+  }
+}
 /* Product Details End */
+
+
 
 /* Seller Info Start */
 #seller-info {
   padding-bottom: 100px;
 }
+
 #seller-info .seller-profile {
   text-align: center;
   align-items: center;
@@ -391,6 +416,7 @@ html {
   border: var(--border-and-color);
   border-radius: 10px;
 }
+
 #seller-info .seller-profile h1 {
   font-family: var(--primary-font);
   font-size: 25px;
@@ -406,28 +432,36 @@ html {
   padding: 30px 0;
   font-family: var(--primary-font);
 }
+
 #seller-info .seller-profile-info p {
   font-size: 16px;
   font-family: var(--secondary-font);
 }
+
 #seller-info .seller-profile-info p span {
   margin-left: 13px;
   color: #038f00;
 }
+
 #seller-info .seller-profile-info .profile-btn {
   margin: 50px 0;
 }
+
 #seller-info .seller-profile-info .visit-btn {
   padding: 8px 25px;
   text-decoration: none;
-  background: var(--background-color);
-  color: var(--text-color-white);
+  font-family: var(--secondary-font);
+  background: var(--text-color-white);
+  color: var(--text-color-blue);
+  border: var(--border-and-color);
   border-radius: 5px;
 }
+
 #seller-info .seller-profile-info .chat-btn {
   padding: 8px 45px;
   border-radius: 5px;
   text-decoration: none;
+  font-family: var(--secondary-font);
   background: var(--background-color);
   color: var(--text-color-white);
 }
@@ -448,6 +482,7 @@ html {
   height: 36px;
   line-height: 36px;
 }
+
 .toggle .tabs .tab {
   font-family: var(--primary-font);
   font-size: 25px;
@@ -460,7 +495,7 @@ html {
 }
 
 .toggle .tabs .tab.active {
-  padding: 0px 0px 20px 0px !important;
+  padding: 0px 0px 30px 0px !important;
   color: var(--text-color-blue);
   border-bottom: 3px solid #22a3ee;
 }
@@ -485,7 +520,33 @@ html {
   }
 }
 
+@media screen and (max-width: 768px) {
+  .toggle .tabs .tab {
+    font-size: 25px;
+
+    height: 21px;
+    margin: 0px 30px 5px 0px;
+    cursor: pointer;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .toggle .tabs .tab {
+    font-size: 10px;
+    margin: 0px 10px 5px 0px;
+    cursor: pointer;
+  }
+}
+@media screen and (max-width: 440px) {
+  .toggle .tabs .tab h4 {
+    font-size: 17px;
+    margin: 0px 8px 5px 0px;
+    cursor: pointer;
+  }
+}
 /* Seller Info End */
+
+
 
 /* More This Seller Start */
 .more-seller {
@@ -780,7 +841,7 @@ html {
 }
 @media screen and (max-width: 495px) {
   .more-seller .swiper-navBtn {
-    margin-top: 268px !important;
+    margin-top: 288px !important;
   }
   .more-seller .swiper-button-prev {
     left: 35% !important;
@@ -802,7 +863,7 @@ html {
 }
 @media screen and (max-width: 380px) {
   .more-seller .swiper-navBtn {
-    margin-top: 228px !important;
+    margin-top: 235px !important;
   }
   .more-seller .swiper-button-prev {
     left: 35% !important;
@@ -1127,7 +1188,7 @@ html {
 }
 @media screen and (max-width: 380px) {
   .also-like .swiper-navBtn {
-    margin-top: 218px !important;
+    margin-top: 235px !important;
   }
   .also-like .swiper-button-prev {
     left: 35% !important;

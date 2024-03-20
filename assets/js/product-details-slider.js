@@ -32,9 +32,8 @@ incrementBtn.addEventListener("click", () => {
 
 
 decrementBtn.addEventListener("click", () => {
-  count--;
-  if (count >= 0) {
-  
+  if (count > 0) {
+    count--;
     quantityCount.textContent = count;
   }
 });

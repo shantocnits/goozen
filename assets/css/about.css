@@ -385,6 +385,7 @@ html {
   font-family: var(--secondary-font);
   font-size: 18px;
   color: #7c8992;
+  margin-top: -5px;
 }
 
 .team .team-box .profile img {
@@ -393,6 +394,7 @@ html {
   object-position: center;
   border: 1px solid rgb(19, 188, 255);
   cursor: pointer;
+  border-radius: 5px;
   z-index: 2;
   transition: 0.4s;
 }

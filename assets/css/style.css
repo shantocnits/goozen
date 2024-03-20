@@ -335,7 +335,7 @@ html {
 
 /* Offer Sec Start */
 #offer {
-  padding: 0px 0px 100px 0px !important;
+  padding: 0px 0px 0px 0px !important;
 }
 
 #offer .offer-item1 img {
@@ -440,7 +440,12 @@ html {
   border-radius: 3px;
   margin: 20px 0;
   text-align: right;
-  background-image: url(../img/home-img/hero-slider/slider-bg.png);
+  background-image: url(../img/home-img/offer-img/offer-bg.png) !important;
+  width: 100%;
+  height: fit-content;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
 }
 
 @media screen and (max-width: 1200px) {
@@ -459,14 +464,16 @@ html {
   }
 
   #offer .offer-item2 {
-    max-width: 96%;
+    max-width: 90%;
+    margin: 0px 12px !important;
   }
 }
 
 @media screen and (max-width: 768px) {
-  #offerr .offer-item2 {
+  #offer .offer-item2 {
     max-width: 94.6%;
   }
+
 }
 
 @media screen and (max-width: 1200px) {
@@ -479,7 +486,7 @@ html {
 
 /* Trending Products Start */
 .trending {
-  padding: 100px 0px 150px 0px;
+  padding: 100px 0px 100px 0px;
   text-align: center;
   overflow: hidden;
 }
@@ -671,7 +678,7 @@ html {
 
 .trending .swiper-navBtn {
   position: absolute;
-  margin-top: 263px !important;
+  margin-top: 288px !important;
   height: 20px;
   width: 20px;
   background: #fff;
@@ -709,13 +716,13 @@ html {
 
 @media screen and (max-width: 1200px) {
   .trending .swiper-navBtn {
-    margin-top: 247px !important;
+    margin-top: 287px !important;
   }
 }
 
 @media screen and (max-width: 992px) {
   .trending .swiper-navBtn {
-    margin-top: 246px !important;
+    margin-top: 286px !important;
   }
   .trending .swiper-button-prev {
     left: 40% !important;
@@ -729,13 +736,13 @@ html {
 }
 @media screen and (max-width: 768px) {
   .trending .swiper-navBtn {
-    margin-top: 254px !important;
+    margin-top: 278px !important;
   }
 }
 
 @media screen and (max-width: 520px) {
   .trending .swiper-navBtn {
-    margin-top: 313px !important;
+    margin-top: 338px !important;
   }
   .trending .swiper-button-prev {
     left: 35% !important;
@@ -746,7 +753,7 @@ html {
 }
 @media screen and (max-width: 500px) {
   .trending .swiper-navBtn {
-    margin-top: 313px !important;
+    margin-top: 333px !important;
   }
   .trending .swiper-button-prev {
     left: 35% !important;
@@ -757,7 +764,7 @@ html {
 }
 @media screen and (max-width: 495px) {
   .trending .swiper-navBtn {
-    margin-top: 293px !important;
+    margin-top: 328px !important;
   }
   .trending .swiper-button-prev {
     left: 35% !important;
@@ -768,7 +775,18 @@ html {
 }
 @media screen and (max-width: 460px) {
   .trending .swiper-navBtn {
-    margin-top: 283px !important;
+    margin-top: 333px !important;
+  }
+  .trending .swiper-button-prev {
+    left: 35% !important;
+  }
+  .trending .swiper-button-next {
+    right: 35% !important;
+  }
+}
+@media screen and (max-width: 450px) {
+  .trending .swiper-navBtn {
+    margin-top: 323px !important;
   }
   .trending .swiper-button-prev {
     left: 35% !important;
@@ -779,7 +797,7 @@ html {
 }
 @media screen and (max-width: 380px) {
   .trending .swiper-navBtn {
-    margin-top: 258px !important;
+    margin-top: 298px !important;
   }
   .trending .swiper-button-prev {
     left: 35% !important;
