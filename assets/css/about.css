@@ -130,8 +130,12 @@ html {
   .hero-title h1 {
     font-size: 40px;
   }
+  .bredcome a {
+    font-size: 18px !important;
+  }
 }
-/* Hero Start */
+
+/* Hero End */
 
 /* About Us Start */
 #about-us {

@@ -96,7 +96,7 @@ html {
   text-align: center;
 }
 
-.pagination .HOME {
+.bredcome .HOME {
   font-family: var(--secondary-font);
   text-decoration: none;
   font-size: 22px;
@@ -106,7 +106,7 @@ html {
 .HOME:hover {
   color: var(--text-color-black);
 }
-.pagination .CONTACT {
+.bredcome .CONTACT {
   font-family: var(--secondary-font);
   color: var(--background-color);
   margin-top: 10px;
@@ -131,6 +131,9 @@ html {
   }
   .hero-title h1 {
     font-size: 40px;
+  }
+  .bredcome a {
+    font-size: 18px !important;
   }
 }
 /* Hero Start */
