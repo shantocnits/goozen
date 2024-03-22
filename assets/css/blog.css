@@ -199,6 +199,9 @@ html {
   padding: 10px 0px 0px 0px;
   margin-top: 10px;
 }
+#blog-post .blog-post .post-heading .contact a {
+  text-decoration: none;
+}
 #blog-post .blog-post .post-heading .contact .admin {
   padding-right: 20px;
   padding: 0px 50px 0px 0px;
@@ -253,15 +256,7 @@ html {
   background-color: #ddd;
 }
 
-
-
-
-
-
-
-
-
-#blog-post .categories{
+#blog-post .categories {
   border: 1px solid rgba(168, 187, 199, 1);
   border-radius: 10px;
   padding: 25px 0;
@@ -288,32 +283,23 @@ html {
   margin: 5px 50px 10px 50px;
   border-bottom: 1px solid #26a0da;
 }
-#blog-post .categories-item{
+#blog-post .categories-item {
   text-align: center;
 }
-#blog-post .categories-item li{
+#blog-post .categories-item li {
   list-style: none;
   line-height: 54px;
 }
-#blog-post .categories-item li a{
+#blog-post .categories-item li a {
   text-decoration: none;
   font-size: 25px;
   color: var(--text-color-black);
   font-weight: 500;
   transition: all 0.3s ease;
 }
-#blog-post .categories-item li a:hover{
+#blog-post .categories-item li a:hover {
   color: var(--text-color-blue);
 }
-
-
-
-
-
-
-
-
-
 
 @media screen and (max-width: 1200px) {
   #blog-post .blog-post .post-heading .calender {
@@ -377,7 +363,7 @@ html {
   }
 
   #blog-post .blog-post .post-heading .heading span {
-    font-size: 15px;
+    font-size: 14px;
     padding-left: 2px;
   }
 
@@ -389,6 +375,11 @@ html {
 
   #blog-post .blog-post .post-heading .heading p {
     font-size: 14px;
+  }
+  #blog-post .blog-post .post-heading .contact {
+    padding: 0px 0px 0px 0px !important;
+    margin-top: 0px !important
+    ;
   }
 }
 
@@ -454,3 +445,44 @@ html {
 }
 
 /* Bloge Post End */
+
+#blog-post .categories {
+  position: relative;
+}
+#blog-post .categories-item {
+  height: 320px;
+}
+#blog-post .categories-next {
+  position: absolute;
+  left: 46.50% !important;
+  top: 93% !important;
+}
+#blog-post .swiper {
+  margin-top: 25px !important;
+
+  width: 50%;
+  height: 268px;
+}
+
+#blog-post .slider-item {
+  font-size: 22px;
+  font-family: var(--secondary-font);
+  height: 40px !important;
+  text-align: center;
+  font-size: 18px;
+  justify-content: center;
+  align-items: center;
+}
+
+#blog-post .slider-item a {
+  text-decoration: none;
+  color: var(--text-color-black);
+  transition: all 0.3s ease;
+}
+#blog-post .slider-item a:hover {
+  color: var(--text-color-blue);
+}
+
+#blog-post .swiper-button-next::after {
+  display: none !important;
+}
