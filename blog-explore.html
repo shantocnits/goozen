@@ -1,0 +1,1057 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Goozen</title>
+
+    <!-- CSS Link -->
+    <link rel="stylesheet" href="./assets/css/blog-explore.css" />
+    <link rel="stylesheet" href="./assets/css/navbar-footer.css" />
+    <link rel="stylesheet" href="./assets/css/sign-in.css" />
+    <!-- CSS Link -->
+
+    <!-- Swiper Css Link -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <!-- Swiper Css Link -->
+
+    <!-- Fontawesome link-->
+    <script
+      src="https://kit.fontawesome.com/476ec20884.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- FontAwesome Link -->
+
+    <!-- Bootstrap CSS CDN Link Start -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <!-- Bootstrap CSS CDN Link End -->
+  </head>
+
+  <body>
+    <!-- Sign-in Start -->
+    <section class="form_wrapper">
+      <div class="forms">
+        <div class="form sign-in">
+          <div class="form-content">
+            <header>Sign In</header>
+            <form action="#">
+              <div class="field input-field">
+                <input type="email" placeholder="email address" class="input" />
+              </div>
+
+              <div class="field input-field">
+                <input
+                  type="password"
+                  placeholder="password"
+                  class="password"
+                />
+              </div>
+
+              <div class="form-link">
+                <a href="#" class="forgot-pass">Forgot your password?</a>
+              </div>
+
+              <div class="field button-field">
+                <button type="submit">Sign In</button>
+              </div>
+            </form>
+          </div>
+
+          <div class="media-options">
+            <a href="#" class="field google">
+              <img
+                src="./assets/img/home-img/sign-in.img/google.svg"
+                alt=""
+                class="google-img"
+              />
+              <span>Sign In with Google</span>
+            </a>
+          </div>
+          <div class="form-link">
+            <span
+              >Don’t have an account?
+              <a href="#" class="link register-link">Register Now</a></span
+            >
+          </div>
+        </div>
+        <!-- Sign in End -->
+
+        <!-- Register Form Start -->
+        <div class="form signup">
+          <div class="form-content">
+            <header>Create Account</header>
+            <form action="#">
+              <div class="field input-field">
+                <input type="email" placeholder="full name" class="input" />
+              </div>
+              <div class="field input-field">
+                <input type="email" placeholder="username" class="input" />
+              </div>
+              <div class="field input-field">
+                <input type="email" placeholder="email address" class="input" />
+              </div>
+
+              <div class="field input-field">
+                <input
+                  type="email"
+                  placeholder="select country"
+                  class="input"
+                />
+              </div>
+
+              <div class="field input-field">
+                <input
+                  type="password"
+                  placeholder="password"
+                  class="password"
+                />
+              </div>
+
+              <div class="field input-field">
+                <input
+                  type="password"
+                  placeholder="confirm password"
+                  class="password"
+                />
+              </div>
+
+              <div class="form-check mt-3">
+                <label class="form-check-label">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    name="remember"
+                  />
+                  Agree all <a href="#">Terms & Policy</a>
+                </label>
+              </div>
+
+              <div class="field button-field">
+                <button type="submit">Create Account</button>
+              </div>
+            </form>
+
+            <div class="form-link">
+              <span
+                >Already Have account?
+                <a href="#" class="link sign-link">Sign in</a></span
+              >
+            </div>
+          </div>
+        </div>
+        <!-- Register Form End -->
+      </div>
+    </section>
+    <!-- Sign-in End -->
+
+    <!-- Topbar Start -->
+    <section id="topbar">
+      <div class="topbar_item justify-contant-center">
+        <ul class="justify-content-center d-flex">
+          <li><a href="#">Offers</a></li>
+          <div class="vertical_bar"></div>
+          <li><a href="#">Gift Card</a></li>
+          <div class="vertical_bar"></div>
+          <li><a href="#">My Wishlist</a></li>
+          <div class="vertical_bar"></div>
+          <li>
+            <a class="signInBtn" style="color: rgba(38, 160, 218, 1)" href="#"
+              ><img src="./assets/img/home-img/sign-in.svg" alt="" />Sign In</a
+            >
+          </li>
+        </ul>
+      </div>
+    </section>
+    <!-- Topbar End -->
+
+    <!-- Header Start -->
+    <header class="header">
+      <div class="container">
+        <div class="header_item row">
+          <div class="logo col-lg-3">
+            <img
+              src="./assets/img/home-img/logo/logo.svg"
+              width="190px"
+              alt="logo"
+            />
+          </div>
+          <div class="search_bar col-lg-6">
+            <div class="search_bar_item">
+              <input type="text" placeholder="Search heare" />
+              <div class="search_btn">
+                <a href="#"
+                  ><img src="./assets/img/home-img/search.svg" alt=""
+                /></a>
+              </div>
+            </div>
+          </div>
+          <div class="contact col-lg-3">
+            <div class="header_contact">
+              <p>Call Us</p>
+              <div class="call_us">
+                <a href="#"
+                  ><img src="./assets/img/home-img/call.svg" alt="" />+112 4125
+                  5125</a
+                >
+              </div>
+            </div>
+            <div class="add_to_cart">
+              <a href="#"
+                ><img src="./assets/img/home-img/add to cart.svg" alt=""
+              /></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- Header End -->
+
+    <!-- Navbar start -->
+    <nav class="navbar">
+      <div class="container">
+        <div class="navbar">
+          <div class="logo">
+            <img
+              src="./assets/img/home-img/logo/logo2.svg"
+              width="130px"
+              alt="logo"
+            />
+          </div>
+          <input type="radio" name="slider" id="menu-btn" />
+          <input type="radio" name="slider" id="close-btn" />
+          <ul class="nav-links m-auto">
+            <label for="close-btn" class="btn close-btn"
+              ><i class="fas fa-times"></i
+            ></label>
+            <li><a class="active" href="index.html">Home</a></li>
+            <li><a href="shop.html">Shop</a></li>
+            <li>
+              <a href="./shop.html" class="desktop-item"
+                >Categories
+                <svg
+                  width="22"
+                  height="13"
+                  viewBox="0 0 22 13"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M2 2L11 11L20 2"
+                    stroke="white"
+                    stroke-width="3"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </a>
+              <input type="checkbox" id="showMega" />
+              <label for="showMega" class="mobile-item">Categories</label>
+              <div class="mega-box">
+                <div class="content">
+                  <div class="row">
+                    <ul class="mega-links">
+                      <li><a href="#">Laptop & Computers</a></li>
+                      <li><a href="#">TV & Audio</a></li>
+                      <li><a href="#">Video Games</a></li>
+                      <li><a href="#">Printer & Ink</a></li>
+                      <li><a href="#">Gaming & Headsets</a></li>
+                    </ul>
+                  </div>
+                  <div class="row">
+                    <ul class="mega-links">
+                      <li><a href="#">Gadgets</a></li>
+                      <li><a href="#">Drone & Helicopter</a></li>
+                      <li><a href="#">PC Accessories</a></li>
+                      <li><a href="#">Camera</a></li>
+                    </ul>
+                  </div>
+                  <div class="row">
+                    <ul class="mega-links">
+                      <li><a href="#">Sports & Fitness</a></li>
+                      <li><a href="#">Laptop & Mobile</a></li>
+                      <li><a href="#">Laptop & Computers</a></li>
+                      <li><a href="#">Printer</a></li>
+                      <li><a href="#">Others</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <a href="#" class="desktop-item"
+                >Pages
+                <svg
+                  width="22"
+                  height="13"
+                  viewBox="0 0 22 13"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M2 2L11 11L20 2"
+                    stroke="white"
+                    stroke-width="3"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </a>
+              <input type="checkbox" id="showDrop" />
+              <label for="showDrop" class="mobile-item">Pages</label>
+              <ul class="drop-menu">
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="#">Coming Soon</a></li>
+                <li><a href="#">Terms & Conditions</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="blog.html">Blog</a>
+            </li>
+            <li>
+              <a href="contact.html">Contact us</a>
+            </li>
+          </ul>
+          <label for="menu-btn" class="btn menu-btn"
+            ><i class="fas fa-bars"></i
+          ></label>
+        </div>
+      </div>
+    </nav>
+    <!-- Navbar end -->
+
+    <!-- Hero Start -->
+    <section id="hero">
+      <div class="container">
+        <div class="hero-wrapper">
+          <div class="hero-shape hero-shape-1">
+            <img src="./assets/img/product-img/hero2.svg" alt="" />
+          </div>
+          <div class="hero-shape hero-shape-2">
+            <img src="./assets/img/product-img/hero1.svg" alt="" />
+          </div>
+          <div class="hero-content">
+            <div class="row d-flex justify-content-center">
+              <div class="hero-title">
+                <h1>Blog</h1>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="container bredcome">
+      <a href="#" class="HOME"
+        >Home
+        <img
+          src="./assets/img/shop-img/Right-arrow-link.svg"
+          width="8px"
+          alt=""
+      /></a>
+      <a href="#" class="BLOG"
+        >Blog
+        <img
+          src="./assets/img/shop-img/Right-arrow-link.svg"
+          width="8px"
+          alt=""
+      /></a>
+      <a href="#" class="EXPLORE">Explore the New Innovation... </a>
+    </div>
+    <!-- Hero End -->
+
+    <!-- Explore Start -->
+    <section id="blog-explore">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8">
+            <div class="blog-post">
+              <div class="post-img1">
+                <img src="./assets/img/blog-img/blog1.png" alt="" />
+              </div>
+              <div class="post-heading d-flex">
+                <div class="calender">
+                  <h1>05</h1>
+                  <p>Oct, 2023</p>
+                </div>
+                <div class="heading">
+                  <div>
+                    <h1>
+                      Explore the New Innovation a Virtual Reality
+                      <br />Headset.
+                    </h1>
+                  </div>
+                  <div class="contact">
+                    <div class="admin">
+                      <a href="#">
+                        <svg
+                          width="30"
+                          height="30"
+                          viewBox="0 0 30 30"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <circle
+                            cx="15"
+                            cy="15"
+                            r="14"
+                            fill="white"
+                            stroke="#26A0DA"
+                            stroke-width="2"
+                          />
+                          <path
+                            d="M15.231 15.3847C14.2573 15.3847 13.3055 15.096 12.4959 14.555C11.6863 14.0141 11.0553 13.2452 10.6827 12.3456C10.3101 11.4461 10.2126 10.4562 10.4026 9.50121C10.5925 8.54623 11.0614 7.66902 11.7499 6.98051C12.4384 6.29201 13.3156 5.82313 14.2706 5.63317C15.2256 5.44321 16.2154 5.54071 17.115 5.91332C18.0146 6.28594 18.7835 6.91694 19.3244 7.72654C19.8654 8.53613 20.1541 9.48796 20.1541 10.4617C20.1541 11.7673 19.6354 13.0195 18.7122 13.9428C17.7889 14.8661 16.5367 15.3847 15.231 15.3847ZM15.231 6.76935C14.5008 6.76935 13.7869 6.9859 13.1797 7.39161C12.5725 7.79733 12.0992 8.37399 11.8198 9.04867C11.5403 9.72335 11.4672 10.4657 11.6097 11.182C11.7521 11.8982 12.1038 12.5561 12.6202 13.0725C13.1366 13.5889 13.7945 13.9405 14.5107 14.083C15.2269 14.2255 15.9693 14.1524 16.644 13.8729C17.3187 13.5934 17.8954 13.1202 18.3011 12.513C18.7068 11.9058 18.9233 11.1919 18.9233 10.4617C18.9233 9.48239 18.5343 8.54324 17.8419 7.8508C17.1494 7.15836 16.2103 6.76935 15.231 6.76935Z"
+                            fill="#26A0DA"
+                          />
+                          <path
+                            d="M19.5384 24.0003H10.9231C10.107 24.0003 9.32438 23.6761 8.74734 23.0991C8.17031 22.522 7.84613 21.7394 7.84613 20.9234V18.4618C7.84615 18.355 7.87396 18.2501 7.92683 18.1573C7.9797 18.0645 8.05581 17.9871 8.14767 17.9326L11.2246 16.0864C11.3634 16.0237 11.5206 16.0147 11.6657 16.0611C11.8108 16.1076 11.9335 16.2062 12.01 16.3379C12.0866 16.4696 12.1116 16.625 12.0802 16.7741C12.0488 16.9232 11.9632 17.0553 11.84 17.1449L9.0769 18.8126V20.9234C9.0769 21.413 9.2714 21.8826 9.61763 22.2288C9.96385 22.575 10.4334 22.7695 10.9231 22.7695H19.5384C20.0281 22.7695 20.4976 22.575 20.8439 22.2288C21.1901 21.8826 21.3846 21.413 21.3846 20.9234V18.8126L18.6092 17.1449C18.5307 17.1094 18.4606 17.0579 18.4033 16.9936C18.346 16.9294 18.3028 16.8538 18.2766 16.7718C18.2503 16.6898 18.2416 16.6032 18.2509 16.5176C18.2602 16.432 18.2874 16.3493 18.3306 16.2748C18.3739 16.2004 18.4323 16.1359 18.5021 16.0854C18.5719 16.035 18.6515 15.9997 18.7358 15.982C18.82 15.9642 18.9071 15.9643 18.9913 15.9823C19.0755 16.0003 19.155 16.0358 19.2246 16.0864L22.3015 17.9326C22.3957 17.9855 22.4742 18.0623 22.5293 18.1552C22.5844 18.2481 22.6141 18.3538 22.6154 18.4618V20.9234C22.6154 21.7394 22.2912 22.522 21.7142 23.0991C21.1371 23.6761 20.3545 24.0003 19.5384 24.0003Z"
+                            fill="#26A0DA"
+                          />
+                        </svg>
+                        <span>By Admin</span>
+                      </a>
+                    </div>
+                    <div class="admin">
+                      <a href="#">
+                        <svg
+                          width="29"
+                          height="30"
+                          viewBox="0 0 29 30"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M22.7098 23.207V29.2506C22.7098 29.9308 21.88 30.2507 21.4188 29.7695L14.2955 23.207H8.28971C6.41729 23.207 4.88841 21.6781 4.88841 19.8057V6.71507C4.88841 4.84302 6.41729 3.31414 8.28971 3.31414H25.3568C27.2293 3.31414 28.7581 4.84265 28.7581 6.71507V19.8057C28.7581 21.6781 27.2293 23.207 25.3568 23.207H22.7098ZM10.5681 11.4786C11.2774 11.4786 11.8522 12.0534 11.8522 12.7627C11.8522 13.4719 11.2774 14.0468 10.5681 14.0468C9.85889 14.0468 9.28402 13.4719 9.28402 12.7627C9.28402 12.0534 9.85889 11.4786 10.5681 11.4786ZM23.0784 11.4786C23.7876 11.4786 24.3625 12.0534 24.3625 12.7627C24.3625 13.4719 23.7876 14.0468 23.0784 14.0468C22.3692 14.0468 21.7943 13.4719 21.7943 12.7627C21.7943 12.0534 22.3692 11.4786 23.0784 11.4786ZM18.9083 11.4786C19.6176 11.4786 20.1924 12.0534 20.1924 12.7627C20.1924 13.4719 19.6176 14.0468 18.9083 14.0468C18.1991 14.0468 17.6242 13.4719 17.6242 12.7627C17.6242 12.0534 18.1991 11.4786 18.9083 11.4786ZM14.7382 11.4786C15.4475 11.4786 16.0223 12.0534 16.0223 12.7627C16.0223 13.4719 15.4475 14.0468 14.7382 14.0468C14.029 14.0468 13.4541 13.4719 13.4541 12.7627C13.4541 12.0534 14.029 11.4786 14.7382 11.4786ZM3.4013 18.3926C4.38762 18.3926 4.38762 19.8928 3.4013 19.8928C1.52888 19.8928 0 18.3639 0 16.4915V3.40093C0 1.52888 1.52888 0 3.4013 0H20.4688C21.4551 0 21.4551 1.49982 20.4688 1.49982H3.4013C2.35723 1.49982 1.50019 2.35687 1.50019 3.40093V16.4915C1.50019 17.5356 2.35723 18.3926 3.4013 18.3926ZM21.21 27.5419V22.4567C21.21 22.0427 21.5459 21.7068 21.9599 21.7068H25.3568C26.4009 21.7068 27.2583 20.8497 27.2583 19.8057V6.71507C27.2583 5.67101 26.4009 4.81396 25.3568 4.81396H8.28971C7.24528 4.81396 6.38823 5.67101 6.38823 6.71507V19.8057C6.38823 20.8497 7.24528 21.7068 8.28971 21.7068L14.5861 21.7086C14.7673 21.7086 14.9492 21.7736 15.093 21.9061L21.21 27.5419Z"
+                            fill="#26A0DA"
+                          />
+                        </svg>
+                        <span>Leave a Comment</span>
+                      </a>
+                    </div>
+                    <div class="admin">
+                      <a href="#">
+                        <svg
+                          width="31"
+                          height="30"
+                          viewBox="0 0 31 30"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <rect
+                            x="1.25781"
+                            y="0.5"
+                            width="29"
+                            height="29"
+                            rx="4.5"
+                            fill="white"
+                            stroke="#26A0DA"
+                          />
+                          <path
+                            d="M10.5266 17.7694C12.056 17.7694 13.2958 16.5296 13.2958 15.0002C13.2958 13.4708 12.056 12.231 10.5266 12.231C8.99721 12.231 7.75739 13.4708 7.75739 15.0002C7.75739 16.5296 8.99721 17.7694 10.5266 17.7694Z"
+                            stroke="#26A0DA"
+                            stroke-width="1.09091"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                          <path
+                            d="M20.2184 23.9999C21.7478 23.9999 22.9876 22.7601 22.9876 21.2307C22.9876 19.7013 21.7478 18.4614 20.2184 18.4614C18.689 18.4614 17.4491 19.7013 17.4491 21.2307C17.4491 22.7601 18.689 23.9999 20.2184 23.9999Z"
+                            stroke="#26A0DA"
+                            stroke-width="1.09091"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                          <path
+                            d="M20.2184 11.5385C21.7478 11.5385 22.9876 10.2986 22.9876 8.76923C22.9876 7.23983 21.7478 6 20.2184 6C18.689 6 17.4491 7.23983 17.4491 8.76923C17.4491 10.2986 18.689 11.5385 20.2184 11.5385Z"
+                            stroke="#26A0DA"
+                            stroke-width="1.09091"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                          <path
+                            d="M17.8908 10.2666L12.8543 13.5031"
+                            stroke="#26A0DA"
+                            stroke-width="1.09091"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                          <path
+                            d="M12.8543 16.4971L17.8908 19.7336"
+                            stroke="#26A0DA"
+                            stroke-width="1.09091"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                        </svg>
+                        <span>By Admin</span>
+                      </a>
+                    </div>
+                  </div>
+                  <p>
+                    The best is yet to come! Give your walls a voice with a
+                    framed poster. This aesthethic, optimistic poster will look
+                    great in your desk or in an open-space office. Painted
+                    wooden frame with passe-partout for more depth...
+                  </p>
+                  <p>
+                    The best is yet to come! Give your walls a voice with a
+                    framed poster. This aesthethic, optimistic poster will look
+                    great in your desk or in an open-space office. Painted
+                    wooden frame with passe-partout for more depth...
+                  </p>
+                  <p>
+                    It is a long established fact that a reader will be
+                    distracted by the readable content of a page when looking at
+                    its layout. The point of using Lorem Ipsum is that it has a
+                    more-or-less normal distribution of letters, as opposed to
+                    using 'Content here, content here', making it look like
+                    readable English. Many desktop publishing packages and web
+                    page editors now use Lorem Ipsum as their default model
+                    text, and a search for 'lorem ipsum' will uncover many web
+                    sites still in their infancy. Various versions have evolved
+                    over the years, sometimes by accident, sometimes on purpose
+                    (injected humour and the like).
+                  </p>
+                </div>
+              </div>
+              <div class="explore-img">
+                <div class="img">
+                  <img
+                    src="./assets/img/blog-explore-img/explore-img1.png"
+                    alt=""
+                  />
+                </div>
+                <div class="img">
+                  <img
+                    src="./assets/img/blog-explore-img/explore-img2.png"
+                    alt=""
+                  />
+                </div>
+                <div class="img">
+                  <img
+                    src="./assets/img/blog-explore-img/explore-img3.png"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <p class="more">
+                It is a long established fact that a reader will be distracted
+                by the readable content of a page when looking at its layout.
+                The point of using Lorem Ipsum is that it has a more-or-less
+                normal distribution of letters, as opposed to using 'Content
+                here, content here', making it look like readable English. Many
+                desktop publishing packages and web page editors now use Lorem
+                Ipsum as their default model text.
+              </p>
+            </div>
+
+            <!-- Customers review Start -->
+            <section id="customer-review">
+              <div class="container">
+                <div class="swiper .swiper-review">
+                  <div class="review">
+                    <div class="review-heading">
+                      <div class="heading">
+                        <h1>Customers <span>Reviews</span></h1>
+                        <div class="bottom-border"></div>
+                        <div class="bottom-border2"></div>
+                      </div>
+                    </div>
+                    <div class="card-wrapper swiper-wrapper">
+                      <div class="card swiper-slide">
+                        <div class="review-details">
+                          <div class="rvw-item1">
+                            <h1>Rating</h1>
+                            <div class="review-star">
+                              <a href="#">
+                                <i class="fas fa-star checked"></i>
+                                <i class="fas fa-star checked"></i>
+                                <i class="fas fa-star checked"></i>
+                                <i class="fas fa-star checked"></i>
+                                <i
+                                  class="fa-regular fa-star"
+                                  style="color: #ffd43b"
+                                ></i>
+                              </a>
+                            </div>
+                            <h1>Date</h1>
+                            <p>28 October, 2023</p>
+                          </div>
+                          <div class="rvw-item2">
+                            <div class="customer-img">
+                              <img
+                                src="./assets/img/shop-img/rvw-logo/rvw-img.png"
+                                alt=""
+                                width="60px"
+                                height="60px"
+                              />
+                              <div class="name">
+                                <h1>Ronald Joy</h1>
+                                <h4>Photographer</h4>
+                              </div>
+                            </div>
+                            <p>
+                              There are many variations of passages of Lorem
+                              Ipsum available, but the majority have suffered
+                              alteration in some form, by injected humour, or
+                              randomised words which don't look even slightly
+                              believable.
+                            </p>
+                            <div class="like">
+                              <img
+                                src="./assets/img/shop-img/rvw-logo/like.svg"
+                                alt=""
+                              />
+                              <img
+                                src="./assets/img/shop-img/rvw-logo/dislike.svg"
+                                alt=""
+                              />
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card swiper-slide">
+                        <div class="review-details">
+                          <div class="rvw-item1">
+                            <h1>Rating</h1>
+                            <div class="review-star">
+                              <a href="#">
+                                <i class="fas fa-star checked"></i>
+                                <i class="fas fa-star checked"></i>
+                                <i class="fas fa-star checked"></i>
+                                <i class="fas fa-star checked"></i>
+                                <i
+                                  class="fa-regular fa-star"
+                                  style="color: #ffd43b"
+                                ></i>
+                              </a>
+                            </div>
+                            <h1>Date</h1>
+                            <p>28 October, 2023</p>
+                          </div>
+                          <div class="rvw-item2">
+                            <div class="customer-img">
+                              <img
+                                src="./assets/img/shop-img/rvw-logo/rvw-img.png"
+                                alt=""
+                                width="60px"
+                                height="60px"
+                              />
+                              <div class="name">
+                                <h1>Ronald Joy</h1>
+                                <h4>Photographer</h4>
+                              </div>
+                            </div>
+                            <p>
+                              There are many variations of passages of Lorem
+                              Ipsum available, but the majority have suffered
+                              alteration in some form, by injected humour, or
+                              randomised words which don't look even slightly
+                              believable.
+                            </p>
+                            <div class="like">
+                              <img
+                                src="./assets/img/shop-img/rvw-logo/like.svg"
+                                alt=""
+                              />
+                              <img
+                                src="./assets/img/shop-img/rvw-logo/dislike.svg"
+                                alt=""
+                              />
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-button-next swiper-navBtns">
+                      <img src="./assets/img/home-img/right-arrow.svg" alt="" />
+                    </div>
+                    <div class="swiper-button-prev swiper-navBtns">
+                      <img src="./assets/img/home-img/left-arrow.svg" alt="" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+          <!-- Explore end -->
+
+          <!-- categories slider Start -->
+          <div class="col-lg-4">
+            <div class="categories">
+              <div class="categories-heading">
+                <div class="heading">
+                  <h1>Categories</h1>
+                  <div class="bottom-border">
+                    <div></div>
+                  </div>
+                  <div class="bottom-border2"></div>
+                </div>
+              </div>
+              <div class="categories-item">
+                <div class="swiper categories-slider">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide slider-item">
+                      <a href="#">Articles</a>
+                    </div>
+                    <div class="swiper-slide slider-item">
+                      <a href="#">Videos</a>
+                    </div>
+                    <div class="swiper-slide slider-item">
+                      <a href="#">Gadgets</a>
+                    </div>
+                    <div class="swiper-slide slider-item">
+                      <a href="#">Electronics</a>
+                    </div>
+                    <div class="swiper-slide slider-item">
+                      <a href="#">Computer & Laptop</a>
+                    </div>
+                    <div class="swiper-slide slider-item">
+                      <a href="#">Articles</a>
+                    </div>
+                    <div class="swiper-slide slider-item">
+                      <a href="#">Videos</a>
+                    </div>
+                    <div class="swiper-slide slider-item">
+                      <a href="#">Gadgets</a>
+                    </div>
+                    <div class="swiper-slide slider-item">
+                      <a href="#">Electronics</a>
+                    </div>
+                    <div class="swiper-slide slider-item">
+                      <a href="#">Computer & Laptop</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-button-next categories-next">
+                  <svg
+                    width="40"
+                    height="40"
+                    viewBox="0 0 20 70"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M19.2667 20.9508C19.6686 20.5573 19.6671 19.9099 19.2633 19.5183L18.1936 18.4809C17.8044 18.1034 17.1853 18.1048 16.7978 18.4841L13.4371 21.7743C12.8045 22.3936 11.7385 21.946 11.7376 21.0607L11.717 0.999957C11.7164 0.447689 11.2683 0.000440249 10.716 0.000983784L9.18044 0.00249506C8.62814 0.00303863 8.18086 0.451221 8.18143 1.00352L8.202 21.0086C8.20291 21.8926 7.14038 22.3429 6.50578 21.7274L3.19366 18.515C2.80445 18.1375 2.18529 18.139 1.79785 18.5183L0.733276 19.5606C0.331405 19.954 0.332925 20.6014 0.736642 20.9929L9.32383 29.3216C9.71303 29.6991 10.3322 29.6976 10.7196 29.3183L19.2667 20.9508Z"
+                      fill="black"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <!-- categories slider End -->
+
+            <!-- Recent Post Start -->
+            <div class="recent-post">
+              <div class="recent-heading">
+                <div class="heading">
+                  <h1>Recent Posts</h1>
+                  <div class="bottom-border">
+                    <div></div>
+                  </div>
+                  <div class="bottom-border2"></div>
+                </div>
+              </div>
+
+              <div class="recent-post-item">
+                <div class="recent-item">
+                  <img src="./assets/img/blog-img/recent1.png" alt="" />
+                  <a href="#">Explore the New <br />Innovation...</a>
+                </div>
+                <div class="recent-item">
+                  <img src="./assets/img/blog-img/recent2.png" alt="" />
+                  <a href="#">Add New Monitor <br />With Different...</a>
+                </div>
+                <div class="recent-item">
+                  <img src="./assets/img/blog-img/recent3.png" alt="" />
+                  <a href="#">Add New <br />Earphones...</a>
+                </div>
+                <div class="recent-item">
+                  <img src="./assets/img/blog-img/recent4.png" alt="" />
+                  <a href="#"
+                    >DSLR Cameras <br />
+                    With Lenses...</a
+                  >
+                </div>
+                <div class="recent-item">
+                  <img src="./assets/img/blog-img/recent5.png" alt="" />
+                  <a href="#"
+                    >Camera Stand <br />
+                    and Flashes.</a
+                  >
+                </div>
+              </div>
+            </div>
+            <!-- Recent Post End -->
+
+            <!-- Tags Start -->
+            <div class="tags">
+              <div class="tag-heading">
+                <div class="heading">
+                  <h1>Recent Posts</h1>
+                  <div class="bottom-border">
+                    <div></div>
+                  </div>
+                  <div class="bottom-border2"></div>
+                </div>
+              </div>
+
+              <div class="tag-items">
+                <div class="item">
+                  <a href="#">Computer</a>
+                  <a href="#">Laptop</a>
+                </div>
+                <div class="item">
+                  <a href="#">TV & Monitor</a>
+                  <a href="#">Mouse Pad</a>
+                </div>
+                <div class="item">
+                  <a href="#">Mouse & Keyboard</a>
+                  <a href="#">Table</a>
+                </div>
+                <div class="item">
+                  <a href="#">Earphones</a>
+                  <a href="#">Audio System</a>
+                </div>
+                <div class="item">
+                  <a href="#">Mouse & Keyboard</a>
+                  <a href="#">Camera</a>
+                </div>
+                <div class="item item2" style="margin-left: -150px">
+                  <a href="#">Apple Watch</a>
+                </div>
+              </div>
+            </div>
+            <!-- Tags End -->
+          </div>
+        </div>
+        <div class="pagination-border">
+          <div class="pagination">
+            <a href="#">Previous</a>
+            <a href="#" class="active">1</a>
+            <a href="#">2</a>
+            <a href="#">3</a>
+            <a href="#">4</a>
+            <a href="#">Next</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Blog Post End -->
+
+    <!-- Footer Start -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-item">
+          <div class="row">
+            <div class="col-lg-4">
+              <div class="logo-item">
+                <div class="logo-text">
+                  <img
+                    src="./assets/img/home-img/logo/footer-logo.svg"
+                    alt=""
+                  />
+                  <p>
+                    It is a long established fact that a reader will be
+                    distracted by the readable content of a page when looking at
+                    its layout.
+                  </p>
+                  <div class="links">
+                    <ul>
+                      <h1>Follow Us:</h1>
+                      <div class="icon">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-pinterest"></i></a>
+                      </div>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-2 col-6">
+              <div class="items">
+                <h4>Our Link</h4>
+                <ul>
+                  <li><a href="#">Specials</a></li>
+                  <li><a href="#">My Account</a></li>
+                  <li><a href="#">Order History</a></li>
+                  <li><a href="#">Whish List</a></li>
+                  <li><a href="#">Brands</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-2 col-6">
+              <div class="items">
+                <h4>Categories</h4>
+                <ul>
+                  <li><a href="#">Laptop & Computers</a></li>
+                  <li><a href="#">Drone & Helicopter</a></li>
+                  <li><a href="#">Table & Chair</a></li>
+                  <li><a href="#">PC Accessories</a></li>
+                  <li><a href="#">Gadgets</a></li>
+                  <li><a href="#">Cameras</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-2 col-6">
+              <div class="items">
+                <h4>Information</h4>
+                <ul>
+                  <li><a href="#">About</a></li>
+                  <li><a href="#">Contact</a></li>
+                  <li><a href="#">Privacy Policy</a></li>
+                  <li><a href="#">Terms & Conditions</a></li>
+                  <li><a href="#">Blog</a></li>
+                  <li><a href="#">Site Map</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-2 col-6">
+              <div class="items">
+                <h4>Contact Us</h4>
+                <div class="footer-icon">
+                  <ul>
+                    <li>
+                      <a href="#">
+                        <img
+                          src="./assets/img/home-img/footer-locate.svg"
+                          alt=""
+                        />
+                      </a>
+                      <a href="#">
+                        3000 E 1st Ave <br />#129 Denver, Colorado, <br />
+                        United States
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <img
+                          src="./assets/img/home-img/footer-contact.svg"
+                          alt=""
+                        />
+                      </a>
+                      <a href="#"> (303) 370-6935 </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <img
+                          src="./assets/img/home-img/footer-email.svg"
+                          alt=""
+                        />
+                      </a>
+                      <a href="#">kim@gmail.com</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="copyright row">
+            <div class="copyright-text col-lg-6">
+              <p>Copyright <span>&copy;</span> 2023. All Right Reserved</p>
+            </div>
+            <div class="payment-method col-lg-6 d-flex justify-contant-center">
+              <div class="logo-slider">
+                <div class="swiper footer-slider">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <div class="logo">
+                        <img
+                          src="./assets/img/home-img/footer-img/logo1.png"
+                          alt=""
+                        />
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="logo">
+                        <img
+                          src="./assets/img/home-img/footer-img/logo2.png"
+                          alt=""
+                        />
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="logo">
+                        <img
+                          src="./assets/img/home-img/footer-img/logo3.png"
+                          alt=""
+                        />
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="logo">
+                        <img
+                          src="./assets/img/home-img/footer-img/logo4.png"
+                          alt=""
+                        />
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="logo">
+                        <img
+                          src="./assets/img/home-img/footer-img/logo1.png"
+                          alt=""
+                        />
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="logo">
+                        <img
+                          src="./assets/img/home-img/footer-img/logo2.png"
+                          alt=""
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-button-next logo-next">
+                  <img
+                    src="./assets/img/home-img/footer-img/Vector.svg"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Footer End -->
+
+    <!-- Back to btn Start -->
+    <a href="#" class="back-button">
+      <div class="svg">
+        <img src="./assets/img/home-img/bact-to-btn.svg" alt="" width="20px" />
+      </div>
+    </a>
+    <!-- Back to btn End -->
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <!-- Swiper js Start -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- <script src="./js/app.js"></script> -->
+
+    <script src="./assets/js/categories-slider.js"></script>
+    <script src="./assets/js/logo-slider.js"></script>
+    <script src="./assets/js/sign-in.js"></script>
+    <script src="./assets/js/blog-explore.js"></script>
+  </body>
+</html>
