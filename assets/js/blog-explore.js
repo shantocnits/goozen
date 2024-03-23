@@ -1,6 +1,6 @@
 var swiper = new Swiper(".review", {
     slidesPerView: 1,
-    spaceBetween: 110,
+    spaceBetween: 10,
     sliderPerGroup: 1,
     loop: true,
     centerSlide: "true",
