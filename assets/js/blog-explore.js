@@ -1,4 +1,4 @@
-var swiper = new Swiper(".review", {
+var swiper = new Swiper(".explore", {
     slidesPerView: 1,
     spaceBetween: 10,
     sliderPerGroup: 1,
@@ -12,8 +12,8 @@ var swiper = new Swiper(".review", {
       dynamicBullets: true,
     },
     navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
+      nextEl: ".explore-next",
+      prevEl: ".explore-prev",
     },
     breakpoints: {
       0: {

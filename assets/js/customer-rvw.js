@@ -12,8 +12,8 @@ var swiper = new Swiper(".review", {
     dynamicBullets: true,
   },
   navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
+    nextEl: ".review-next",
+    prevEl: ".review-prev",
   },
   breakpoints: {
     0: {

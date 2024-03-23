@@ -7,7 +7,7 @@ var swiper = new Swiper('.categories-slider', {
       loop: true,
       loopFillGroupWithBlank: true,
       navigation: {
-        nextEl: '.swiper-button-next',
+        nextEl: '.categories-next',
       },
       
     });
