@@ -103,9 +103,11 @@ html {
   color: var(--text-color-black);
   margin-top: 10px;
 }
+
 .HOME:hover {
   color: var(--text-color-black);
 }
+
 .bredcome .CONTACT {
   font-family: var(--secondary-font);
   color: var(--background-color);
@@ -120,18 +122,22 @@ html {
     width: 90px !important;
     display: block;
   }
+
   .hero-title h1 {
     font-size: 50px;
   }
 }
+
 @media screen and (max-width: 600px) {
   .hero-shape {
     width: 60px !important;
     display: block;
   }
+
   .hero-title h1 {
     font-size: 40px;
   }
+
   .bredcome a {
     font-size: 18px !important;
   }
@@ -268,9 +274,11 @@ html {
   #contact-us .contact .contact-items {
     display: block;
   }
+
   #contact-us .send-mail h1 {
     font-size: 35px;
   }
+
   #contact-us .send-mail .send-btn a {
     font-size: 20px;
     padding: 8px 15px;
@@ -284,6 +292,7 @@ html {
     padding: 8px 15px;
     margin-right: 10px;
   }
+  
   #contact-us .send-mail h1 {
     font-size: 32px;
   }

@@ -118,23 +118,26 @@ html {
     width: 90px !important;
     display: block;
   }
+
   .hero-title h1 {
     font-size: 50px;
   }
 }
+
 @media screen and (max-width: 600px) {
   .hero-shape {
     width: 60px !important;
     display: block;
   }
+
   .hero-title h1 {
     font-size: 40px;
   }
+
   .bredcome a {
     font-size: 18px !important;
   }
 }
-
 /* Hero End */
 
 /* About Us Start */
@@ -142,17 +145,21 @@ html {
   padding: 100px 12px 110px 12px;
   text-align: center !important;
 }
+
 #about-us .about-heading .heading {
   display: flex;
   justify-content: center;
 }
+
 #about-us .about-heading h1 {
   font-size: 40px;
   font-family: var(--primary-font);
 }
+
 #about-us .about-heading h1 span {
   color: var(--item-color);
 }
+
 #about-us .about-heading p {
   font-size: 18px;
   font-family: var(--secondary-font);
@@ -162,6 +169,7 @@ html {
  margin: 0px 20px;
   border-bottom: 2px solid #26a0da;
 }
+
 .about-heading .bottom-border2 {
  margin: 5px 40px;
   border-bottom: 2px solid #26a0da;
@@ -198,6 +206,7 @@ html {
   padding: 100px 0px 110px 0px;
   text-align: center !important;
 }
+
 #service .service-heading {
   display: flex;
   justify-content: center;
@@ -208,6 +217,7 @@ html {
   font-size: 40px;
   font-family: var(--primary-font);
 }
+
 #service .service-heading h1 span {
   color: var(--item-color);
 }
@@ -235,19 +245,23 @@ html {
   font-family: var(--primary-font);
   font-size: 25px;
 }
+
 #service .service-item h1 span {
   color: var(--item-color);
 }
+
 #service .service-item p {
   font-family: var(--secondary-font);
   font-size: 18px;
 }
+
 #service .success {
   border-radius: 10px;
   padding: 48px 60px;
   text-align: left;
   border: 1px solid rgb(60, 194, 247);
 }
+
 #service .success .border {
   width: 100%;
   height: 2px;
@@ -258,36 +272,44 @@ html {
   background: #26a0da;
   color: var(--text-color-white);
 }
+
 #service .success .count h1 {
   transition: all 0.3s ease;
   color: var(--text-color-black);
   padding: 5px 20px 5px 20px;
   border-radius: 5px;
 }
+
 #service .success .success-title {
   margin-top: 10px;
   margin-left: 40px;
 }
+
 #service .success .success-item {
   margin-top: 20px;
 }
+
 #service .success .success-title h1 {
   padding-bottom: 15px;
   font-size: 25px;
   font-family: var(--primary-font);
 }
+
 #service .success .success-title p {
   padding-bottom: 20px;
   font-size: 18px;
   font-family: var(--secondary-font);
 }
+
 @media screen and (max-width: 570px) {
   #service .service-heading h1{
     font-size: 35px;
   }
+
   #service .service-heading p{
     font-size: 18px;
   }
+
   .service-heading .bottom-border {
     margin: 0px 110px;
   }
@@ -299,15 +321,16 @@ html {
   }
   
 }
+
 @media screen and (max-width: 490px) {
   #service .service-heading h1{
     font-size: 33px;
   }
+
   #service .service-heading p{
     font-size: 16px;
   }
 }
-
 /* Provide Service End */
 
 
@@ -333,6 +356,7 @@ html {
   font-size: 45px;
   text-align: center;
 }
+
 .team p {
   color: rgba(124, 137, 146, 1);
   text-align: center;
@@ -433,9 +457,11 @@ html {
   border: 1px solid #26a0da;
   border-radius: 5px;
 }
+
 .team .team-box .profile .info .team-icon a:hover {
   background: var(--background-color);
 }
+
 .team .team-box .profile .info .team-icon a:hover i {
   color: var(--text-color-white);
 }
@@ -447,42 +473,48 @@ html {
   color: #26a0da;
   font-size: 22px;
 }
+
 @media screen and (max-width: 1400px) {
   .team .team-box .profile .info .team-icon {
     padding: 25px 0;
   }
 }
+
 @media screen and (max-width: 1200px) {
   .team .team-box .profile .team-title {
     top: -10%;
   }
 }
+
 @media screen and (max-width: 992px) {
   .team .team-box .profile .team-title {
     top: -13%;
   }
 }
+
 @media screen and (max-width: 768px) {
   .team .team-box .profile .team-title {
     top: -9%;
   }
 }
+
 @media screen and (max-width: 540px) {
   .team .team-box .profile .team-title {
     top: -10%;
   }
 }
+
 @media screen and (max-width: 468px) {
   .team .team-box .profile .team-title {
     top: -12%;
   }
 }
+
 @media screen and (max-width: 396px) {
   .team .team-box .profile .team-title {
     top: -13%;
   }
 }
-
 /* team end */
 
 
@@ -491,16 +523,19 @@ html {
 #apply-now {
   background: var(--background-color);
 }
+
 #apply-now .apply {
   padding: 60px 0;
   text-align: center;
 }
+
 #apply-now h1 {
   
   font-family: var(--primary-font);
   font-size: 40px;
   color: var(--text-color-white);
 }
+
 #apply-now p {
   padding: 30px 0;
   font-family: var(--secondary-font);

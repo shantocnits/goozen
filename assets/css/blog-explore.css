@@ -33,6 +33,7 @@ html {
   align-items: center;
   line-height: 50px;
 }
+
 .back-button img {
   margin-bottom: 50px;
 }
@@ -132,6 +133,7 @@ html {
     width: 90px !important;
     display: block;
   }
+
   .hero-title h1 {
     font-size: 50px;
   }
@@ -142,14 +144,15 @@ html {
     width: 60px !important;
     display: block;
   }
+
   .hero-title h1 {
     font-size: 40px;
   }
+
   .bredcome a {
     font-size: 18px !important;
   }
 }
-
 /* Hero End */
 
 /* Explore Start */
@@ -243,6 +246,7 @@ html {
 }
 
 /* Explore slider Start */
+
 #blog-explore .explore-slider .swiper {
   position: relative;
   display: flex !important;
@@ -432,8 +436,9 @@ html {
 #blog-explore .comment {
   padding-top: 100px;
 }
+
 #blog-explore .comment h1 {
-  font-size: 45px;
+  font-size: 40px;
   padding-bottom: 20px;
   font-family: var(--primary-font);
 }
@@ -442,19 +447,24 @@ html {
   display: flex;
   justify-content: space-between;
 }
+
 #blog-explore .comment .profile {
   display: flex;
 }
+
 #blog-explore .comment .profile .profile-heading {
   padding: 10px 0px 0px 20px;
 }
+
 #blog-explore .comment .profile .profile-heading h2 {
   font-family: var(--primary-font);
   font-size: 25px;
 }
+
 #blog-explore .comment .profile .profile-heading a {
   text-decoration: none;
 }
+
 #blog-explore .comment .profile .profile-heading span {
   font-family: var(--secondary-font);
   font-size: 18px;
@@ -464,10 +474,12 @@ html {
 #blog-explore .comment .profile img {
   width: 90px;
 }
+
 #blog-explore .comment .comment-item-box .reply {
   margin-top: 10px;
   text-align: center;
 }
+
 #blog-explore .comment .comment-item-box .reply a {
   border: var(--border-and-color);
   padding: 9px 25px;
@@ -475,6 +487,7 @@ html {
   text-decoration: none;
   color: var(--text-color-blue);
 }
+
 #blog-explore .comment p {
   font-family: var(--secondary-font);
   font-size: 18px;
@@ -482,6 +495,7 @@ html {
   padding-right: 20px;
   margin: 20px 0;
 }
+
 #blog-explore .comment .like {
   gap: 20px;
   cursor: pointer;
@@ -489,12 +503,20 @@ html {
 }
 
 @media screen and (max-width: 500px) {
+  #blog-explore .comment {
+    padding-top: 0px;
+  }
+}
+
+@media screen and (max-width: 500px) {
   #blog-explore .comment h1 {
     font-size: 35px;
   }
+
   #blog-explore .comment .profile .profile-heading h2 {
     font-size: 20px;
   }
+
   #blog-explore .comment .profile .profile-heading {
     padding: 0px 0px 0px 10px;
   }
@@ -502,24 +524,30 @@ html {
   #blog-explore .comment .profile .profile-heading span {
     font-size: 14px;
   }
+
   #blog-explore .comment .comment-item-box a svg {
     width: 25px;
   }
+
   #blog-explore .comment .profile img {
     width: 60px;
     aspect-ratio: 1/1;
   }
+
   #blog-explore .comment .comment-item-box .reply a {
     padding: 4px 20px;
   }
 }
+
 @media screen and (max-width: 400px) {
   #blog-explore .comment h1 {
     font-size: 30px;
   }
+
   #blog-explore .comment .profile .profile-heading h2 {
     font-size: 18px;
   }
+
   #blog-explore .comment .profile .profile-heading {
     padding: 0px 0px 0px 10px;
   }
@@ -527,29 +555,52 @@ html {
   #blog-explore .comment .profile .profile-heading span {
     font-size: 12px;
   }
+
   #blog-explore .comment .comment-item-box a svg {
     width: 25px;
   }
+
   #blog-explore .comment .profile img {
     width: 60px;
     aspect-ratio: 1/1;
   }
+
   #blog-explore .comment .comment-item-box .reply a {
     font-size: 12px;
     padding: 4px 20px;
   }
 }
-/* Post Comment Start */
 
-/* blog post */
+/* Post Comment Start */
 #blog-explore .post-comment {
- 
+  margin: 100px 0;
 }
+
 #blog-explore .post-comment h1 {
-  font-size: 45px;
+  font-size: 40px;
   padding-bottom: 20px;
   font-family: var(--primary-font);
 }
+
+#blog-explore .post-comment textarea {
+  width: 100%;
+  padding: 10px 0px 100px 20px;
+  font-family: var(--secondary-font);
+  border-radius: 5px;
+}
+
+#blog-explore .post-comment .comment-btn a {
+  text-decoration: none;
+  background: var(--text-color-blue);
+  color: white;
+  font-size: 18px;
+  font-family: var(--secondary-font);
+  padding: 4px 35px;
+  border-radius: 5px;
+  margin-top: 15px;
+}
+/* Post Comment End */
+
 /* categories Start */
 #blog-explore .categories {
   border: 1px solid rgba(168, 187, 199, 1);
@@ -709,6 +760,23 @@ html {
   color: var(--text-color-blue);
 }
 
+@media screen and (max-width: 1200px) {
+  #blog-explore .recent-item a {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  #blog-explore .recent-item a {
+    font-size: 19px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  #blog-explore .recent-item a {
+    font-size: 16px;
+  }
+}
 /* Recent Post End */
 
 /* Tags Start */
@@ -781,6 +849,7 @@ html {
     padding: 8px 8px !important;
     font-size: 16px;
   }
+
   #blog-explore .tags .tag-items .item2 {
     margin-left: -90px !important;
   }
@@ -791,8 +860,13 @@ html {
     padding: 8px 8px !important;
     font-size: 22px;
   }
+
   #blog-explore .tags .tag-items .item2 {
     margin-left: -290px !important;
+  }
+
+  #blog-explore .tags {
+    margin-bottom: 100px;
   }
 }
 
@@ -801,6 +875,7 @@ html {
     padding: 8px 8px !important;
     font-size: 22px;
   }
+
   #blog-explore .tags .tag-items .item2 {
     margin-left: -190px !important;
   }
@@ -811,6 +886,7 @@ html {
     padding: 8px 8px !important;
     font-size: 19px;
   }
+
   #blog-explore .tags .tag-items .item2 {
     margin-left: -120px !important;
   }
@@ -938,13 +1014,16 @@ html {
   #blog-explore .blog-post .post-heading .heading p {
     font-size: 12px;
   }
+
   #blog-explore .blog-post .post-heading .contact {
     flex-wrap: wrap;
   }
+
   #blog-explore .pagination a {
     padding: 4px 12px !important;
     margin: 0 4px;
   }
+  
   #blog-explore .pagination {
     font-size: 16px;
   }

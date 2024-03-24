@@ -136,6 +136,9 @@
 .forms .form-link {
   margin-top: 10px;
 }
+.forms .form-check-label a {
+  color: var(--text-color-blue);
+}
 
 .forms .form-content .form-link a {
   font-size: 14px;
@@ -149,7 +152,7 @@
   color: var(--text-color-blue);
 }
 
-.forms .media-option .form-link a {
+.forms .form-link a {
   font-size: 14px;
   font-weight: 400;
   color: var(--text-color-blue);

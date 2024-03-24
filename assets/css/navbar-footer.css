@@ -722,21 +722,26 @@ html {
     border-left: none;
     margin-left: 80px !important;
   }
+
   .footer .copyright .payment-method {
     justify-content: center !important;
   }
+
   .footer .copyright-text p {
     text-align: center;
     padding-bottom: 20px;
   }
+  
   .logo-slider {
     margin-top: 0px;
     margin-right: -25px !important;
     
   }
+
   .footer .copyright p {
     padding-top: 20px;
   }
+  
   .footer .copyright .logo-next-btn {
     margin-right: -100px !important;
   }
@@ -747,11 +752,13 @@ html {
     border-left: none;
     margin-left: 0px !important;
   }
+
   .footer .copyright .logo-next-btn {
    
     margin-right: -99px !important;
   }
 }
+
 @media (max-width: 520px) {
   .footer .copyright .logo-next-btn {
   

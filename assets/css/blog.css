@@ -123,6 +123,7 @@ html {
     width: 90px !important;
     display: block;
   }
+  
   .hero-title h1 {
     font-size: 50px;
   }
@@ -133,9 +134,11 @@ html {
     width: 60px !important;
     display: block;
   }
+
   .hero-title h1 {
     font-size: 40px;
   }
+
   .bredcome a {
     font-size: 18px !important;
   }
@@ -497,6 +500,7 @@ html {
     padding: 8px 8px !important;
     font-size: 16px;
   }
+
   #blog-post .tags .tag-items .item2 {
     margin-left: -90px !important;
   }
@@ -507,6 +511,7 @@ html {
     padding: 8px 8px !important;
     font-size: 22px;
   }
+
   #blog-post .tags .tag-items .item2 {
     margin-left: -290px !important;
   }
@@ -517,6 +522,7 @@ html {
     padding: 8px 8px !important;
     font-size: 22px;
   }
+
   #blog-post .tags .tag-items .item2 {
     margin-left: -190px !important;
   }
@@ -527,6 +533,7 @@ html {
     padding: 8px 8px !important;
     font-size: 19px;
   }
+
   #blog-post .tags .tag-items .item2 {
     margin-left: -120px !important;
   }
@@ -656,13 +663,16 @@ html {
   #blog-post .blog-post .post-heading .heading p {
     font-size: 12px;
   }
+
   #blog-post .blog-post .post-heading .contact {
     flex-wrap: wrap;
   }
+
   #blog-post .pagination a {
     padding: 4px 12px !important;
     margin: 0 4px;
   }
+
   #blog-post .pagination {
     font-size: 16px;
   }
