@@ -1,13 +1,13 @@
-var swiper = new Swiper('.rated-slider', {
+var swiper = new Swiper('.selling-slider', {
     slidesPerView: 3,
-    spaceBetween: 15,
+    spaceBetween: 8,
     slidesPerGroup: 1,
         direction: 'vertical',
         effect: 'slide',
         loop: true,
         loopFillGroupWithBlank: true,
         navigation: {
-          nextEl: '.rated-next',
+          nextEl: '.selling-next',
         },
         
       });
