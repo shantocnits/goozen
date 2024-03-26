@@ -374,7 +374,7 @@ html {
 }
 
 #product-details .product-quantity .add-to-cart {
-  background: var(--background-color);
+  background:#00abfae6;
   color: var(--text-color-white);
   border: var(--border-and-color);
   font-family: var(--secondary-font);
@@ -383,6 +383,11 @@ html {
   margin-left: 20px;
   border-radius: 5px;
   text-wrap: nowrap;
+  border: none;
+  transition: all 0.3s;
+}
+#product-details .product-quantity .add-to-cart:hover {
+  background:#26A0DA;
 }
 
 #product-details .buy-now {
@@ -515,13 +520,18 @@ html {
 }
 
 #seller-info .seller-profile-info .chat-btn {
-  padding: 8px 45px;
+  padding: 9px 45px;
   border-radius: 5px;
   text-decoration: none;
   font-family: var(--secondary-font);
-  background: var(--background-color);
+  background:#00abfae6;
   color: var(--text-color-white);
   margin-left: 2px;
+  transition: all 0.3s;
+}
+
+#seller-info .seller-profile-info .chat-btn:hover {
+  background: #26A0DA;
 }
 
 #seller-info .seller-profile img {
