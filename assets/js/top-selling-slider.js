@@ -1,6 +1,6 @@
 var swiper = new Swiper('.selling-slider', {
     slidesPerView: 3,
-    spaceBetween: 8,
+    spaceBetween: 15,
     slidesPerGroup: 1,
         direction: 'vertical',
         effect: 'slide',
