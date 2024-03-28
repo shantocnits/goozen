@@ -622,7 +622,7 @@ html {
 }
 
 .more-seller .card-wrapper {
-  margin-bottom: 20px !important;
+  margin-bottom: 50px !important;
 }
 
 .more-seller .swiper {
@@ -823,16 +823,14 @@ html {
   transition: all 0.2s ease;
 }
 
-.more-seller .swiper-navBtn {
-  position: absolute;
-  margin-top: 225px !important;
-  height: 20px;
-  width: 20px;
-  background: #fff;
-}
-
-.more-seller .rectangle {
-  margin-top: 60px !important;
+#more-this-seller .seller-btn-item{
+  position: relative;
+  width: 160px;
+  bottom: 0;
+  display: flex;
+  justify-content: center !important;
+  margin: auto;
+ 
 }
 
 .more-seller .swiper-button-prev img {
@@ -845,126 +843,12 @@ html {
   height: 50px !important;
 }
 
-.more-seller .swiper-button-prev {
-  left: 44% !important;
-}
-
-.more-seller .swiper-button-next {
-  right: 44% !important;
-}
-
 .more-seller .swiper-button-prev::after {
   display: none;
 }
 
 .more-seller .swiper-button-next::after {
   display: none;
-}
-
-@media screen and (max-width: 1400px) {
-  .more-seller .swiper-navBtn {
-    margin-top: 210px !important;
-  }
-}
-
-@media screen and (max-width: 1200px) {
-  .more-seller .swiper-navBtn {
-    margin-top: 210px !important;
-  }
-}
-
-@media screen and (max-width: 992px) {
-  .more-seller .swiper-navBtn {
-    margin-top: 206px !important;
-  }
-
-  .more-seller .swiper-button-prev {
-    left: 40% !important;
-  }
-
-  .more-seller .swiper-button-next {
-    right: 40% !important;
-  }
-
-  .more-seller .slide-container .rectangle {
-    margin-top: 55px;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .more-seller .swiper-navBtn {
-    margin-top: 204px !important;
-  }
-}
-
-@media screen and (max-width: 520px) {
-  .more-seller .swiper-navBtn {
-    margin-top: 275px !important;
-  }
-
-  .more-seller .swiper-button-prev {
-    left: 35% !important;
-  }
-
-  .more-seller .swiper-button-next {
-    right: 35% !important;
-  }
-}
-
-@media screen and (max-width: 500px) {
-  .more-seller .swiper-navBtn {
-    margin-top: 278px !important;
-  }
-
-  .more-seller .swiper-button-prev {
-    left: 35% !important;
-  }
-
-  .more-seller .swiper-button-next {
-    right: 35% !important;
-  }
-}
-
-@media screen and (max-width: 495px) {
-  .more-seller .swiper-navBtn {
-    margin-top: 288px !important;
-  }
-
-  .more-seller .swiper-button-prev {
-    left: 35% !important;
-  }
-
-  .more-seller .swiper-button-next {
-    right: 35% !important;
-  }
-}
-
-@media screen and (max-width: 460px) {
-  .more-seller .swiper-navBtn {
-    margin-top: 245px !important;
-  }
-
-  .more-seller .swiper-button-prev {
-    left: 35% !important;
-  }
-
-  .more-seller .swiper-button-next {
-    right: 35% !important;
-  }
-}
-
-@media screen and (max-width: 380px) {
-  .more-seller .swiper-navBtn {
-    margin-top: 235px !important;
-  }
-
-  .more-seller .swiper-button-prev {
-    left: 35% !important;
-  }
-
-  .more-seller .swiper-button-next {
-    right: 35% !important;
-  }
 }
 /* More This Seller End */
 
@@ -1165,16 +1049,15 @@ html {
   transition: all 0.2s ease;
 }
 
-.also-like .swiper-navBtn {
-  position: absolute;
-  margin-top: 226px !important;
-  height: 20px;
-  width: 20px;
-  background: #fff;
-}
-
-.also-like .rectangle {
-  margin-top: 60px !important;
+#also-like .also-like-btn-item{
+  margin-top: 50px !important;
+  position: relative;
+  width: 160px;
+  bottom: 0;
+  display: flex;
+  justify-content: center !important;
+  margin: auto;
+ 
 }
 
 .also-like .swiper-button-prev img {
@@ -1187,140 +1070,12 @@ html {
   height: 50px !important;
 }
 
-.also-like .swiper-button-prev {
-  left: 44% !important;
-}
-
-.also-like .swiper-button-next {
-  right: 44% !important;
-}
-
 .also-like .swiper-button-prev::after {
   display: none;
 }
 
 .also-like .swiper-button-next::after {
   display: none;
-}
-
-@media screen and (max-width: 1400px) {
-  .also-like .swiper-navBtn {
-    margin-top: 217px !important;
-  }
-}
-
-@media screen and (max-width: 1200px) {
-  .also-like .swiper-navBtn {
-    margin-top: 217px !important;
-  }
-}
-
-@media screen and (max-width: 992px) {
-  .also-like .swiper-navBtn {
-    margin-top: 206px !important;
-  }
-
-  .also-like .swiper-button-prev {
-    left: 40% !important;
-  }
-
-  .also-like .swiper-button-next {
-    right: 40% !important;
-  }
-
-  .also-like .slide-container .rectangle {
-    margin-top: 55px;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .also-like .swiper-navBtn {
-    margin-top: 204px !important;
-  }
-}
-
-@media screen and (max-width: 520px) {
-  .also-like .swiper-navBtn {
-    margin-top: 273px !important;
-  }
-
-  .also-like .swiper-button-prev {
-    left: 35% !important;
-  }
-
-  .also-like .swiper-button-next {
-    right: 35% !important;
-  }
-}
-
-@media screen and (max-width: 500px) {
-  .also-like .swiper-navBtn {
-    margin-top: 270px !important;
-  }
-
-  .also-like .swiper-button-prev {
-    left: 35% !important;
-  }
-
-  .also-like .swiper-button-next {
-    right: 35% !important;
-  }
-}
-
-@media screen and (max-width: 495px) {
-  .also-like .swiper-navBtn {
-    margin-top: 248px !important;
-  }
-
-  .also-like .swiper-button-prev {
-    left: 35% !important;
-  }
-
-  .also-like .swiper-button-next {
-    right: 35% !important;
-  }
-}
-
-@media screen and (max-width: 460px) {
-  .also-like .swiper-navBtn {
-    margin-top: 260px !important;
-  }
-
-  .also-like .swiper-button-prev {
-    left: 35% !important;
-  }
-
-  .also-like .swiper-button-next {
-    right: 35% !important;
-  }
-}
-
-@media screen and (max-width: 400px) {
-  .also-like .swiper-navBtn {
-    margin-top: 235px !important;
-  }
-
-  .also-like .swiper-button-prev {
-    left: 35% !important;
-  }
-
-  .also-like .swiper-button-next {
-    right: 35% !important;
-  }
-}
-
-@media screen and (max-width: 380px) {
-  .also-like .swiper-navBtn {
-    margin-top: 235px !important;
-  }
-
-  .also-like .swiper-button-prev {
-    left: 35% !important;
-  }
-  
-  .also-like .swiper-button-next {
-    right: 35% !important;
-  }
 }
 /* You Might Also Like End */
 
