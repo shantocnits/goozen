@@ -1129,6 +1129,7 @@ html {
 #deals {
   margin-top: 100px;
 }
+
 #deals .deals {
   border: var(--border-and-color);
   box-shadow: var(--box-shadow);
@@ -1196,7 +1197,7 @@ html {
 }
 
 #deals .deals .deals-item .product-details {
-  margin: 70px 40px 50px 40px;
+  margin: 80px 40px 50px 40px;
 }
 
 #deals .deals .deals-item .product-details h1 {
@@ -1211,72 +1212,69 @@ html {
   margin-top: 50px;
 }
 
-#deals .deals .deals-item .product-details h2 span{
+#deals .deals .deals-item .product-details h2 span {
   text-decoration: line-through;
-  color: #A8BBC7;
+  color: #a8bbc7;
   margin-right: 20px;
 }
 
-#deals .deals .deals-item .deals-slider{
+#deals .deals .deals-item .deals-slider {
   display: flex;
   justify-content: space-around;
 }
 
-#deals .deals .deals-item .deals-slider .deals-product{
-  max-width: 60%;
+#deals .deals .deals-item .deals-slider .deals-product {
+  max-width: 64%;
   display: flex;
   align-items: center;
 }
 
-#deals .deals .deals-item .deals-slider .deals-product img{
-  max-width: 100%;
+#deals .deals .deals-item .deals-slider .deals-product img {
+  width: 100%;
+  margin-bottom: 50px;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* Top selling Product Start */
-
-
-/* top selling slider Start */
-
-
-#deals .top-selling {
+#deals .deal-slider-item {
   position: relative;
-  height: 380px;
+  height: 378px !important;
+  display: flex;
+  justify-content: center;
 }
 
 #deals .swiper {
-  margin-top: 25px !important;
   width: 60%;
-  height: 300px;
+  height: 295px;
+  display: flex !important;
+  justify-content: center !important;
+  margin: 0px 0px 0px 0px !important;
 }
 
 #deals .deal-next {
   position: absolute;
-  left: 40.5% !important;
-  top: 90% !important;
+  left: 44.5% !important;
+  top: 89% !important;
+  transition: all 0.5s;
+}
+#deals .deal-next:hover svg path {
+  fill: #26a0da !important;
+}
+
+#deals .deal-prev:hover svg path {
+  fill: #26a0da !important;
+}
+
+#deals .deal-prev {
+  position: absolute;
+  left: 44.5% !important;
+  top: -6% !important;
 }
 
 #deals .slider-item {
   display: flex;
   align-items: center;
-  width: 100% !important;
-  border-radius: 10px;
-  border: var(--border-and-color) !important;
+  width: 99% !important;
+  border: var(--border-and-color);
+  border-radius: 5px;
 }
 
 #deals .slider-item:hover {
@@ -1285,232 +1283,325 @@ html {
 
 #deals .slider-item img {
   width: 100%;
-  border-radius: 12px;
+}
+#deals .deals-product img {
+  width: 100%;
+  padding: 20px 0px 0px 0px;
 }
 
 #deals .swiper-button-next::after {
   display: none !important;
 }
+
 #deals .swiper-button-prev::after {
   display: none !important;
 }
 
 @media screen and (max-width: 1400px) {
-  #deals .selling-next {
-    position: absolute;
-    left: 40.5% !important;
-    top: 90% !important;
+  #deals .deal-slider-item {
+    height: 300px !important;
+    margin-top: 10px;
+  }
+  #deals .deal-next {
+    left: 42.5% !important;
+    top: 325px !important;
+    transition: all 0.5s;
   }
 
-  #deals .selling-product .selling-img-item h1 {
-    font-size: 20px;
-  }
-
-  #deals .selling-product .selling-img-item p {
-    font-size: 25px;
+  #deals .deal-prev {
+    left: 43.5% !important;
+    top: -4% !important;
   }
 }
 
 @media screen and (max-width: 1200px) {
-  #deals .selling-next {
-    position: absolute;
-    left: 38.5% !important;
-    top: 92% !important;
-  }
-
-  #deals .top-selling {
-    height: 405px;
+  #deals .deal-slider-item {
+    height: 300px !important;
+    margin-top: 50px;
   }
 
   #deals .swiper {
-    height: 340px;
+    width: 60%;
+    height: 245px;
+  }
+
+  #deals .deals .deals-item .deals-template h1 {
+    font-size: 29px;
+    padding-top: 20px;
+  }
+
+  #deals .deals .deals-item .deals-template h1 span {
+    font-size: 40px;
+    padding-top: 20px;
+  }
+
+  #deals .deals .deals-item .deals-template svg {
+    width: 140px !important;
+  }
+
+  #deals .deals .deals-item .product-details {
+    margin: 80px 40px 40px 40px;
+  }
+  #deals .deals .deals-item .product-details h1 {
+    font-size: 28px;
+  }
+
+  #deals .deals .deals-item .product-details h2 {
+    font-size: 26px;
+    margin-top: 40px;
+  }
+  #deals .deal-next {
+    left: 42.5% !important;
+    top: 93% !important;
+    transition: all 0.5s;
+  }
+
+  #deals .deal-prev {
+    left: 42.5% !important;
+    top: -5% !important;
   }
 }
 
 @media screen and (max-width: 992px) {
-  #deals .selling-next {
-    position: absolute;
-    left: 42.5% !important;
-    top: 87% !important;
-  }
-
-  #deals .selling-product .selling-img-item h1 {
-    font-size: 23px;
-  }
-
-  #deals .selling-product .selling-img-item p {
-    font-size: 24px;
-  }
-
-  #deals .top-selling {
-    height: 495px;
+  #deals .deal-slider-item {
+    margin-top: 30px;
+    height: 360px !important;
   }
 
   #deals .swiper {
-    height: 400px;
+    width: 50%;
+    height: 285px !important;
+  }
+
+  #deals .deals .deals-item .deals-template {
+    padding-top: 20px;
+  }
+
+  #deals .deals .deals-item .deals-template h1 {
+    font-size: 29px;
+
+    padding-top: 20px;
+  }
+
+  #deals .deals .deals-item .deals-template h1 span {
+    font-size: 40px;
+
+    padding-top: 20px;
+  }
+
+  #deals .deals .deals-item .deals-template svg {
+    width: 140px !important;
+  }
+
+  #deals .deals .deals-item .product-details {
+    margin: 40px;
+  }
+  #deals .deals .deals-item .product-details h1 {
+    font-size: 28px;
+  }
+
+  #deals .deals .deals-item .product-details h2 {
+    font-size: 26px;
+    margin-top: 20px;
+  }
+
+  #deals .deal-next {
+    left: 42.5% !important;
+    top: 88% !important;
+    transition: all 0.5s;
+  }
+
+  #deals .deal-prev {
+    left: 43.5% !important;
+    top: -4% !important;
+  }
+  #deals .deals .deals-item .deals-slider .deals-product img {
+    padding-left: 40px;
   }
 }
 
 @media screen and (max-width: 768px) {
-  #deals .selling-next {
-    position: absolute;
-    left: 42.5% !important;
-    top: 82% !important;
-  }
-
-  #deals .rated-heading {
-    font-size: 30px !important;
-  }
-
-  #deals .selling-heading {
-    font-size: 30px !important;
-  }
-
-  #deals .selling-product .selling-img-item h1 {
-    font-size: 18px;
-  }
-
-  #deals .selling-product .selling-img-item p {
-    font-size: 20px;
-  }
-
-  #deals .top-selling {
-    height: 465px;
+  #deals .deal-slider-item {
+    margin-top: 50px;
+    height: 320px !important;
   }
 
   #deals .swiper {
-    height: 350px;
+    width: 50%;
+    height: 245px !important;
+  }
+
+  #deals .deals .deals-item .deals-template {
+    padding-top: 20px;
+  }
+
+  #deals .deals .deals-item .deals-template h1 {
+    font-size: 26px;
+    padding-top: 20px;
+  }
+
+  #deals .deals .deals-item .deals-template h1 span {
+    font-size: 38px;
+
+    padding-top: 20px;
+  }
+
+  #deals .deals .deals-item .deals-template svg {
+    width: 135px !important;
+  }
+
+  #deals .deals .deals-item .product-details {
+    margin: 40px;
+  }
+
+  #deals .deals .deals-item .product-details h1 {
+    font-size: 26px;
+  }
+
+  #deals .deals .deals-item .product-details h2 {
+    font-size: 25px;
+    margin-top: 20px;
+  }
+
+  #deals .deal-next {
+    left: 42.5% !important;
+    top: 86% !important;
+    transition: all 0.5s;
+  }
+
+  #deals .deal-prev {
+    left: 43.5% !important;
+    top: -4% !important;
+  }
+
+  #deals .deals .deals-item .deals-slider .deals-product img {
+    padding-left: 40px;
   }
 }
 
 @media screen and (max-width: 575px) {
-  #deals .rated-heading {
-    font-size: 25px !important;
-  }
-
-  #deals .selling-heading {
-    font-size: 25px !important;
-  }
-}
-
-@media screen and (max-width: 500px) {
-  #deals .selling-next {
-    position: absolute;
-    left: 40.5% !important;
-    top: 79% !important;
-  }
-
-  #deals .selling-product .selling-img-item h1 {
-    font-size: 16px;
-  }
-
-  #deals .selling-product .selling-img-item p {
-    font-size: 20px;
-  }
-
-  #deals .top-selling {
-    height: 425px;
+  #deals .deal-slider-item {
+    margin-top: 40px !important;
+    height: 328px !important;
   }
 
   #deals .swiper {
-    height: 310px;
+    width: 60%;
+    height: 250px;
+    margin-top: 10px !important;
   }
 
-  #deals .selling-next svg {
-    width: 15px;
+  #deals .deals .deals-item .deals-template {
+    padding-top: 20px;
   }
 
-  #deals .selling-product .selling-img-item svg {
-    position: absolute;
-    top: 20px;
-    right: 43px;
-    width: 40px;
+  #deals .deals .deals-item .deals-template h1 {
+    font-size: 22px;
+
+    padding-top: 20px;
   }
 
-  #deals .selling-product .selling-img-item .percent {
-    position: absolute;
-    top: 50px;
-    right: 45px;
-    width: 30px;
-    color: var(--text-color-black);
+  #deals .deals .deals-item .deals-template h1 span {
+    font-size: 35px;
+
+    padding-top: 20px;
+  }
+
+  #deals .deals .deals-item .deals-template svg {
+    width: 100px !important;
+    margin: 0px 20px;
+  }
+
+  #deals .deals .deals-item .product-details {
+    margin: 25px;
+  }
+
+  #deals .deals .deals-item .product-details h1 {
+    font-size: 25px;
+  }
+
+  #deals .deals .deals-item .product-details h2 {
+    font-size: 26px;
+    margin-top: 20px;
+  }
+  #deals .deal-next {
+    left: 42.5% !important;
+    top: 88% !important;
+    transition: all 0.5s;
+  }
+
+  #deals .deal-prev {
+    left: 43.5% !important;
+    top: -2% !important;
+  }
+
+  #deals .deals .deals-item .deals-slider .deals-product img {
+    padding-left: 20px;
   }
 }
 
 @media screen and (max-width: 450px) {
-  #deals .selling-next {
-    position: absolute;
-    left: 37.5% !important;
-    top: 77% !important;
-  }
-
-  #deals .selling-product .selling-img-item h1 {
-    font-size: 14px;
-  }
-
-  #deals .selling-product .selling-img-item p {
-    font-size: 18px;
-  }
-
-  #deals .top-selling {
-    height: 358px;
+  #deals .deal-slider-item {
+    margin-top: 30px !important;
+    height: 268px !important;
   }
 
   #deals .swiper {
-    height: 253px !important;
+    width: 60%;
+    height: 195px !important;
+    margin-top: 10px !important;
   }
 
-  #deals .swiper-slide {
-    height: 70px !important;
+  #deals .deals .deals-item .deals-template {
+    padding-top: 20px;
+  }
+
+  #deals .deals .deals-item .deals-template h1 {
+    font-size: 22px;
+
+    padding-top: 20px;
+  }
+
+  #deals .deals .deals-item .deals-template h1 span {
+    font-size: 35px;
+
+    padding-top: 20px;
+  }
+
+  #deals .deals .deals-item .deals-template svg {
+    width: 100px !important;
+    margin: 0px 20px;
+  }
+
+  #deals .deals .deals-item .product-details {
+    margin: 25px;
+  }
+
+  #deals .deals .deals-item .product-details h1 {
+    font-size: 25px;
+  }
+
+  #deals .deals .deals-item .product-details h2 {
+    font-size: 26px;
+    margin-top: 20px;
+  }
+
+  #deals .deal-next {
+    left: 40.5% !important;
+    top: 88% !important;
+    transition: all 0.5s;
+  }
+
+  #deals .deal-prev {
+    left: 40.5% !important;
+    top: -1% !important;
+  }
+
+  #deals .deals .deals-item .deals-slider .deals-product img {
+    padding-left: 20px;
   }
 }
-
-/* Top selling Product End */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* Deal Section End */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* Latest Blog Start */
 #latest-blog {
@@ -1602,6 +1693,7 @@ html {
   border: var(--border-and-color);
   border-radius: 3px;
 }
+
 #latest-blog .blog-item .blog-btns a:hover {
   background: var(--background-color);
   color: var(--text-color-white);
@@ -1739,7 +1831,7 @@ html {
   padding-right: 10px;
 }
 
-/* top rated slider Start */
+/* Top Rated Slider Start */
 
 #top-all-product .top-rated-item {
   text-align: center;
@@ -1762,6 +1854,11 @@ html {
   position: absolute;
   left: 40.5% !important;
   top: 90% !important;
+  transition: all 0.5s;
+}
+
+#top-all-product .rated-next:hover svg path {
+  fill: #26a0da !important;
 }
 
 #top-all-product .slider-item {
@@ -2019,7 +2116,8 @@ html {
   padding-right: 10px;
 }
 
-/* top selling slider Start */
+/* Top Selling Slider Start */
+
 #top-all-product .top-selling-item {
   text-align: center;
 }
@@ -2039,6 +2137,11 @@ html {
   position: absolute;
   left: 40.5% !important;
   top: 90% !important;
+  transition: all 0.5s;
+}
+
+#top-all-product .selling-next:hover svg path {
+  fill: #26a0da !important;
 }
 
 #top-all-product .slider-item {
@@ -2532,4 +2635,5 @@ Pre-loader Style
   background: #7453fc;
   border-radius: 50%;
 }
+
 /* Preloader End */
