@@ -16,28 +16,30 @@ html {
   scroll-behavior: smooth;
 }
 
-.back-button {
-  outline: 2px solid var(--item-color);
-  outline-offset: 4px;
-  border-radius: 3px;
-  align-items: center;
-  padding: 10px 10px 15px 10px;
-  z-index: 9999;
+#progress {
   position: fixed;
+  bottom: 20px;
+  right: 20px;
+  height: 70px;
+  width: 70px;
+  display: none;
+  place-items: center;
+  border-radius: 8%;
+  cursor: pointer;
+}
+
+#progress-value {
+  display: block;
+  height: calc(100% - 12px);
+  width: calc(100% - 12px);
   background-color: var(--item-color);
-  border-radius: px;
-  height: 40px;
-  bottom: 25px;
-  right: 25px;
-  text-decoration: none;
-  align-items: center;
-  line-height: 50px;
-  z-index: 99999;
+  border-radius: 8%;
+  display: grid;
+  place-items: center;
+  font-size: 35px;
+  border: 3px solid rgba(236, 236, 236, 0.601);
 }
-.back-button img {
-  margin-bottom: 50px;
-  z-index: 9999999;
-}
+
 /* Back to btn End */
 
 /* Variable */
@@ -265,24 +267,53 @@ html {
   font-weight: 500;
 }
 
-.feature .slider-btn-item{
+.feature .slider-btn-item {
   position: relative;
-  width: 160px;
+  width: 190px;
   bottom: 0;
   display: flex;
-  justify-content: center !important;
+  justify-content: center;
   margin: auto;
+}
+
+#feature-category .swiper-navBtn {
+  border: var(--border-and-color);
+  width: 50px;
+  height: 50px;
+  padding: 10px;
+  border-radius: 4px;
+  
+}
+#feature-category .swiper-button-next{
+ display: inline-block;
+
+
  
+  overflow: hidden;
+  
+}
+#feature-category .swiper-button-next a:hover svg path {
+  
+  background: #314755;
 }
 
-.swiper-button-prev img {
-  width: 50px !important;
-  height: 50px !important;
+#feature-category .swiper-button-next a::before{
+  content: "";
+  z-index: 333333;
+  position: absolute;
+  height: 150px !important;
+  width: 40px !important;  
+  background: rgb(124, 188, 212);
+  opacity: 0.9;
+  filter: blur(1px);
+  top: -30px;
+  transition: 3s;
+  transform: rotate(20deg) translateX(-60px);
+  
 }
-
-.swiper-button-next img {
-  width: 50px !important;
-  height: 50px !important;
+#feature-category .swiper-button-next a:hover:before{
+  transform: rotate(20deg) translate(140px, 70px);
+  
 }
 
 .swiper-button-prev::after {
@@ -659,14 +690,13 @@ html {
   transition: all 0.2s ease;
 }
 
-#trending-product .trending-btn-item{
+#trending-product .trending-btn-item {
   position: relative;
   width: 160px;
   bottom: 0;
   display: flex;
   justify-content: center !important;
   margin: auto;
- 
 }
 
 .trending .swiper-button-prev img {
@@ -687,7 +717,6 @@ html {
   display: none;
 }
 /* Trending Products End */
-
 
 /* All Product Start */
 #all-product h1 {
