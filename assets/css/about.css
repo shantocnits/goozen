@@ -11,6 +11,17 @@
   box-sizing: border-box;
 }
 
+/* Scrollbar Start */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(38, 160, 218, 1);
+  border-radius: 10px;
+}
+/* Scrollbar End */
+
 /* Back to btn Start */
 html {
   scroll-behavior: smooth;

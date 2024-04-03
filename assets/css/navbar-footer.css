@@ -71,7 +71,7 @@ html {
   font-size: 18px;
   text-decoration: none;
   color: var(--text-color-white);
-  transition: all 0.3s;
+  transition: 0.3s;
 }
 
 .topbar_item ul a:hover {
@@ -89,7 +89,8 @@ html {
 .topbar_item ul li .signInBtn svg {
   width: 28px;
   height: 26px;
-  padding-right: 5px;
+  margin-top: 3px;
+  
 }
 
 .topbar_item ul li {
@@ -107,7 +108,7 @@ html {
   background-color: white;
 }
 
-@media screen and (max-width:575px) {
+@media screen and (max-width: 575px) {
   .topbar_item ul a {
     font-size: 15px;
   }
@@ -212,7 +213,7 @@ html {
   right: 5px;
   top: -12px;
   color: var(--text-color-white);
-  
+
   background: var(--background-color);
 }
 
@@ -236,7 +237,6 @@ html {
     font-size: 18px;
   }
   .header .header_contact {
-   
     display: block;
     padding-right: 10px;
   }
@@ -735,7 +735,7 @@ html {
   display: flex;
   justify-content: space-between !important;
   padding: 0px 0;
-  border-top: 1px solid #7C8992;
+  border-top: 1px solid #7c8992;
 }
 
 .footer .copyright p {
@@ -792,7 +792,7 @@ html {
     margin: 15px 0px 15px 8px;
   }
 
-  .footer .copyright .copyright-item p{
+  .footer .copyright .copyright-item p {
     padding-top: 10px;
   }
   .footer .copyright .copyright-item .payment {
@@ -801,8 +801,8 @@ html {
   }
 
   .footer .copyright .copyright-item {
-   display: block;
-   text-align: center;
+    display: block;
+    text-align: center;
   }
 }
 

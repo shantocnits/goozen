@@ -11,6 +11,18 @@
   box-sizing: border-box;
 }
 
+/* Scrollbar Start */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(38, 160, 218, 1);
+  border-radius: 10px;
+}
+/* Scrollbar End */
+
+
 /* Back to button Start */
 html {
   scroll-behavior: smooth;
@@ -58,10 +70,9 @@ html {
 }
 
 /* Hero Slider Start */
-#hero-slider{
+#hero-slider {
   position: relative;
   display: flex;
-
 }
 .mySwiper {
   display: flex;
@@ -121,8 +132,7 @@ html {
 }
 
 .hero-slider-item .swiper-img {
- padding: 20px;
-  
+  padding: 20px;
 }
 
 .hero-slider-item .swiper-img img {
@@ -130,8 +140,6 @@ html {
   height: auto;
   margin-top: -175px;
   margin-left: -80px;
-  
-  
 }
 
 .swiper-pagination-bullets-dynamic {
@@ -149,7 +157,7 @@ html {
   opacity: 1 !important;
   justify-content: center !important;
   padding-top: -30px !important;
-  background: transparent!important;
+  background: transparent !important;
   width: 12px !important;
   height: 12px !important;
   border: 1px solid #00aeff !important;
@@ -176,14 +184,12 @@ html {
 
   .hero-slider-header h1 {
     font-size: 45px;
-   
   }
 }
 
 @media screen and (max-width: 992px) {
   .mySwiper {
     height: 800px;
-    
   }
 
   .hero-slider-item .swiper-img img {
@@ -206,12 +212,12 @@ html {
 
   .hero-slider-item button {
     font-size: 18px;
-    padding: 10px 25px; 
+    padding: 10px 25px;
   }
 
   .hero-slider-item button:hover {
     font-size: 18px;
-    padding: 10px 25px; 
+    padding: 10px 25px;
   }
 }
 
@@ -252,12 +258,12 @@ html {
 
   .hero-slider-item button {
     font-size: 16px;
-    padding: 8px 16px; 
+    padding: 8px 16px;
   }
 
   .hero-slider-item button:hover {
     font-size: 16px;
-    padding: 8px 16px; 
+    padding: 8px 16px;
   }
 }
 /* Hero Slider End */
@@ -308,7 +314,6 @@ html {
   align-items: center;
   justify-content: center;
   height: auto !important;
- 
   text-align: center;
   background: #fff;
   border-radius: 8px;
@@ -362,12 +367,11 @@ html {
   border-radius: 4px;
   overflow: hidden;
   margin-left: -30px !important;
-  transition: 0.5s ease-in-out;
+  transition: 1s ease;
 }
 
 #feature-category .next-btn:hover {
   background: #26a0da;
-
 }
 
 #feature-category .swiper-button-next:hover svg path {
@@ -379,7 +383,7 @@ html {
   position: absolute;
   height: 100px !important;
   width: 15px !important;
-  background: rgb(247, 253, 255);
+  background: rgba(255, 255, 255, 0.701);
   opacity: 0.8;
   top: -20px;
   left: 12px;
@@ -396,7 +400,7 @@ html {
   position: absolute;
   height: 100px !important;
   width: 8px !important;
-  background: rgb(242, 252, 255);
+  background: rgba(255, 255, 255, 0.701);
   opacity: 0.8;
   filter: blur(1px);
   top: -20px;
@@ -418,11 +422,12 @@ html {
   border-radius: 4px;
   overflow: hidden;
   margin-right: -30px !important;
+  transition: 1s ease;
 }
 
 #feature-category .prev-btn:hover {
   background: #26a0da;
-  transition: all 0.3s ease-in;
+
 }
 
 #feature-category .swiper-button-prev:hover svg path {
@@ -434,11 +439,11 @@ html {
   position: absolute;
   height: 100px !important;
   width: 15px !important;
-  background: rgb(133, 210, 237);
+  background: rgba(255, 255, 255, 0.701);
   opacity: 0.8;
   top: -20px;
   left: 12px;
-  transition: 1s;
+  transition: 0.5s ease-in;
   transform: rotate(10deg) translateX(-40px);
 }
 
@@ -451,12 +456,12 @@ html {
   position: absolute;
   height: 100px !important;
   width: 8px !important;
-  background: rgb(133, 210, 237);
+  background: rgba(255, 255, 255, 0.701);
   opacity: 0.8;
   filter: blur(1px);
   top: -20px;
   left: 0px;
-  transition: 1s;
+  transition: 0.5s ease-in;
   transform: rotate(10deg) translateX(-40px);
 }
 
@@ -480,49 +485,59 @@ html {
 }
 
 #offer .offer-item1 .offer-title1 {
-  padding: 50px 0px 0px 30px;
+  padding: 30px 0px 0px 15px;
 }
 
 #offer .offer-item1 .offer-title1 p {
+  font-size: 15px;
   color: var(--item-color);
+  margin-bottom: 0px;
   font-family: var(--secondary-font);
 }
 
 #offer .offer-item1 .offer-title1 h1 {
   color: var(--text-color-white);
   font-family: var(--primary-font);
-  font-size: 33px;
-  margin: 20px 0;
+  font-size: 32px;
+  margin: 0px;
+  
 }
 #offer .offer-item1 .offer-title1 h4 {
   color: var(--text-color-white);
   font-family: var(--primary-font);
-  font-size: 33px;
-  margin: 20px 0;
+  font-size: 28px;
+  padding: 8px 0;
+  margin: 0px;
+
 }
 
 #offer .offer-item1 .offer-title1 h6 {
   color: var(--text-color-white);
   display: flex;
+  font-size: 16px;
   align-items: center;
   margin-bottom: 0px;
+  padding: 15px 0;
+  font-family: var(--secondary-font);
 }
 
 #offer .offer-item1 .offer-title1 h6 span {
   padding-left: 10px;
   color: var(--item-color);
   font-family: var(--primary-font);
-  font-size: 25px;
+  font-size: 28px;
   margin: 0px 0;
 }
 
 #offer .offer-item1 .offer-title1 .offer-button1 {
-  margin: 40px 0px;
+  margin: 20px 0px;
 }
 
 #offer .offer-item1 .offer-title1 a {
   text-decoration: none;
-  padding: 10px 20px;
+  font-size: 22px;
+  font-family: var(--secondary-font);
+  padding: 12px 30px;
   background: #ffb700e1;
   color: var(--text-color-white);
   border-radius: 3px;
@@ -540,7 +555,7 @@ html {
 }
 #offer .offer-item2 {
   border-radius: 3px;
-  background: rgb(244, 244, 244) !important;
+  background: url(../img/home-img/offer-img/offer-bg.png) !important;
 }
 
 #offer .offer-item2 img {
