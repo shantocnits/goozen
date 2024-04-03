@@ -326,7 +326,7 @@ html {
   line-height: 45px;
   background: var(--text-color-white);
   color: var(--text-color-black);
-  width: 18%;
+  width: 22%;
   padding: 0px 20px 0px 0px;
   top: 70px !important;
   border-bottom-left-radius: 5px !important;
@@ -355,7 +355,7 @@ html {
   width: 100%;
   color: var(--text-color-black);
   display: block;
-  padding: 0px 0px 0px 10px;
+  padding: 0 10px 0px 20px;
   font-size: 22px;
   font-weight: 400;
   border-radius: 0px;
