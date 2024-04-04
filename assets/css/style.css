@@ -365,9 +365,9 @@ html {
   height: 55px;
   padding: 10px 10px 10px 10px;
   border-radius: 4px;
+  transition: all 0.4s ease-in-out;
   overflow: hidden;
   margin-left: -30px !important;
-  transition: 1s ease;
 }
 
 #feature-category .next-btn:hover {
@@ -383,16 +383,17 @@ html {
   position: absolute;
   height: 100px !important;
   width: 15px !important;
-  background: rgba(255, 255, 255, 0.701);
+  background: rgba(255, 255, 255, 0.815);
+  filter: blur( 2px);
   opacity: 0.8;
   top: -20px;
-  left: 12px;
-  transition: 0.5s ease-in;
-  transform: rotate(10deg) translateX(-40px);
+  right: 14px;
+  transition: 1.5s;
+  transform: rotate(-10deg) translateX(40px);
 }
 
 #feature-category .next-btn:hover:before {
-  transform: rotate(10deg) translate(60px, -10px);
+  transform: rotate(-10deg) translate(-60px, -10px);
 }
 
 #feature-category .next-btn::after {
@@ -400,17 +401,18 @@ html {
   position: absolute;
   height: 100px !important;
   width: 8px !important;
-  background: rgba(255, 255, 255, 0.701);
+  background: rgba(255, 255, 255, 0.815);
+  filter: blur(2px) !important;
   opacity: 0.8;
   filter: blur(1px);
   top: -20px;
-  left: 0px;
-  transition: 0.5s ease-in;
-  transform: rotate(10deg) translateX(-40px);
+  right: 0px;
+  transition: 1.5s;
+  transform: rotate(-10deg) translateX(40px);
 }
 
 #feature-category .next-btn:hover::after {
-  transform: rotate(10deg) translate(60px, -10px);
+  transform: rotate(-10deg) translate(-60px, -10px);
 }
 
 #feature-category .prev-btn {
@@ -420,14 +422,13 @@ html {
   height: 55px;
   padding: 10px 10px 10px 10px;
   border-radius: 4px;
+  transition: all 0.4s ease-in-out;
   overflow: hidden;
   margin-right: -30px !important;
-  transition: 1s ease;
 }
 
 #feature-category .prev-btn:hover {
   background: #26a0da;
-
 }
 
 #feature-category .swiper-button-prev:hover svg path {
@@ -439,11 +440,12 @@ html {
   position: absolute;
   height: 100px !important;
   width: 15px !important;
-  background: rgba(255, 255, 255, 0.701);
+  background: rgba(255, 255, 255, 0.815);
+  filter: blur(2px) !important;
   opacity: 0.8;
   top: -20px;
   left: 12px;
-  transition: 0.5s ease-in;
+  transition: 1.5s;
   transform: rotate(10deg) translateX(-40px);
 }
 
@@ -456,12 +458,13 @@ html {
   position: absolute;
   height: 100px !important;
   width: 8px !important;
-  background: rgba(255, 255, 255, 0.701);
+  background: rgba(255, 255, 255, 0.815);
+  filter: blur(2px) !important;
   opacity: 0.8;
   filter: blur(1px);
   top: -20px;
   left: 0px;
-  transition: 0.5s ease-in;
+  transition: 1.5s;
   transform: rotate(10deg) translateX(-40px);
 }
 
@@ -485,7 +488,8 @@ html {
 
 #offer .offer-item1 img {
   width: 100%;
-  max-width: 300px;
+  max-width: 253px;
+  
   aspect-ratio: 1/1;
 }
 #offer .offer-title1 {
@@ -565,7 +569,7 @@ html {
 }
 
 
-/* #offer .offer-item2 .offer-title2 {
+#offer .offer-item2 .offer-title2 {
  text-align: right;
 }
 
@@ -583,85 +587,84 @@ html {
 #offer .offer-item2 img {
   width: 100%;
   max-width: 290px;
+  margin-top: 25px;
   aspect-ratio: 1/1;
 }
 
 
 #offer .offer-item2 .offer-title2 p {
- margin: 0px 0px 12px 0px;
- float: right;
- text-wrap: nowrap;
- font-size: 16px;
- font-family: var(--secondary-font);
- color: var(--text-color-blue);
+  font-size: 16px;
+  color: var(--text-color-blue);
+  margin-bottom: 0px;
+  font-family: var(--secondary-font);
+  text-wrap: nowrap;
 
  
  
 }
 #offer .offer-item2 .offer-title2 {
- 
+  padding-top: 4px;
  
 }
 
 #offer .offer-item2 .offer-title2 h4{
-  font-size: 30px;
+  color: var(--text-color-black);
   font-family: var(--primary-font);
+  font-size: 30px;
   margin: 0px;
-  float: right;
+  padding-top: 12px;
   
-  
- 
 }
 
 #offer .offer-item2 .offer-title2 h1 {
-  float: right;
-  text-wrap: nowrap;
-  margin: 0px;
-  padding: 10px 0px 15px 0px;
-  font-size: 35px;
+  color: var(--text-color-black);
   font-family: var(--primary-font);
+  font-size: 35px;
+  margin: 0px;
+  text-wrap: nowrap;
+  padding-top: 10px;
  
 }
 
 #offer .offer-item2 .offer-title2 h6 {
-   color: var(--text-color-black);
-   font-size: 16px;
-   margin: 0px;
-   padding-bottom: 33px;
-   float: right;
-   display: flex;
-   align-items: center;
-   font-family: var(--secondary-font);
+  color: var(--text-color-black);
+  display: flex;
+  text-align: right !important;
+  justify-content: flex-end;
+  font-size: 16px;
+  align-items: center;
+  margin-bottom: 0px;
+  padding-top: 15px;
+  font-family: var(--secondary-font);
 }
 
 #offer .offer-item2 .offer-title2 h6 span {
-  font-size: 30px;
   padding-left: 10px;
   color: var(--item-color);
-  font-family: var(--secondary-font);
-  font-family: var(--primary-font);
+  font-family:var(--primary-font);
+  font-size: 30px;
+  margin: 0px 0;
 }
 
 #offer .offer-item2 .offer-title2 .offer-button2 {
   margin: 30px 0px 20px 0px;
-  display: block;
 }
 
 
 #offer .offer-item2 .offer-title2 a {
   text-decoration: none;
-  background: #00abfae6;
-  color: var(--text-color-white);
-  border-radius: 3px;
   font-size: 22px;
   font-family: var(--secondary-font);
   padding: 12px 30px;
+  background: #26a1dabc;
   color: var(--text-color-white);
+  border-radius: 3px;
+  margin-top: 50px !important;
   transition: all 0.3s;
-} */
+}
 
 #offer .offer-item2 .offer-title2 a:hover {
-  background: #26a0da;
+  background: #10a6ec;
 }
 
 
@@ -670,11 +673,16 @@ html {
   #offer .offer-item1 {
     margin: 20px 0;
   }
-
- 
-}
-
-@media screen and (max-width: 992px) {
+  #offer .offer-item1 img {
+    width: 100%;
+    max-width: 100%;
+    aspect-ratio: 1/1;
+  }
+  #offer .offer-item2 img {
+    width: 100%;
+    max-width: 100%;
+    aspect-ratio: 1/1;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -698,10 +706,31 @@ html {
   #offer .offer-item1 .offer-title1 h6 span {
     margin: 0px 0;
   }
+
+  #offer .offer-item2 .offer-title2 {
+    text-align: center;
+  }
+
+  #offer .offer-item2 .offer-title2 h6 {
+    justify-content: center;
+  }
+
+  #offer .offer-item2 img {
+    position: relative;
+    width: 100%;
+    margin: 20px;
+    max-width: 80%;
+    display: flex;
+    
+    margin: 0px 0px 0px 40px;
+    
+  }
+  
+  #offer .offer-item1 .offer-title1 h6 span {
+    margin: 0px 0;
+  }
 }
 
-@media screen and (max-width: 1200px) {
-}
 /* Offer Sec End */
 
 
@@ -745,6 +774,7 @@ html {
 }
 
 .trending .card-wrapper .card {
+  position: relative;
   transition: all 0.3s ease;
   font-family: var(--secondary-font);
   height: auto !important;
@@ -764,9 +794,9 @@ html {
 
 .trending .product {
   overflow: hidden;
-  position: relative;
+
   padding: 50px 20px;
-  position: relative;
+
   text-align: center;
   transition: all 0.3s ease;
   background: var(--text-color-white);
@@ -820,6 +850,7 @@ html {
   line-height: 1;
   font-weight: 500;
   color: var(--item-color);
+  font-family: var(--primary-font);
 }
 
 .trending .product-icon-btns {
@@ -833,12 +864,13 @@ html {
 
 .trending .product-icon-btns a {
   opacity: 0;
+  padding: 5px;
   text-decoration: none;
   border: var(--border-and-color);
   box-shadow: var(--box-shadow);
   display: flex;
-  width: 35px;
-  height: 35px;
+  width: 37px;
+  height: 37px;
   background-color: transparent;
   align-items: center;
   justify-content: center;
@@ -847,6 +879,7 @@ html {
   color: var(--text-color-blue);
   transition: all 0.3s ease;
   position: relative;
+  
 }
 
 .trending .product:hover .product-icon-btns a {
@@ -855,11 +888,17 @@ html {
  
 }
 
+.trending .product:hover .product-icon-btns a:hover svg path {
+  stroke: white;
+ 
+}
+
 .trending .product-icon-btns a:hover .product-tooltip {
   opacity: 1;
   transform: translate(18px);
 }
-.trending .product-icon-btns a:hover .product-img {
+
+.trending .product-icon-btns a:hover .product-img-box a{
   opacity: 0.4 !important;
  
 }
@@ -889,17 +928,18 @@ html {
 .trending .product-icon-btns .product-tooltip {
   font-family: var(--secondary-font);
   position: absolute;
-  top: 1px;
-  right: 52px;
+  top: 2px;
+  right: 54px;
   border-top-left-radius: 5px;
   border-bottom-left-radius: 5px;
-  transform: translateX(50%);
+  transform: translateX(30%);
   background: #314755;
   color: var(--text-color-white);
   font-size: 18px;
   padding: 2px 15px;
   white-space: nowrap;
   opacity: 0;
+  
   transition: all 0.3s ease;
 }
 
@@ -1127,6 +1167,7 @@ html {
   line-height: 1;
   font-weight: 500;
   color: var(--item-color);
+ 
 }
 
 #all-product .product-icon-btns {
