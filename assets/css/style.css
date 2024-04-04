@@ -747,10 +747,11 @@ html {
 .trending .card-wrapper .card {
   transition: all 0.3s ease;
   font-family: var(--secondary-font);
-  align-items: center;
-  justify-content: center;
   height: auto !important;
   margin-top: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   text-align: center;
   background: #fff;
   border-radius: 5px;
@@ -798,7 +799,7 @@ html {
 }
 
 .trending .product-title {
-  margin: 25px 0 15px;
+  margin: 20px 0 25px;
   font-size: 18px;
   font-weight: 400;
   line-height: 1.3;
@@ -933,16 +934,17 @@ html {
   position: absolute;
   height: 100px !important;
   width: 15px !important;
-  background: rgb(133, 210, 237);
+  background: rgba(255, 255, 255, 0.815);
+  filter: blur( 2px);
   opacity: 0.8;
   top: -20px;
-  left: 12px;
+  right: 14px;
   transition: 1.5s;
-  transform: rotate(10deg) translateX(-40px);
+  transform: rotate(-10deg) translateX(40px);
 }
 
 #trending-product .next-btn:hover:before {
-  transform: rotate(10deg) translate(60px, -10px);
+  transform: rotate(-10deg) translate(-60px, -10px);
 }
 
 #trending-product .next-btn::after {
@@ -950,17 +952,18 @@ html {
   position: absolute;
   height: 100px !important;
   width: 8px !important;
-  background: rgb(133, 210, 237);
+  background: rgba(255, 255, 255, 0.815);
+  filter: blur(2px) !important;
   opacity: 0.8;
   filter: blur(1px);
   top: -20px;
-  left: 0px;
+  right: 0px;
   transition: 1.5s;
-  transform: rotate(10deg) translateX(-40px);
+  transform: rotate(-10deg) translateX(40px);
 }
 
 #trending-product .next-btn:hover::after {
-  transform: rotate(10deg) translate(60px, -10px);
+  transform: rotate(-10deg) translate(-60px, -10px);
 }
 
 #trending-product .prev-btn {
@@ -988,7 +991,8 @@ html {
   position: absolute;
   height: 100px !important;
   width: 15px !important;
-  background: rgb(133, 210, 237);
+  background: rgba(255, 255, 255, 0.815);
+  filter: blur(2px) !important;
   opacity: 0.8;
   top: -20px;
   left: 12px;
@@ -1005,7 +1009,8 @@ html {
   position: absolute;
   height: 100px !important;
   width: 8px !important;
-  background: rgb(133, 210, 237);
+  background: rgba(255, 255, 255, 0.815);
+  filter: blur(2px) !important;
   opacity: 0.8;
   filter: blur(1px);
   top: -20px;
@@ -2474,6 +2479,7 @@ html {
 
 /* Top selling Product End */
 
+
 /* Get Many offers Start */
 
 #get-offer {
@@ -2482,8 +2488,8 @@ html {
 }
 
 #get-offer .offer {
-  padding-top: 100px !important;
-  padding-bottom: 50px;
+  padding-top: 50px !important;
+  display: flex;
   align-items: center;
 }
 
@@ -2491,6 +2497,7 @@ html {
   margin-bottom: 50px;
   position: relative;
   display: inline-block;
+  
 }
 
 #get-offer .offer-img img {
@@ -2530,21 +2537,25 @@ html {
 .sign-up h1 {
   color: var(--text-color-black);
   font-family: var(--primary-font);
+  font-size: 32px;
+  margin-bottom: 0px;
 }
 
 .sign-up h2 {
   color: var(--item-color);
   font-family: var(--primary-font);
+  font-size: 32px;
 }
 
 .sign-up p {
   color: var(--text-color-white);
-  font-family: var(--primary-font);
+  font-family: var(--secondary-font);
   font-size: 18px;
+  margin-bottom: 30px;
 }
 
 .sign-up p span {
-  font-size: 28px;
+  font-size: 22px;
   color: var(--item-color);
 }
 
@@ -2557,13 +2568,14 @@ html {
 
 #get-offer .sign-up form a {
   font-family: var(--secondary-font);
-  padding: 10px;
   font-size: 22px;
   text-decoration: none;
   background: var(--item-color);
-  color: var(--text-color-white);
+  color: var(--text-color-black);
   border-radius: 5px;
-  margin: 10px;
+  font-weight: 600;
+  margin: 5px;
+  padding: 5px 20px;
 }
 
 #get-offer .sign-up {
@@ -2572,12 +2584,56 @@ html {
 
 #get-offer .sign-up input {
   width: 100%;
-  padding: 15px;
+  padding-left: 25px;
   font-family: var(--secondary-font);
-  font-size: 22px;
+  font-size: 18px;
   background: none;
   border: none;
   outline: none;
+}
+
+@media screen and (max-width:992px) {
+  #get-offer .offer-img {
+    display: flex;
+    justify-content: center;
+    
+  }
+}
+
+@media screen and (max-width: 575px) {
+  #get-offer .offer-img .img-text h1 {
+    font-size: 18px;
+  }
+
+  #get-offer .offer-img .img-text a {
+    font-size: 14px;
+  }
+
+  .sign-up h1 {
+    font-size: 28px;
+  
+  }
+  
+  .sign-up h2 {
+   font-size: 28px;
+
+  }
+
+  .sign-up p{
+   font-size: 16px;
+
+  }
+
+  #get-offer .sign-up form a {
+    font-size: 18px;
+    
+  }
+
+  #get-offer .sign-up input {
+    font-size: 16px;
+    
+  }
+  
 }
 /* Get Many offers End */
 

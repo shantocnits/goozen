@@ -79,7 +79,7 @@ html {
 }
 
 .topbar_item ul li .signInBtn {
-  transition: 0.3s;
+  transition: 0.2s;
 }
 
 .topbar_item ul li .signInBtn:hover svg path {
