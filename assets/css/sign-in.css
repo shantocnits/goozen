@@ -45,6 +45,7 @@
   visibility: hidden;
   user-select: none;
   transition: 0.5s;
+  z-index: 999 !important;
 }
 
 .form_wrapper.active {
@@ -80,10 +81,10 @@
 }
 
 .forms header {
-  font-family: fonts;
+  font-family: var(--primary-font);
   padding-bottom: 20px;
   border-bottom: 1px solid black;
-  font-size: 28px;
+  font-size: 42px;
   font-weight: 600;
   color: #232836;
   text-align: center;
@@ -95,7 +96,7 @@
 
 .forms .form .field {
   position: relative;
-  height: 50px;
+  height: 60px;
   width: 100%;
   margin-top: 20px;
   border-radius: 6px;
@@ -113,7 +114,9 @@
 
 .forms .field input {
   outline: none;
-  padding: 0 15px !important;
+  font-size: 18px;
+  font-family: var(--secondary-font);
+  padding: 0px 15px !important;
   border: 1px solid#CACACA;
 }
 
@@ -123,6 +126,7 @@
 }
 
 .forms .field button {
+  font-size: 22px;
   color: #fff;
   background-color: #3e9ef3;
   transition: all 0.3s ease;
@@ -141,7 +145,8 @@
 }
 
 .forms .form-content .form-link a {
-  font-size: 14px;
+  font-size: 18px;
+  font-family: var(--secondary-font);
   font-weight: 400;
   color: #060606;
 }
@@ -162,17 +167,24 @@
   text-decoration: none;
 }
 
+.forms .form-link .sign-link {
+  font-size: 22px !important;
+  font-family: var(--secondary-font);
+}
+
 .forms .media-options a {
   text-decoration: none;
+  font-size: 22;
+  font-family: var(--secondary-font);
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.forms .media-option img.google-img {
-  height: 25px;
-  width: 25px;
-  margin-right: 20px;
+.forms .media-options .google-img {
+  height: 40px;
+  width: 40px;
+  margin-right: 10px !important;
   object-fit: cover;
 }
 
@@ -181,9 +193,32 @@
 }
 
 .forms a.google span {
+  font-size: 22px;
+  font-family: var(--secondary-font);
   font-weight: 500;
   opacity: 0.6;
   color: #232836;
+}
+
+.forms .form-link span {
+  font-size: 22px;
+  font-family: var(--secondary-font);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgba(124, 137, 146, 1);
+}
+
+.forms .form-link span a {
+  font-size: 22px;
+  font-family: var(--secondary-font);
+  padding-left: 10px;
+  color: var(--text-color-blue);
+}
+
+.forms .form-check {
+  font-size: 18px;
+  font-family: var(--secondary-font);
 }
 
 @media screen and (max-width: 400px) {

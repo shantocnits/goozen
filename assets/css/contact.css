@@ -110,6 +110,10 @@ html {
   text-align: center;
 }
 
+.bredcome {
+  padding-top: 5px !important;
+}
+
 .bredcome .HOME {
   font-family: var(--secondary-font);
   text-decoration: none;
@@ -117,14 +121,16 @@ html {
   color: var(--text-color-black);
   margin-top: 10px;
 }
+
 .HOME:hover {
   color: var(--text-color-black);
 }
+
 .bredcome .CONTACT {
   font-family: var(--secondary-font);
   color: var(--background-color);
   margin-top: 10px;
-  margin-left: 10px;
+  margin-left: 5px;
   font-size: 22px;
   text-decoration: none;
 }
@@ -166,7 +172,7 @@ html {
 #contact-us .contact .contact-items {
   line-height: 25px;
   display: flex;
-  padding: 70px 0px 50px 0px;
+  padding: 70px 0px 70px 0px;
   text-align: center;
   align-items: center;
   justify-content: space-around;
@@ -210,7 +216,7 @@ html {
 }
 
 #contact-us .send-mail p {
-  font-size: 16px;
+  font-size: 18px;
   padding: 0px 20px;
   font-family: var(--secondary-font);
   color: rgba(124, 137, 146, 1);

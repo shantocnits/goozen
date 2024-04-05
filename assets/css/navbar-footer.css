@@ -252,7 +252,7 @@ html {
   left: 0px !important;
   font-family: var(--secondary-font);
   width: 100%;
-  z-index: 99999999999;
+  z-index: 99;
   background: var(--text-color-blue);
 }
 
