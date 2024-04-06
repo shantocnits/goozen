@@ -113,6 +113,11 @@ html {
   text-align: center;
 }
 
+.bredcome{
+  padding-top: 5px;
+ 
+}
+
 .bredcome .HOME {
   font-family: var(--secondary-font);
   text-decoration: none;

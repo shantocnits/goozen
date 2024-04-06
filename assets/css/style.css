@@ -37,7 +37,7 @@ html {
   place-items: center;
   border-radius: 8%;
   cursor: pointer;
-  z-index: 999999999;
+  z-index: 99999999999999 !important;
 }
 
 #progress-value {
@@ -316,11 +316,12 @@ html {
   text-align: center;
   background: #fff;
   border-radius: 8px;
-  border: 1px solid #26a0da !important;
+  border: 1px solid #A8BBC7 !important;
 }
 
 .card-wrapper .card:hover {
   box-shadow: var(--box-shadow);
+  border: var(--border-and-color) !important;
 }
 
 .card-wrapper .card:hover .card-details .name h3 {
@@ -471,11 +472,11 @@ html {
   transform: rotate(10deg) translate(60px, -10px);
 }
 
-.swiper-button-prev::after {
+#feature-category .swiper-button-prev::after {
   display: none;
 }
 
-.swiper-button-next::after {
+#feature-category .swiper-button-next::after {
   display: none;
 }
 
@@ -1082,7 +1083,7 @@ html {
   text-align: center;
   transition: all 0.3s ease;
   background: var(--text-color-white);
-  border: 1px solid skyblue;
+  border: 1px solid #A8BBC7;
   border-radius: 5px;
 }
 
@@ -1111,6 +1112,7 @@ html {
 
 #all-product .product:hover {
   box-shadow: 0 0 10px hsl(0, 0%, 0%, 0.15);
+  border: var(--border-and-color);
 }
 
 #all-product .review-star a {
