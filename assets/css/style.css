@@ -826,8 +826,9 @@ html {
 
 .trending .product-price {
   position: absolute;
-  bottom: 20px;
-  left: 35%;
+  bottom: 0px;
+  left: 50%;
+  transform: translate(-50%, -50%);
   font-size: 28px;
   line-height: 1;
   font-weight: 500;
@@ -1143,8 +1144,9 @@ html {
 
 #all-product .product-price {
   position: absolute;
-  bottom: 20px;
-  left: 35%;
+  bottom: 0px;
+  left: 50%;
+  transform: translate(-50%, -50%);
   font-size: 28px;
   line-height: 1;
   font-weight: 500;
