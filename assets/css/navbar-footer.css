@@ -90,7 +90,6 @@ html {
   width: 28px;
   height: 26px;
   margin-top: 3px;
-  
 }
 
 .topbar_item ul li {
@@ -328,12 +327,19 @@ html {
   color: var(--text-color-black);
   width: 22%;
   padding: 0px 20px 0px 0px;
-  top: 70px !important;
+  top: 55px !important;
   border-bottom-left-radius: 5px !important;
   border-bottom-right-radius: 5px !important;
   opacity: 0;
   visibility: hidden;
   box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+.nav-links li:hover .drop-menu {
+  transition: all 0.3s ease;
+  top: 70px !important;
+  opacity: 1;
+  visibility: visible;
 }
 
 .nav-links li:hover .drop-menu,
@@ -720,10 +726,11 @@ html {
 }
 
 .footer .links a:hover {
-  border: none !important;
+  border: 1px solid rgba(255, 184, 0, 1);
   color: #39393a;
   background-color: var(--item-color);
 }
+
 .footer .footer-icon img {
   margin-right: 10px;
   width: 26px;

@@ -37,7 +37,7 @@ html {
   place-items: center;
   border-radius: 8%;
   cursor: pointer;
-  z-index: 99999999999999 !important;
+  z-index: 99999999999 !important;
 }
 
 #progress-value {
@@ -2843,7 +2843,7 @@ html {
   justify-content: center;
   opacity: 1;
   visibility: visible;
-  z-index: 9999;
+  z-index: 9999999999999999999999999 !important;
   -webkit-transition: opacity 0.25s ease;
   transition: opacity 0.25s ease;
 }
@@ -2895,7 +2895,7 @@ html {
   height: 16px;
   top: 12px;
   left: 15px;
-  background: #f10f0f;
+  background: var(--item-color);
   border-radius: 50%;
   -webkit-transform: translateX(0);
   transform: translateX(0);
@@ -2918,7 +2918,7 @@ html {
   width: 16px;
   height: 16px;
   margin-left: 16px;
-  background: #7453fc;
+  background: var(--background-color);
   border-radius: 50%;
 }
 /* 
@@ -2941,7 +2941,7 @@ Pre-loader Style
   justify-content: center;
   opacity: 1;
   visibility: visible;
-  z-index: 9999999;
+  z-index: 9999999999999999999999999 !important;
   -webkit-transition: opacity 0.25s ease;
   transition: opacity 0.25s ease;
 }
@@ -2993,7 +2993,7 @@ Pre-loader Style
   height: 16px;
   top: 12px;
   left: 15px;
-  background: #f10f0f;
+  background: var(--item-color);
   border-radius: 50%;
   -webkit-transform: translateX(0);
   transform: translateX(0);
@@ -3016,7 +3016,7 @@ Pre-loader Style
   width: 16px;
   height: 16px;
   margin-left: 16px;
-  background: #7453fc;
+  background: var(--background-color);
   border-radius: 50%;
 }
 
