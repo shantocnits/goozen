@@ -170,7 +170,7 @@ html {
 }
 
 #about-us .about-heading h1 {
-  font-size: 40px;
+  font-size: 42px;
   font-family: var(--primary-font);
 }
 
@@ -203,18 +203,43 @@ html {
 #achievement .achevement-item img {
   width: 60px;
 }
+
 #achievement .achevement-item .item {
   align-items: center;
 }
+
 #achievement .achevement-item h1 {
   font-size: 22px;
   padding-left: 20px;
+  margin-bottom: 0px;
   font-family: var(--primary-font);
 }
+
 #achievement .achevement-item p {
   font-size: 18px;
   padding: 20px 0px 40px 0px;
   font-family: var(--secondary-font);
+}
+
+@media screen and (max-width:1200px) {
+  #achievement .achevement-item{
+    text-align: center;
+  }
+
+  #achievement .achevement-item .item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #achievement .achevement-item .item h1{
+    padding-left: 10px;
+  }
+
+  #achievement .achevement-item img {
+    width: 60px;
+  }
+  
 }
 /* Achevement End */
 
@@ -232,17 +257,12 @@ html {
 }
 
 #service .service-heading h1 {
-  font-size: 40px;
+  font-size: 42px;
   font-family: var(--primary-font);
 }
 
 #service .service-heading h1 span {
   color: var(--item-color);
-}
-
-#service .service-heading p {
-  font-size: 18px;
-  font-family: var(--secondary-font);
 }
 
 .service-heading .bottom-border {
@@ -270,7 +290,7 @@ html {
 
 #service .service-item p {
   font-family: var(--secondary-font);
-  font-size: 18px;
+  font-size: 20px;
 }
 
 #service .success {
@@ -284,6 +304,7 @@ html {
   width: 100%;
   height: 2px;
   margin: 0px 35px;
+
 }
 
 #service .success .success-item:hover .count h1 {
@@ -296,6 +317,7 @@ html {
   color: var(--text-color-black);
   padding: 5px 20px 5px 20px;
   border-radius: 5px;
+  background: #edf7fc;
 }
 
 #service .success .success-title {
@@ -315,13 +337,41 @@ html {
 
 #service .success .success-title p {
   padding-bottom: 20px;
-  font-size: 18px;
+  font-size: 20px;
   font-family: var(--secondary-font);
 }
 
-@media screen and (max-width: 570px) {
+@media screen and (max-width: 1200px) {
+  #service .service-heading {
+    padding-bottom: 50px;
+  }
+
+  #service .service-heading h1 {
+    font-size: 38px;
+  }
+  
+}
+
+@media screen and (max-width: 575px) {
+  #service .success .border {
+    width: 85%;
+  
+  }
+
+  #service .success .success-title {
+    margin-top: 10px;
+    margin-left: 20px;
+
+  }
+
   #service .service-heading h1{
     font-size: 35px;
+
+  }
+
+  #service .service-heading h1 {
+    font-size: 30px !important;
+
   }
 
   #service .service-heading p{
@@ -336,6 +386,30 @@ html {
     margin: 0px 130px;
     margin-top: 5px;
     border-bottom: 2px solid #26a0da;
+  }
+
+  #service .success {
+    border-radius: 10px;
+    padding: 10px 10px;
+  }
+
+  #service .success-item {
+    margin-top: 0px;
+  }
+
+  #service .success-item h1{
+    margin-bottom: 0px;
+    font-size: 22px;
+  }
+
+  #service .success .count h1 {
+    padding: 15px 20px 15px 20px;
+  
+  }
+  #service .success .count {
+    margin-top: 10px !important;
+    margin-bottom: 0px;
+  
   }
   
 }
@@ -378,7 +452,7 @@ html {
 .team p {
   color: rgba(124, 137, 146, 1);
   text-align: center;
-  font-size: 18px;
+  font-size: 20px;
   margin-top: 20px;
 }
 
@@ -551,24 +625,30 @@ html {
 #apply-now h1 {
   
   font-family: var(--primary-font);
-  font-size: 40px;
+  font-size: 42px;
   color: var(--text-color-white);
 }
 
 #apply-now p {
   padding: 30px 0;
   font-family: var(--secondary-font);
-  font-size: 18px;
+  font-size: 20px;
   color: var(--text-color-white);
 }
 
 #apply-now a {
   font-family: var(--secondary-font);
   text-decoration: none;
-  font-size: 18px;
+  font-size: 20px;
   padding: 9px 30px;
   border-radius: 5px;
   border: 2px solid var(--item-color);
   color: var(--item-color);
+  transition: 0.3s;
+}
+
+#apply-now a:hover {
+  background: var(--item-color);
+  color: var(--text-color-white);
 }
 /* Apply Now End */

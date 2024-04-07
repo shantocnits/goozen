@@ -111,9 +111,8 @@ html {
   text-align: center;
 }
 
-.bredcome{
+.bredcome {
   padding-top: 5px;
- 
 }
 
 .HOME {
@@ -397,7 +396,7 @@ html {
 }
 
 #product-details .product-quantity .add-to-cart {
-  background:#00abfae6;
+  background: #00abfae6;
   color: var(--text-color-white);
   border: var(--border-and-color);
   font-family: var(--secondary-font);
@@ -410,7 +409,7 @@ html {
   transition: all 0.3s;
 }
 #product-details .product-quantity .add-to-cart:hover {
-  background:#26A0DA;
+  background: #26a0da;
 }
 
 #product-details .buy-now {
@@ -459,16 +458,13 @@ html {
     max-width: 100% !important;
   }
   #product-details .buy-now {
-   max-width: 84.8%;
-   
+    max-width: 84.8%;
   }
 }
 
 @media screen and (max-width: 768px) {
- 
   #product-details .buy-now {
-   max-width: 98.5%;
-   
+    max-width: 98.5%;
   }
 }
 
@@ -517,7 +513,6 @@ html {
 #seller-info h4 {
   font-family: var(--primary-font);
   font-size: 28px;
- 
 }
 
 #seller-info .seller-profile h1 {
@@ -567,7 +562,7 @@ html {
   border-radius: 5px;
   text-decoration: none;
   font-family: var(--secondary-font);
-  background:#00abfae6;
+  background: #00abfae6;
   color: var(--text-color-white);
   margin-left: 2px;
   transition: all 0.3s;
@@ -575,7 +570,7 @@ html {
 }
 
 #seller-info .seller-profile-info .chat-btn:hover {
-  background: #26A0DA;
+  background: #26a0da;
 }
 
 #seller-info .seller-profile img {
@@ -674,7 +669,6 @@ html {
 }
 
 .more-seller .seller-heading {
-
   margin: auto;
   display: flex;
   align-items: center;
@@ -853,15 +847,27 @@ html {
   color: var(--text-color-white);
 }
 
-.more-seller .product-icon-btns .product:hover .product-icon-btns a:nth-child(2) {
+.more-seller
+  .product-icon-btns
+  .product:hover
+  .product-icon-btns
+  a:nth-child(2) {
   transition-delay: 0.1s;
 }
 
-.more-seller .product-icon-btns .product:hover .product-icon-btns a:nth-child(2) {
+.more-seller
+  .product-icon-btns
+  .product:hover
+  .product-icon-btns
+  a:nth-child(2) {
   transition-delay: 0.1s;
 }
 
-.more-seller .product-icon-btns .product:hover .product-icon-btns a:nth-child(3) {
+.more-seller
+  .product-icon-btns
+  .product:hover
+  .product-icon-btns
+  a:nth-child(3) {
   transition-delay: 0.2s;
 }
 
@@ -1015,7 +1021,6 @@ html {
 }
 
 .also-like .like-heading {
-
   margin: auto;
   display: flex;
   align-items: center;
