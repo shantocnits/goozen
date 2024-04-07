@@ -119,12 +119,13 @@ html {
 
 /* Topbar End */
 
+
 /* Header Start */
 .header .logo img {
   align-items: center;
   justify-content: center;
   text-align: center;
-  padding: 30px 0;
+  padding: 15px 0;
 }
 
 .header .search_bar {
@@ -177,12 +178,13 @@ html {
 
 .header_contact img {
   margin-bottom: 5px;
-  width: 34px;
+  width: 28px;
   align-items: center;
 }
 
 .header_contact .call_us a {
   text-decoration: none;
+  font-family: var(--secondary-font);
   color: var(--text-color-black);
   font-size: 18px;
   font-weight: bold;
@@ -283,13 +285,18 @@ html {
   text-decoration: none;
   font-size: 22px;
   font-weight: 500;
-  padding: 9px 15px 20px 18px;
+  padding: 5px 15px 24px 18px;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
   transition: all 0.3s ease;
 }
 
 .nav-links li a:hover {
+  background: var(--text-color-white);
+  color: var(--text-color-blue);
+}
+
+.nav-links li a:hover:active {
   background: var(--text-color-white);
   color: var(--text-color-blue);
 }
@@ -792,6 +799,7 @@ html {
   .footer-item .items {
     border-left: none;
     margin-left: 0px !important;
+    
   }
 
   .footer .copyright .copyright-item .payment img {

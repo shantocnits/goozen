@@ -310,11 +310,13 @@ html {
 #service .success .success-item:hover .count h1 {
   background: #26a0da;
   color: var(--text-color-white);
+  
 }
 
 #service .success .count h1 {
   transition: all 0.3s ease;
   color: var(--text-color-black);
+  font-family: var(--primary-font);
   padding: 5px 20px 5px 20px;
   border-radius: 5px;
   background: #edf7fc;
@@ -447,6 +449,7 @@ html {
 .team h1 {
   font-size: 45px;
   text-align: center;
+  font-family: var(--primary-font);
 }
 
 .team p {
