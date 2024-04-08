@@ -37,6 +37,7 @@ html {
   place-items: center;
   border-radius: 8%;
   cursor: pointer;
+  z-index: 9999999999999;
 }
 
 #progress-value {
@@ -667,7 +668,12 @@ html {
   color: var(--text-color-white);
 }
 
+#apply-now .apply {
+  position: relative;
+}
+
 #apply-now a {
+  position: absolute;
   font-family: var(--secondary-font);
   text-decoration: none;
   font-size: 20px;
@@ -676,11 +682,50 @@ html {
   border: 2px solid var(--item-color);
   color: var(--item-color);
   transition: 0.3s;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  overflow: hidden;
 }
 
 #apply-now a:hover {
   background: var(--item-color);
   color: var(--text-color-white);
+}
+
+#apply-now a::before {
+  content: "";
+  position: absolute;
+  height: 140px !important;
+  width: 25px !important;
+  background: rgba(255, 255, 255, 0.815);
+  filter: blur(2px) !important;
+  opacity: 0.8;
+  top: -55px;
+  left: 0px;
+  transition: 1.5s;
+  transform: rotate(20deg) translateX(-40px);
+}
+
+#apply-now a:hover:before {
+  transform: rotate(20deg) translate(220px, -30px);
+}
+
+#apply-now a::after {
+  content: "";
+  position: absolute;
+  height: 140px !important;
+  width: 15px !important;
+  background: rgba(255, 255, 255, 0.815);
+  filter: blur(2px) !important;
+  opacity: 0.8;
+  top: -55px;
+  left: -20px;
+  transition: 1.5s;
+  transform: rotate(20deg) translateX(-40px);
+}
+
+#apply-now a:hover::after {
+  transform: rotate(20deg) translate(220px, -30px);
 }
 
 @media screen and (max-width: 575px) {

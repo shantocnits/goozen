@@ -37,6 +37,7 @@ html {
   place-items: center;
   border-radius: 8%;
   cursor: pointer;
+  z-index: 9999999999999;
 }
 
 #progress-value {
@@ -230,7 +231,7 @@ html {
   text-decoration: none;
   color: var(--text-color-blue);
   font-size: 22px;
-  padding: 8px 23px;
+  padding:14px 40px;
   margin-right: 20px;
   border-radius: 5px;
   font-family: var(--secondary-font);

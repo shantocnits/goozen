@@ -37,6 +37,7 @@ html {
   place-items: center;
   border-radius: 8%;
   cursor: pointer;
+  z-index: 9999999999999;
 }
 
 #progress-value {
@@ -201,6 +202,7 @@ html {
 
 #blog-post .blog-post .post-heading .heading p {
   font-family: var(--secondary-font);
+  font-size: 18px;
   padding: 20px 0px 0px 0px;
   color: rgba(124, 137, 146, 1);
 }
@@ -238,9 +240,9 @@ html {
   font-family: var(--secondary-font);
   color: var(--text-color-blue);
   text-decoration: none;
-  font-size: 18px;
+  font-size: 22px;
   font-weight: 500;
-  padding: 8px 30px;
+  padding: 11px 40px;
   border-radius: 5px;
   float: right;
 }
@@ -259,17 +261,22 @@ html {
   position: relative;
   float: right;
   background: #ffffff;
-  top: -20px;
+  top: -30px;
   right: -6px;
 }
 
 #blog-post .pagination a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   color: var(--text-color-blue);
   float: left;
-  padding: 8px 16px;
+  font-size: 22px;
+  font-family: var(--secondary-font);
+  padding: 8px 22px;
   border: 1px solid #26a0da;
   text-decoration: none;
-  border-radius: 3px;
+  border-radius: 4px;
   transition: background-color 0.3s;
   margin-right: 8px;
 }
@@ -277,12 +284,55 @@ html {
 #blog-post .pagination a.active {
   background-color: #26a0da;
   color: white;
+  padding: 11px 25px !important;
 }
 
 #blog-post .pagination a:hover:not(.active) {
-  background-color: #ddd;
+  background-color: var(--background-color);
+  color: var(--text-color-white);
 }
+
+@media screen and (max-width: 768px) {
+  #blog-post  .pagination-border {
+    display: inline-block;
+    display: flex;
+    justify-content: center;
+    background: none;
+  }
+  #blog-post .pagination a {
+    padding: 20px 14px !important;
+    margin: 0px 8px 0px 0px;
+    font-size: 18px;
+  }
+
+  #blog-post .pagination a.active {
+    padding: 20px 18px !important;
+  }
+ 
+}
+
+@media screen and (max-width: 575px) {
+  #blog-post .blog-post .post-heading .heading {
+    padding: 0px 0px 0px 15px;
+  }
+
+  #blog-post .pagination a {
+    padding: 14px 10px !important;
+    margin: 0px 8px 0px 0px;
+    font-size: 14px;
+  }
+
+  #blog-post .pagination a.active {
+    padding: 14px 12px !important;
+  }
+
+  #blog-post .pagination {
+    top: -28px;
+  }
+}
+
 /* blog post */
+
 
 /* categories Start */
 #blog-post .categories {
@@ -302,7 +352,7 @@ html {
 }
 
 #blog-post .categories-heading h1 {
-  font-size: 30px;
+  font-size: 32px;
 }
 
 #blog-post .categories-heading .bottom-border {
@@ -332,6 +382,10 @@ html {
   transition: all 0.3s ease;
 }
 
+#blog-post .categories-item .slider-item a {
+  font-size: 22px;
+}
+
 #blog-post .categories-item li a:hover {
   color: var(--text-color-blue);
 }
@@ -348,6 +402,10 @@ html {
   position: absolute;
   left: 46.5% !important;
   top: 93% !important;
+}
+
+#blog-post .categories-next:hover svg path {
+  fill: var(--background-color) !important;
 }
 
 #blog-post .swiper {
@@ -403,7 +461,7 @@ html {
 }
 
 #blog-post .recent-heading h1 {
-  font-size: 30px;
+  font-size: 32px;
 }
 
 #blog-post .recent-heading .bottom-border {
@@ -431,7 +489,7 @@ html {
 }
 
 #blog-post .recent-item a {
-  font-size: 19px;
+  font-size: 22px;
   text-decoration: none;
   font-family: var(--primary-font);
   color: var(--text-color-black);
@@ -465,7 +523,7 @@ html {
 }
 
 #blog-post .tag-heading h1 {
-  font-size: 30px;
+  font-size: 32px;
 }
 
 #blog-post .tag-heading .bottom-border {
@@ -683,28 +741,6 @@ html {
     flex-wrap: wrap;
   }
 
-  #blog-post .pagination a {
-    padding: 4px 12px !important;
-    margin: 0 4px;
-  }
-
-  #blog-post .pagination {
-    font-size: 16px;
-  }
 }
 
-@media screen and (max-width: 540px) {
-  #blog-post .pagination a {
-    padding: 2px 8px !important;
-    margin: 0 4px;
-  }
-
-  #blog-post .pagination {
-    font-size: 14px;
-  }
-
-  #blog-post .pagination {
-    top: -15px;
-  }
-}
 /* Bloge Post End */

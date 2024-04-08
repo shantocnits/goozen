@@ -26,6 +26,7 @@ html {
   place-items: center;
   border-radius: 8%;
   cursor: pointer;
+  z-index: 9999999999999;
 }
 
 #progress-value {

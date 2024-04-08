@@ -108,18 +108,27 @@ html {
 }
 
 .hero-slider-item button {
+  border: none;
+  margin-top: 20px;
+  position: relative;
+}
+.hero-slider-item button a {
+  position: absolute;
+  text-wrap: nowrap;
+  float: left;
   transition: all 0.3s ease;
   border: none;
   font-size: 22px;
   padding: 12px 32px;
   box-shadow: var(--box-shadow);
   border-radius: 3px;
-  margin-top: 10px;
-  background: rgba(67, 180, 224, 0.79);
+  background: rgba(67, 179, 224, 0.945);
   font-family: var(--secondary-font);
+  overflow: hidden;
+  
 }
 
-.hero-slider-item button:hover {
+.hero-slider-item button a:hover {
   border: none;
   padding: 12px 32px;
   background: var(--background-color);
@@ -128,6 +137,43 @@ html {
 .hero-slider-item button a {
   text-decoration: none;
   color: var(--text-color-white);
+}
+
+
+.hero-slider-item button a::before {
+  content: "";
+  position: absolute;
+  height: 140px !important;
+  width: 25px !important;
+  background: rgba(255, 255, 255, 0.815);
+  filter: blur(2px) !important;
+  opacity: 0.8;
+  top: -55px;
+  left: 0px;
+  transition: 1.5s;
+  transform: rotate(20deg) translateX(-40px);
+}
+
+.hero-slider-item button a:hover:before {
+  transform: rotate(20deg) translate(220px, -30px);
+}
+
+.hero-slider-item button a::after {
+  content: "";
+  position: absolute;
+  height: 140px !important;
+  width: 15px !important;
+  background: rgba(255, 255, 255, 0.815);
+  filter: blur(2px) !important;
+  opacity: 0.8;
+  top: -55px;
+  left: -20px;
+  transition: 1.5s;
+  transform: rotate(20deg) translateX(-40px);
+}
+
+.hero-slider-item button a:hover::after {
+  transform: rotate(20deg) translate(220px, -30px);
 }
 
 .hero-slider-item .swiper-img {
@@ -209,15 +255,6 @@ html {
     font-size: 14px;
   }
 
-  .hero-slider-item button {
-    font-size: 18px;
-    padding: 10px 25px;
-  }
-
-  .hero-slider-item button:hover {
-    font-size: 18px;
-    padding: 10px 25px;
-  }
 }
 
 @media screen and (max-width: 768px) {
@@ -255,15 +292,6 @@ html {
     transform: translateY(-20px) translateX(-50px) !important;
   }
 
-  .hero-slider-item button {
-    font-size: 16px;
-    padding: 8px 16px;
-  }
-
-  .hero-slider-item button:hover {
-    font-size: 16px;
-    padding: 8px 16px;
-  }
 }
 /* Hero Slider End */
 
@@ -543,11 +571,14 @@ html {
   margin: 0px 0;
 }
 
-#offer .offer-item1 .offer-title1 .offer-button1 {
-  margin: 30px 0px 20px 0px;
+#offer .offer-item1 .offer-button1 {
+  position: relative;
+  padding: 45px 0 ;
+  margin: -20px 0px 20px 0px;
 }
 
-#offer .offer-item1 .offer-title1 a {
+#offer .offer-item1 .offer-button1 a {
+  position: absolute;
   text-decoration: none;
   font-size: 22px;
   font-family: var(--secondary-font);
@@ -555,12 +586,48 @@ html {
   background: #ffb700e1;
   color: var(--text-color-white);
   border-radius: 3px;
-  margin-top: 50px !important;
   transition: all 0.3s;
+  overflow: hidden;
 }
 
 #offer .offer-item1 .offer-title1 a:hover {
   background: #ffb800;
+}
+
+#offer .offer-item1 .offer-title1 a::before {
+  content: "";
+  position: absolute;
+  height: 140px !important;
+  width: 25px !important;
+  background: rgba(255, 255, 255, 0.815);
+  filter: blur(2px) !important;
+  opacity: 0.8;
+  top: -55px;
+  left: 0px;
+  transition: 1.5s;
+  transform: rotate(20deg) translateX(-40px);
+}
+
+#offer .offer-item1 .offer-title1 a:hover:before {
+  transform: rotate(20deg) translate(220px, -30px);
+}
+
+#offer .offer-item1 .offer-title1 a::after {
+  content: "";
+  position: absolute;
+  height: 140px !important;
+  width: 15px !important;
+  background: rgba(255, 255, 255, 0.815);
+  filter: blur(2px) !important;
+  opacity: 0.8;
+  top: -55px;
+  left: -20px;
+  transition: 1.5s;
+  transform: rotate(20deg) translateX(-40px);
+}
+
+#offer .offer-item1 .offer-title1 a:hover::after {
+  transform: rotate(20deg) translate(220px, -30px);
 }
 
 #offer .offer-item2 .offer-title2 {
@@ -632,11 +699,15 @@ html {
   margin: 0px 0;
 }
 
-#offer .offer-item2 .offer-title2 .offer-button2 {
-  margin: 30px 0px 20px 0px;
+#offer .offer-item2 .offer-button2 {
+  position: relative;
+  margin: 0px 145px 24px 0px;
+  padding: 25px 10px 40px 0px;
 }
 
 #offer .offer-item2 .offer-title2 a {
+  position: absolute;
+  text-wrap: nowrap;
   text-decoration: none;
   font-size: 22px;
   font-family: var(--secondary-font);
@@ -644,12 +715,48 @@ html {
   background: #26a1dabc;
   color: var(--text-color-white);
   border-radius: 3px;
-  margin-top: 50px !important;
   transition: all 0.3s;
+  overflow: hidden;
 }
 
 #offer .offer-item2 .offer-title2 a:hover {
   background: #10a6ec;
+}
+
+#offer .offer-item2 .offer-title2 a::before {
+  content: "";
+  position: absolute;
+  height: 140px !important;
+  width: 25px !important;
+  background: rgba(255, 255, 255, 0.815);
+  filter: blur(2px) !important;
+  opacity: 0.8;
+  top: -55px;
+  left: 0px;
+  transition: 1.5s;
+  transform: rotate(20deg) translateX(-40px);
+}
+
+#offer .offer-item2 .offer-title2 a:hover:before {
+  transform: rotate(20deg) translate(220px, -30px);
+}
+
+#offer .offer-item2 .offer-title2 a::after {
+  content: "";
+  position: absolute;
+  height: 140px !important;
+  width: 15px !important;
+  background: rgba(255, 255, 255, 0.815);
+  filter: blur(2px) !important;
+  opacity: 0.8;
+  top: -55px;
+  left: -20px;
+  transition: 1.5s;
+  transform: rotate(20deg) translateX(-40px);
+}
+
+#offer .offer-item2 .offer-title2 a:hover::after {
+  transform: rotate(20deg) translate(220px, -30px);
 }
 
 @media screen and (max-width: 1200px) {
@@ -710,6 +817,18 @@ html {
   #offer .offer-item1 .offer-title1 h6 span {
     margin: 0px 0;
   }
+  
+  #offer .offer-item1 .offer-button1 {
+    display: flex;
+    justify-content: center;
+  }
+
+  #offer .offer-item2 .offer-button2 {
+    position: relative;
+    margin: 0px 145px 0px 0px;
+    padding: 25px 10px 90px 0px;
+  }
+
 }
 
 /* Offer Sec End */
@@ -1473,6 +1592,7 @@ html {
   top: 89% !important;
   transition: all 0.5s;
 }
+
 #deals .deal-next:hover svg path {
   fill: #26a0da !important;
 }
