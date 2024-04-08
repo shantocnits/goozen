@@ -82,7 +82,7 @@ html {
 
 .hero-shape {
   position: absolute;
-  width: 150px;
+  max-width: 150px;
 }
 
 .hero-shape img {
@@ -97,6 +97,16 @@ html {
 .hero-shape-2 {
   top: 0;
   right: 0;
+}
+
+.hero-content .hero-img-1 img{
+  margin-top: 10px;
+  
+}
+
+.hero-content .hero-img-2 img{
+  margin-left: 70px;
+  
 }
 
 .hero-content {
@@ -138,6 +148,14 @@ html {
 }
 
 @media screen and (max-width: 992px) {
+  .hero-content .hero-img-2 img{
+    margin-left: 0px;
+    max-width: 90%;
+    
+  }
+}
+
+@media screen and (max-width: 992px) {
   .hero-shape {
     display: none;
   }
@@ -152,8 +170,24 @@ html {
 
 @media screen and (max-width: 768px) {
   .hero-content .hero-img-2 {
-    display: none;
+    width: 100%;
+    display: flex;
+    justify-content: center;
   }
+  .hero-content .hero-img-2 img{
+    max-width: 80%;
+    align-items: center;
+   
+    display: flex;
+    justify-content: center;
+  }
+  .hero-content .hero-img-1 img{
+    max-width: 80%;
+    display: none;
+    
+    
+  }
+  
 }
 @media screen and (max-width: 600px) {
   .bredcome a {
@@ -225,6 +259,12 @@ html {
   }
   #payment .cashback-img .payment-item p {
     font-size: 10px;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  #payment {
+    margin: 50px 0px 0px 0px;
   }
 }
 
@@ -450,6 +490,13 @@ html {
 
 .swiper-button-next::after {
   display: none;
+}
+
+@media screen and (max-width:575px) {
+  .feature {
+    padding: 50px 0px 120px 0px;
+  }
+  
 }
 /* Categories End */
 
@@ -685,7 +732,8 @@ html {
 }
 
 #all-product .pagination a:hover:not(.active) {
-  background-color: #ddd;
+  background-color: var(--background-color);
+  color: var(--text-color-white);
 }
 
 @media screen and (max-width: 768px) {
