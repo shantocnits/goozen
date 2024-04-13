@@ -235,6 +235,8 @@ html {
 }
 
 #blog-post .blog-post .button a {
+  position: relative;
+  overflow: hidden;
   border: var(--border-and-color);
   background: var(--text-color-white);
   font-family: var(--secondary-font);
@@ -245,6 +247,48 @@ html {
   padding: 11px 40px;
   border-radius: 5px;
   float: right;
+  transition: 0.4s;
+}
+
+#blog-post .blog-post .button a:hover {
+  background: var(--background-color);
+  color: var(--text-color-white);
+}
+
+#blog-post .blog-post .button a::before {
+  content: "";
+  position: absolute;
+  height: 140px !important;
+  width: 25px !important;
+  background: rgba(255, 255, 255, 0.815);
+  filter: blur(2px) !important;
+  opacity: 0.8;
+  top: -55px;
+  left: 0px;
+  transition: 1.5s;
+  transform: rotate(20deg) translateX(-40px);
+}
+
+#blog-post .blog-post .button a:hover:before {
+  transform: rotate(20deg) translate(220px, -30px);
+}
+
+#blog-post .blog-post .button a::after {
+  content: "";
+  position: absolute;
+  height: 140px !important;
+  width: 15px !important;
+  background: rgba(255, 255, 255, 0.815);
+  filter: blur(2px) !important;
+  opacity: 0.8;
+  top: -55px;
+  left: -25px;
+  transition: 1.5s;
+  transform: rotate(20deg) translateX(-40px);
+}
+
+#blog-post .blog-post .button a:hover::after {
+  transform: rotate(20deg) translate(220px, -30px);
 }
 
 #blog-post .pagination-border {

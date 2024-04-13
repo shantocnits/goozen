@@ -229,28 +229,83 @@ html {
 
 #contact-us .send-mail .send-btn {
   margin: 50px 0;
+  display: flex;
+  gap: 15px;
+  justify-content: center;
 }
 
 #contact-us .send-mail .send-btn a {
+  position: relative;
+  overflow: hidden;
   text-decoration: none;
   color: var(--text-color-blue);
   font-size: 22px;
-
-  margin-right: 20px;
   border-radius: 5px;
   font-family: var(--secondary-font);
   border: var(--border-and-color);
   transition: all 0.5s ease;
 }
 
-#contact-us .send-mail .send-btn .form-btn {
+#contact-us .send-mail .send-btn a:hover {
   background: rgba(38, 160, 218, 1);
   color: var(--text-color-white);
-  padding:14px 23px;
+}
+
+#contact-us .send-mail .send-btn a::before {
+  content: "";
+  position: absolute;
+  height: 180px !important;
+  width: 25px !important;
+  background: rgba(255, 255, 255, 0.815);
+  filter: blur(2px) !important;
+  opacity: 0.8;
+  top: -90px;
+  left: 0px;
+  transition: 1.5s;
+  transform: rotate(20deg) translateX(-40px);
+}
+
+#contact-us .send-mail .send-btn a:hover:before {
+  transform: rotate(20deg) translate(310px, -30px);
+}
+
+#contact-us .send-mail .send-btn a::after {
+  content: "";
+  position: absolute;
+  height: 180px !important;
+  width: 15px !important;
+  background: rgba(255, 255, 255, 0.815);
+  filter: blur(2px) !important;
+  opacity: 0.8;
+  top: -90px;
+  left: -20px;
+  transition: 1.5s;
+  transform: rotate(20deg) translateX(-40px);
+}
+
+#contact-us .send-mail .send-btn a:hover::after {
+  transform: rotate(20deg) translate(310px, -30px);
+}
+
+#contact-us .send-mail .send-btn .form-btn {
+  background: rgba(38, 160, 218, 0.9);
+  color: var(--text-color-white);
+  padding: 14px 23px !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.3s;
+}
+
+#contact-us .send-mail .send-btn .form-btn:hover {
+  background: var(--background-color);
 }
 
 #contact-us .send-mail .send-btn .close-btn {
-  padding: 14px 53px !important;
+  padding: 14px 53px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #contact-us .contact .contact-form {
@@ -288,7 +343,9 @@ html {
 }
 
 #contact-us .contact .contact-form form .contact-form-btn a {
-  background: var(--background-color);
+  position: relative;
+  overflow: hidden;
+  background: rgba(38, 160, 218, 0.9);
   color: var(--text-color-white);
   font-family: var(--secondary-font);
   text-decoration: none;
@@ -296,7 +353,54 @@ html {
   margin: 20px 0px 70px 0px;
   padding:14px 100px;
   font-size: 22px;
+  transition: 0.3s;
 }
+
+#contact-us .contact .contact-form form .contact-form-btn a:hover {
+  background: var(--background-color);
+}
+
+#contact-us .send-mail .send-btn a:hover {
+  background: rgba(38, 160, 218, 1);
+  color: var(--text-color-white);
+}
+
+#contact-us .contact .contact-form form .contact-form-btn a::before {
+  content: "";
+  position: absolute;
+  height: 180px !important;
+  width: 25px !important;
+  background: rgba(255, 255, 255, 0.815);
+  filter: blur(2px) !important;
+  opacity: 0.8;
+  top: -90px;
+  left: 0px;
+  transition: 1.5s;
+  transform: rotate(20deg) translateX(-40px);
+}
+
+#contact-us .contact .contact-form form .contact-form-btn a:hover:before {
+  transform: rotate(20deg) translate(310px, -30px);
+}
+
+#contact-us .contact .contact-form form .contact-form-btn a::after {
+  content: "";
+  position: absolute;
+  height: 180px !important;
+  width: 15px !important;
+  background: rgba(255, 255, 255, 0.815);
+  filter: blur(2px) !important;
+  opacity: 0.8;
+  top: -90px;
+  left: -20px;
+  transition: 1.5s;
+  transform: rotate(20deg) translateX(-40px);
+}
+
+#contact-us .contact .contact-form form .contact-form-btn a:hover::after {
+  transform: rotate(20deg) translate(310px, -30px);
+}
+
 #contact-us .contact-form input {
   font-size: 18px;
   font-family: var(--secondary-font);
@@ -308,6 +412,33 @@ html {
 }
 
 @media screen and (max-width: 768px) {
+  #contact-us .send-mail .send-btn {
+    display: block;
+    margin-bottom: 10px;
+  }
+  #contact-us .send-mail .send-btn .form-btn {
+    background: rgba(38, 160, 218, 1);
+    color: var(--text-color-white);
+    padding: 0px 10px;
+    font-size: 16px;
+    height: 50px;
+    width: 220px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-right: 5px ;
+
+  }
+  
+  #contact-us .send-mail .send-btn .close-btn {
+    padding: 0px 18px;
+    height: 50px;
+    font-size: 16px;
+    margin-top: 15px;
+    width: 150px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
   #contact-us .contact .contact-items {
     display: block;
   }
@@ -316,20 +447,14 @@ html {
     font-size: 35px;
   }
 
-  #contact-us .send-mail .send-btn a {
-    font-size: 20px;
-    padding: 8px 15px;
-    margin-right: 10px;
+  #contact-us .contact .contact-form form .contact-form-btn a {
+    padding:8px 50px;
+    font-size: 16px;
+  
   }
 }
 
 @media screen and (max-width: 500px) {
-  #contact-us .send-mail .send-btn a {
-    font-size: 16px;
-    padding: 8px 15px;
-    margin-right: 10px;
-  }
-  
   #contact-us .send-mail h1 {
     font-size: 32px;
   }
