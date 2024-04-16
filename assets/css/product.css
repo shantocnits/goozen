@@ -639,8 +639,6 @@ html {
   }
 }
 
-
-
 @media screen and (max-width: 992px) {
   #product-details .quantity-main {
     max-width: 84.3% !important;
@@ -947,7 +945,7 @@ html {
   #seller-info .col-lg-4 {
     padding: 0px 12px !important;
   }
-  #seller-info .panel{
+  #seller-info .panel {
     padding-right: 0px;
   }
 }
@@ -971,7 +969,7 @@ html {
     font-family: var(--primary-font);
     font-size: 17px;
   }
-  #seller-info .panel{
+  #seller-info .panel {
     font-size: 17px;
   }
 }
