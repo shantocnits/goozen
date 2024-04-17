@@ -1,20 +1,17 @@
-var swiper = new Swiper('.rated-slider', {
-    slidesPerView: 3,
-    spaceBetween: 15,
-    slidesPerGroup: 1,
-        direction: 'vertical',
-        effect: 'slide',
-        loop: true,
-        loopFillGroupWithBlank: true,
-        navigation: {
-          nextEl: '.rated-next',
-        },
-        
-      });
-  
-      function getDirection() {
-        var windowWidth = window.innerWidth;
-        var direction = window.innerWidth <= 760 ? 'vertical' : 'horizontal';
-  
-        return direction;
-      }
+var swiper = new Swiper(".topslide2", {
+  spaceBetween: 20,
+  direction: 'vertical',
+  loop: "true",
+  slidesPerView: 3,
+  freeMode: true,
+  watchSlidesProgress: true,
+  navigation: {
+    nextEl: ".swiper-button-next",
+  },
+});
+var swiper2 = new Swiper(".topslide", {
+  spaceBetween: 10,
+  thumbs: {
+    swiper: swiper,
+  },
+});

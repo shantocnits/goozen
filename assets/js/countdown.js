@@ -9,5 +9,5 @@ setInterval(function time(){
     if((sec + '').length == 1){
           sec = '0' + sec;
     }
-    jQuery('#the-final-countdown p').html(hours+':'+min+':'+sec)
+    jQuery('#the-final-countdown p').html(hours+' : '+min+' : '+sec)
   }, 1000);

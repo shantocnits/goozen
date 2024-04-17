@@ -12,7 +12,6 @@ var swiper = new Swiper(".myslide2", {
   },
 });
 var swiper2 = new Swiper(".myslide", {
-
   spaceBetween: 10,
   thumbs: {
     swiper: swiper,
