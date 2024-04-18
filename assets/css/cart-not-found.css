@@ -1,0 +1,193 @@
+@import url("https://fonts.googleapis.com/css2?family=K2D&display=swap");
+
+@font-face {
+  font-family: fonts;
+  src: url(../fonts/fonts/ttf/OtomanopeeOne-Regular.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Scrollbar Start */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(38, 160, 218, 1);
+  border-radius: 10px;
+}
+/* Scrollbar End */
+
+/* Back to button Start */
+html {
+  scroll-behavior: smooth;
+}
+
+#progress {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  height: 70px;
+  width: 70px;
+  display: none;
+  place-items: center;
+  border-radius: 8%;
+  cursor: pointer;
+  z-index: 99999999999 !important;
+}
+
+#progress-value {
+  display: block;
+  height: calc(100% - 12px);
+  width: calc(100% - 12px);
+  background-color: var(--item-color);
+  border-radius: 8%;
+  display: grid;
+  place-items: center;
+  font-size: 35px;
+  border: 3px solid rgba(236, 236, 236, 0.601);
+}
+
+/* Back to button End */
+
+/* Variable */
+:root {
+  --box-shadow: 0 0 10px hsl(0, 0%, 0%, 0.15);
+  --primary-font: fonts;
+  --secondary-font: K2D;
+  --border-and-color: 1px solid rgba(38, 160, 218, 1);
+  --text-color-black: black;
+  --background-color: rgba(38, 160, 218, 1);
+  --text-color-white: rgba(255, 255, 255, 1);
+  --text-color-blue: rgba(38, 160, 218, 1);
+  --item-color: rgba(255, 184, 0, 1);
+  --shadow: 0px 15px 15px rgba(0, 0, 0, 0.18);
+}
+
+/* Hero Start */
+#hero {
+  background: rgba(187, 229, 255, 1);
+}
+
+.hero-wrapper {
+  position: relative;
+}
+
+.hero-content {
+  position: relative;
+}
+
+.hero-shape {
+  position: absolute;
+  width: 150px;
+}
+
+.hero-shape img {
+  width: 50%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.hero-shape-1 {
+  top: 0;
+  left: 0;
+}
+
+.hero-shape-2 {
+  display: flex;
+  justify-content: end;
+  bottom: 0;
+  right: 0;
+}
+
+.hero-content {
+  padding: 100px 0;
+}
+
+.hero-title h1 {
+  font-size: 70px;
+  font-family: var(--primary-font);
+  text-align: center;
+}
+
+.bredcome {
+  padding-top: 5px !important;
+}
+
+.bredcome .HOME {
+  font-family: var(--secondary-font);
+  text-decoration: none;
+  font-size: 22px;
+  color: var(--text-color-black);
+  margin-top: 10px;
+}
+
+.HOME:hover {
+  color: var(--text-color-black);
+}
+
+.bredcome .CONTACT {
+  font-family: var(--secondary-font);
+  color: var(--background-color);
+  margin-top: 10px;
+  margin-left: 5px;
+  font-size: 22px;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 992px) {
+  .hero-shape {
+    width: 90px !important;
+    display: block;
+  }
+
+  .hero-title h1 {
+    font-size: 50px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .hero-shape {
+    width: 60px !important;
+    display: block;
+  }
+
+  .hero-title h1 {
+    font-size: 40px;
+  }
+
+  .bredcome a {
+    font-size: 18px !important;
+  }
+}
+/* Hero Start */
+
+/* Comming Start */
+#update {
+  margin: 100px 0;
+}
+#update h1 {
+    padding-top: 20px;
+  text-align: center;
+  font-size: 40px;
+  font-family: var(--primary-font);
+}
+#update .not-found {
+  display: flex;
+  justify-content: center;
+}
+#update .not-found img {
+  max-width: 40%;
+}
+@media screen and (max-width:768px) {
+    #update h1 {
+        font-size: 30px;
+        
+      }
+    
+}
+/* Comming End */

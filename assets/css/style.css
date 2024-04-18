@@ -2303,7 +2303,6 @@ html {
 #top-all-product .topslide {
   width: 80% !important;
   aspect-ratio: 1/1 !important;
-
   margin-bottom: 100px;
   padding: 0px !important;
   border: var(--border-and-color) !important;
@@ -2313,17 +2312,10 @@ html {
 
 #top-all-product .topslide .swiper-slide {
   padding: 5px !important;
-  
-  
- 
+
 }
 
-#top-all-product .topslide .swiper-slide .swiper-wrapper{
- 
-  
-  
- 
-}
+
 #top-all-product .topslide h2 {
 position: absolute;
   bottom: -20px;
@@ -2338,7 +2330,6 @@ position: absolute;
   padding: 20px;
   
 }
-
 
 #top-all-product .swiper-slide {
   background-size: cover;
@@ -2384,33 +2375,22 @@ position: absolute;
   
 }
 
-
 #top-all-product .top-rated-next {
   position: absolute;
   top: 425px;
   left: 43%;
   transform: translate(-50%, -50%);
- 
   margin: 0px;
-}
 
+}
 
 #top-all-product .top-rated-next svg {
   width: 17px;
 }
 
-
 #top-all-product .slider-item .top-rated-next:hover svg path {
   fill: #26a0da;
 }
-
-
-
-
-
-
-
-
 
 
 /* Top Rated Product End */
