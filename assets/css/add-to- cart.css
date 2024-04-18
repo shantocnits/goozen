@@ -176,7 +176,28 @@ html {
   }
  
   #cart table thead .name{
+
     text-align: start;
+    
+  }
+  #cart table thead .name span{
+    position: relative;
+    padding-bottom: 8px !important;
+  
+  }
+  #cart table thead th span{
+    padding-bottom: 8px !important;
+  
+  }
+
+  #cart table thead .name span::before{
+    content: "";
+    position: absolute;
+    bottom: -6px;
+    background: #26A0DA;
+    width: 50%;
+    height: 1px;
+
     
   }
   
@@ -185,15 +206,46 @@ html {
     font-size: 25px;
     text-align: center;
     text-wrap: nowrap;
+    
 
   }
+  #cart table thead th span{
+    border-bottom: var(--border-and-color) !important;
+
+  }
+
   #cart table tbody tr{
     margin-top: 30px !important;
   }
 
 
   #cart table tbody td{
+  
     border-bottom: none !important;
+    text-align: center;
+    padding-top: 30px !important;
+  }
+
+  #cart table tbody .product h1{
+     padding-top: 5%;
+     font-size: 25px;
+  }
+  #cart table tbody .product{
+    float: left;
+    max-width: 90%;
+   
+  }
+  #cart table tbody .item{
+    
+   
+  }
+  #cart table tbody .product img{
+    max-width: 150%;
+   
+    border: var(--border-and-color);
+    padding: 10px 50px;
+    border-radius: 4px;
+   
   }
   
 
