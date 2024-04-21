@@ -402,9 +402,7 @@
                   >
                   <input
                     type="email"
-                    class="form-control"
-                    id="email"
-                    name="email"
+                    class="email"
                     placeholder="enter your name"
                   />
 
@@ -413,18 +411,16 @@
                   >
                   <input
                     type="text"
-                    class="form-control"
-                    id="text"
-                    name="text"
+                    class="text"
                     placeholder="enter your address"
                   />
 
                   <div class="row">
-                    <div class="col-lg-6">
-                      <label for="country">Country<span>*</span></label
+                    <div class="col-sm-6">
+                      <label style="margin-bottom: 8px;" for="country">Country<span>*</span></label
                       ><br />
                       <select
-                        class="form-select"
+                        class="name"
                         name="country"
                         placeholder="Your name.."
                       >
@@ -435,10 +431,10 @@
                         <option value="usa">USA</option>
                       </select>
                     </div>
-                    <div class="col-lg-6">
-                      <label for="country">State<span>*</span></label
+                    <div class="col-sm-6">
+                      <label style="margin-bottom: 8px;" for="country">State<span>*</span></label
                       ><br />
-                      <select class="form-select" name="country">
+                      <select class="state" name="country">
                         <option value="state">select state</option>
                         <option value="canada">Canada</option>
                         <option value="usa">USA</option>
@@ -449,27 +445,28 @@
                   </div>
                   <br />
                   <div class="row">
-                    <div class="col-lg-6">
-                      <label for="country">City/Town<span>*</span></label
+                    <div class="col-sm-6">
+                      <label style="margin-bottom: 8px;" for="country">City/Town<span>*</span></label
                       ><br />
                       <select
-                        class="form-select"
+                        class="country"
                         name="country"
-                        placeholder="Your name.."
+                        placeholder="select city/town"
                       >
-                        <option class="country">select country</option>
+                        <option class="country">select city/town</option>
                         <option value="canada">Canada</option>
                         <option value="usa">USA</option>
                         <option value="usa">USA</option>
                         <option value="usa">USA</option>
                       </select>
                     </div>
-                    <div class="col-lg-6">
-                      <label for="country">Mobile Number<span>*</span></label
+                    <div class="col-sm-6">
+                      <label style="margin-bottom: 8px;" for="country">Mobile Number<span>*</span></label
                       ><br />
                       <input
+                        style="width: 100%;"
                         type="number"
-                        class="form-control"
+                        class="number"
                         id="number"
                         name=""
                         placeholder="enter number"
@@ -482,22 +479,154 @@
                   >
                   <input
                     type="email"
-                    class="form-control"
-                    id="email"
-                    name="email"
+                    class="email"
                     placeholder="enter email address"
                   />
 
-                  <label for="comment">Order Notes</label>
-                  <textarea style="height: 150px;"
-                    class="form-control"
+                  <label style="margin-bottom: 8px;" for="comment">Order Notes</label>
+                  <textarea
+                    style="height: 150px"
+                    class="text"
                     name="text"
+                    placeholder="enter massage"
                   ></textarea>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      name="remember"
+                    />
+                    Create an Accounts
+                  </div>
                 </form>
+
+                <div class="product">
+                  <h1 class="heading">Products</h1>
+                  <div class="product-item">
+                    <div class="product-img">
+                      <img src="./assets/img/check-out-img/product1.svg" alt="">
+                      <h1>Adico- Smart <br>
+                        Watch</h1>
+                    </div>
+                    <div class="qty">
+                      <h1>1 Qty</h1>
+                    </div>
+                    <div class="price">
+                      <h1>$10.25</h1>
+                    </div>
+                  </div>
+                </div>
+                <div class="chipping-cost">
+                  <h1 class="heading">Shipping Cost</h1>
+                  <div class="chipping-item">
+                    <div class="row">
+                      <div class="col-lg-6">
+                        <div class="Shipping">
+                          <div>
+                            <h1>Express Shipping</h1>
+                          <h2 class="price">$5.00</h2>
+                          <span class="zone">Zone: Asia</span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-lg-6">
+                        <div class="Shipping">
+                          <div>
+                            <h1>International Shipping</h1>
+                          <h2 class="price">$25</h2>
+                          <span class="zone">Zone: Asia</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <br>
+                    <div class="row">
+                      <div class="col-lg-6">
+                        <div class="Shipping">
+                          <div>
+                            <h1>Same-Day Delivery</h1>
+                          <h2 class="price">$45</h2>
+                          <span class="zone">Zone: Asia</span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-lg-6">
+                        <div class="Shipping">
+                          <div>
+                            <h1>Free Shipping</h1>
+                          <h2 class="price">$25</h2>
+                          <span class="zone">Zone: Asia</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="calculation">
+                  <div class="item">
+                    <h1>Sub Total</h1>
+                    <h2>$10.25</h2>
+                  </div>
+                  <div class="item">
+                    <h1>Tax Amount</h1>
+                    <h2>Inclusive Tax</h2>
+                  </div>
+                  <div class="item">
+                    <h1>Shipping Cost</h1>
+                    <h2>$5.00</h2>
+                  </div>
+                  <div class="item">
+                    <h1>Total</h1>
+                    <h2>$15.25</h2>
+                  </div>
+                </div>
               </div>
             </div>
 
-            <div class="col-lg-5">ss</div>
+            <div class="col-lg-5">
+              <div class="order-summery">
+                <div class="heading">
+                  <h1><span>Order Summery</span></h1>
+                </div>
+
+                <div class="apply-cuppon">
+                  <input type="text" placeholder="enter your coupon code">
+                  <a href="#">Apply Coupon</a>
+                </div>
+                <div class="calculation">
+                  <div class="item">
+                    <h1>Items Total</h1>
+                    <h2>$10.25</h2>
+                  </div>
+                  <div class="item">
+                    <h1>Discount Amount</h1>
+                    <h2>$0.00</h2>
+                  </div>
+                  <div class="item">
+                    <h1>Tax Amount</h1>
+                    <h2>$0.00</h2>
+                  </div>
+                  <div class="item">
+                    <h1>Total Delivery Cost</h1>
+                    <h2>$5.00</h2>
+                  </div>
+                  <div class="item">
+                    <h1>Payment Amount</h1>
+                    <h2>$15.25</h2>
+                  </div>
+                  <div class="item">
+                    <h1>Total</h1>
+                    <h2>$15.25</h2>
+                  </div>
+                </div>
+              </div>
+
+              <div class="payment-methode">
+                 <div class="heading">
+                  <h1><span>Select Payment Method</span></h1>
+                 </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
