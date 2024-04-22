@@ -250,7 +250,7 @@ html {
 .navbar {
   position: absolute !important;
   position: sticky !important;
-  top: 0px !important;
+  top: -1px !important;
   left: 0px !important;
   font-family: var(--secondary-font);
   width: 100%;

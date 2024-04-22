@@ -166,7 +166,6 @@ html {
 }
 /* Hero Start */
 
-
 /* Check Out Start */
 #check-out {
   margin: 80px 0;
@@ -273,26 +272,25 @@ html {
   outline-style: none;
 }
 
-#check-out .check-out-system form textarea:focus{
+#check-out .check-out-system form textarea:focus {
   box-shadow: var(--box-shadow);
   border: var(--border-and-color) !important;
   outline-style: none;
 }
 
-#check-out .check-out-system form .form-check{
+#check-out .check-out-system form .form-check {
   display: flex;
   align-items: center;
   margin: 20px 0px 0px 10px;
 }
 
-#check-out .check-out-system form .form-check-input{
+#check-out .check-out-system form .form-check-input {
   font-size: 22px;
   font-family: var(--secondary-font);
   border-radius: 4px;
   padding: 8px;
   margin-top: 20px;
   margin-right: 10px;
-  
 }
 
 #check-out .check-out-system .product .product-item {
@@ -300,45 +298,42 @@ html {
   justify-content: space-between;
   align-items: center;
   margin-top: 30px;
-  
 }
 
-#check-out .check-out-system .product .product-item h1{
+#check-out .check-out-system .product .product-item h1 {
   font-size: 22px;
   font-family: var(--secondary-font);
-  
 }
-#check-out .check-out-system .product .heading{
+#check-out .check-out-system .product .heading {
   font-size: 32px;
   font-family: var(--primary-font);
   border-bottom: var(--border-and-color);
   padding-bottom: 5px;
   margin-top: 10px;
-  
 }
 
-#check-out .check-out-system .product .product-img{
+#check-out .check-out-system .product .product-img {
   border: var(--border-and-color);
   padding: 20px;
   border-radius: 6px;
   background-position: center;
 }
-#check-out .check-out-system .product .product-img img{
+#check-out .check-out-system .product .product-img img {
   width: 100%;
   background-size: cover;
   background-position: center;
 }
-#check-out .check-out-system .product .product-img h1{
+#check-out .check-out-system .product .product-img h1 {
   text-align: center;
   font-size: 22px;
   font-family: var(--primary-font);
 }
-#check-out .check-out-system .chipping-cost{
- margin-top: 20px;
- border-bottom: var(--border-and-color);
+#check-out .check-out-system .chipping-cost {
+  margin-top: 20px;
+  border-bottom: var(--border-and-color);
 }
 
-#check-out .check-out-system .chipping-cost .heading{
+#check-out .check-out-system .chipping-cost .heading {
   font-size: 32px;
   font-family: var(--primary-font);
   border-bottom: var(--border-and-color);
@@ -346,143 +341,260 @@ html {
   margin-top: 40px;
   margin-bottom: 0px;
 }
-#check-out .check-out-system .chipping-cost .chipping-item{
+#check-out .check-out-system .chipping-cost .chipping-item {
   padding: 40px 0;
 }
-#check-out .check-out-system .chipping-cost .Shipping{
+#check-out .check-out-system .chipping-cost .Shipping {
   width: 100%;
   display: flex;
   justify-content: center;
   text-align: center;
-  border: 1px solid #A8BBC7;
+  border: 1px solid #a8bbc7;
   border-radius: 4px;
   padding: 20px 10px;
   transition: 0.3s;
 }
-#check-out .check-out-system .chipping-cost .Shipping:hover{
+#check-out .check-out-system .chipping-cost .Shipping:hover {
   background: var(--background-color);
   color: var(--text-color-white);
 }
 #check-out .check-out-system .chipping-cost .Shipping:hover span {
   color: var(--text-color-white);
 }
-#check-out .check-out-system .chipping-cost .Shipping h1{
+#check-out .check-out-system .chipping-cost .Shipping h1 {
   font-size: 22px;
   font-family: var(--secondary-font);
 }
-#check-out .check-out-system .chipping-cost .Shipping h2{
+#check-out .check-out-system .chipping-cost .Shipping h2 {
   font-size: 30px;
   font-family: var(--primary-font);
 }
-#check-out .check-out-system .chipping-cost .Shipping span{
+#check-out .check-out-system .chipping-cost .Shipping span {
   font-size: 18px;
   font-family: var(--secondary-font);
-  color: #A8BBC7;
+  color: #a8bbc7;
 }
-#check-out .check-out-system .calculation{
+#check-out .check-out-system .calculation {
   margin-top: 30px;
- 
 }
-#check-out .check-out-system .calculation .item{
+#check-out .check-out-system .calculation .item {
   display: flex;
   justify-content: space-between;
   padding: 10px 0;
 }
-#check-out .check-out-system .calculation .item h1{
- font-size: 23px;
- font-family: var(--secondary-font);
- color: #7C8992;
+#check-out .check-out-system .calculation .item h1 {
+  font-size: 23px;
+  font-family: var(--secondary-font);
+  color: #7c8992;
 }
-#check-out .check-out-system .calculation .item h2{
- font-size: 23px;
- font-family: var(--secondary-font);
- color: #000000;
+#check-out .check-out-system .calculation .item h2 {
+  font-size: 23px;
+  font-family: var(--secondary-font);
+  color: #000000;
 }
 
-
-#check-out .order-summery{
- background: #F2F2F2;
- padding: 25px;
- border-radius: 6px;
+#check-out .order-summery {
+  background: #f2f2f2;
+  padding: 25px;
+  border-radius: 6px;
 }
-#check-out .order-summery .apply-cuppon{
+#check-out .order-summery .apply-cuppon {
   margin-top: 45px;
- display: flex;
- justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
-#check-out .order-summery .apply-cuppon input{
- border: 1px solid #7c8992;
- outline: none;
- padding: 15px 20px;
- font-size: 18px;
- font-family: var(--secondary-font);
- border-radius: 4px;
+#check-out .order-summery .apply-cuppon input {
+  border: 1px solid #7c8992;
+  outline: none;
+  padding: 15px 20px;
+  font-size: 18px;
+  font-family: var(--secondary-font);
+  border-radius: 4px;
 }
-#check-out .order-summery .apply-cuppon a{
- outline: none;
- padding: 15px 42px;
- font-size: 18px;
- font-family: var(--secondary-font);
- border-radius: 4px;
- background: var(--background-color);
- color: var(--text-color-white);
- text-decoration: none;
+#check-out .order-summery .apply-cuppon a {
+  outline: none;
+  padding: 15px 42px;
+  font-size: 18px;
+  font-family: var(--secondary-font);
+  border-radius: 4px;
+  background: var(--background-color);
+  color: var(--text-color-white);
+  text-decoration: none;
+}
+
+#check-out .payment-methode .heading {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+#check-out .payment-methode .heading h2 {
+  position: relative;
+  font-size: 22px;
+  font-family: var(--primary-font);
+  border-bottom: var(--border-and-color);
+}
+
+#check-out .payment-methode .heading h2::before {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  font-size: 22px;
+  margin-top: 8px;
+  width: 60%;
+  left: 20%;
+  height: 1px;
+  background: var(--background-color);
 }
 
 
-@media screen and (max-width: 1400px) {
-  #check-out .order-summery .apply-cuppon input{
-    padding: 2px 0px 2px 2px;
 
-    font-size: 16px;
-   }
-   #check-out .order-summery .apply-cuppon a{
-    padding: 12px 5px;
-    text-wrap: nowrap;
-    font-size: 16px;
-   }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.payment-method-item {
+  width: 80px;
+  height: 80px;
+  padding: 8px;
+  border: 1px solid var(--gray-200);
+  border-radius: 8px;
+  margin-right: 12px;
+  cursor: pointer;
+  position: relative;
+  flex-shrink: 0;
+}
+
+
+.payment-method-item > img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* #check-out .payment-methode .payment-item {
+  padding: 25px;
+}
+#check-out .payment-methode .payment-item .payment-img {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  gap: 10px 10px;
+}
+#check-out .payment-methode .payment-item .payment-img .image {
+  position: relative;
+  width: 33.33%;
+  padding: 10px;
+  margin: 5px 0;
+  display: flex;
+  justify-content: center;
+  border: 1px solid #a8bbc7;
+  border-radius: 4px;
+}
+#check-out .payment-methode .payment-item .payment-img .form-check {
+  position: absolute;
+  top: 0px;
+  left: -24px;
+  
   
 }
+#check-out .payment-methode .payment-item .payment-img .image .form-check-input{
+ width: 20px ;
+ height: 20px;
+ outline: none;
+ outline-color: none;
+ outline-offset: none;
+
+  
+}
+
+#check-out .payment-methode .payment-item .payment-img img {
+  width: 80%;
+  height: 40px;
+  background-size: cover;
+} */
+
+@media screen and (max-width: 1400px) {
+  #check-out .order-summery .apply-cuppon input {
+    padding: 2px 0px 2px 8px;
+
+    font-size: 16px;
+  }
+  #check-out .order-summery .apply-cuppon a {
+    padding: 12px 8px;
+    text-wrap: nowrap;
+    font-size: 16px;
+  }
+}
 @media screen and (max-width: 992px) {
-  #check-out .check-out-system .chipping-cost .Shipping{
+  #check-out .check-out-system .chipping-cost .Shipping {
     margin: 10px 0;
   }
 
-  #check-out .order-summery{
+  #check-out .order-summery {
     margin-top: 50px;
-   }
-  
-  
+  }
+  #check-out .order-summery .apply-cuppon {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
 }
 
-@media screen and (max-width:576px) {
+@media screen and (max-width: 576px) {
   #check-out .returning-option h1 {
     font-size: 16px;
   }
-  
-#check-out .returning-option .fa-info {
-  border: var(--border-and-color);
-  padding: 4px 8px;
-  border-radius: 4px;
-  margin-right: 10px;
-}
-#check-out .check-out-system .heading h1 {
-  font-size: 24px;
-}
-#check-out .check-out-system .product .heading{
-  font-size: 24px;
-  font-family: var(--primary-font);
-  border-bottom: var(--border-and-color);
-  padding-bottom: 5px;
-  margin-top: 10px;
-  
-}
-#check-out .check-out-system .product .product-img h1{
-  font-size: 18px;
-}
-#check-out .check-out-system .chipping-cost .heading{
-  font-size: 24px;
-}
-  
+
+  #check-out .returning-option .fa-info {
+    border: var(--border-and-color);
+    padding: 4px 8px;
+    border-radius: 4px;
+    margin-right: 10px;
+  }
+  #check-out .check-out-system .heading h1 {
+    font-size: 24px;
+  }
+  #check-out .check-out-system .product .heading {
+    font-size: 24px;
+    font-family: var(--primary-font);
+    border-bottom: var(--border-and-color);
+    padding-bottom: 5px;
+    margin-top: 10px;
+  }
+  #check-out .check-out-system .product .product-img h1 {
+    font-size: 18px;
+  }
+  #check-out .check-out-system .chipping-cost .heading {
+    font-size: 24px;
+  }
 }
 /* Check Out End */

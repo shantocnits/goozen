@@ -417,7 +417,8 @@
 
                   <div class="row">
                     <div class="col-sm-6">
-                      <label style="margin-bottom: 8px;" for="country">Country<span>*</span></label
+                      <label style="margin-bottom: 8px" for="country"
+                        >Country<span>*</span></label
                       ><br />
                       <select
                         class="name"
@@ -432,7 +433,8 @@
                       </select>
                     </div>
                     <div class="col-sm-6">
-                      <label style="margin-bottom: 8px;" for="country">State<span>*</span></label
+                      <label style="margin-bottom: 8px" for="country"
+                        >State<span>*</span></label
                       ><br />
                       <select class="state" name="country">
                         <option value="state">select state</option>
@@ -446,7 +448,8 @@
                   <br />
                   <div class="row">
                     <div class="col-sm-6">
-                      <label style="margin-bottom: 8px;" for="country">City/Town<span>*</span></label
+                      <label style="margin-bottom: 8px" for="country"
+                        >City/Town<span>*</span></label
                       ><br />
                       <select
                         class="country"
@@ -461,10 +464,11 @@
                       </select>
                     </div>
                     <div class="col-sm-6">
-                      <label style="margin-bottom: 8px;" for="country">Mobile Number<span>*</span></label
+                      <label style="margin-bottom: 8px" for="country"
+                        >Mobile Number<span>*</span></label
                       ><br />
                       <input
-                        style="width: 100%;"
+                        style="width: 100%"
                         type="number"
                         class="number"
                         id="number"
@@ -483,7 +487,9 @@
                     placeholder="enter email address"
                   />
 
-                  <label style="margin-bottom: 8px;" for="comment">Order Notes</label>
+                  <label style="margin-bottom: 8px" for="comment"
+                    >Order Notes</label
+                  >
                   <textarea
                     style="height: 150px"
                     class="text"
@@ -504,9 +510,14 @@
                   <h1 class="heading">Products</h1>
                   <div class="product-item">
                     <div class="product-img">
-                      <img src="./assets/img/check-out-img/product1.svg" alt="">
-                      <h1>Adico- Smart <br>
-                        Watch</h1>
+                      <img
+                        src="./assets/img/check-out-img/product1.svg"
+                        alt=""
+                      />
+                      <h1>
+                        Adico- Smart <br />
+                        Watch
+                      </h1>
                     </div>
                     <div class="qty">
                       <h1>1 Qty</h1>
@@ -524,8 +535,8 @@
                         <div class="Shipping">
                           <div>
                             <h1>Express Shipping</h1>
-                          <h2 class="price">$5.00</h2>
-                          <span class="zone">Zone: Asia</span>
+                            <h2 class="price">$5.00</h2>
+                            <span class="zone">Zone: Asia</span>
                           </div>
                         </div>
                       </div>
@@ -533,20 +544,20 @@
                         <div class="Shipping">
                           <div>
                             <h1>International Shipping</h1>
-                          <h2 class="price">$25</h2>
-                          <span class="zone">Zone: Asia</span>
+                            <h2 class="price">$25</h2>
+                            <span class="zone">Zone: Asia</span>
                           </div>
                         </div>
                       </div>
                     </div>
-                    <br>
+                    <br />
                     <div class="row">
                       <div class="col-lg-6">
                         <div class="Shipping">
                           <div>
                             <h1>Same-Day Delivery</h1>
-                          <h2 class="price">$45</h2>
-                          <span class="zone">Zone: Asia</span>
+                            <h2 class="price">$45</h2>
+                            <span class="zone">Zone: Asia</span>
                           </div>
                         </div>
                       </div>
@@ -554,8 +565,8 @@
                         <div class="Shipping">
                           <div>
                             <h1>Free Shipping</h1>
-                          <h2 class="price">$25</h2>
-                          <span class="zone">Zone: Asia</span>
+                            <h2 class="price">$25</h2>
+                            <span class="zone">Zone: Asia</span>
                           </div>
                         </div>
                       </div>
@@ -590,7 +601,7 @@
                 </div>
 
                 <div class="apply-cuppon">
-                  <input type="text" placeholder="enter your coupon code">
+                  <input type="text" placeholder="enter your coupon code" />
                   <a href="#">Apply Coupon</a>
                 </div>
                 <div class="calculation">
@@ -621,11 +632,195 @@
                 </div>
               </div>
 
-              <div class="payment-methode">
-                 <div class="heading">
-                  <h1><span>Select Payment Method</span></h1>
-                 </div>
+              <div class="payment-right">
+                <form action="" class="payment-form">
+                  
+                  <div class="payment-method">
+                    <input type="radio" name="payment-method" id="method-1" />
+                    <label for="method-1" class="payment-method-item">
+                      <img
+                        src="./assets/img/check-out-img/pyment2.svg"
+                        alt=""
+                      />
+                    </label>
+                    <input type="radio" name="payment-method" id="method-2" />
+                    <label for="method-2" class="payment-method-item">
+                      <img
+                        src="./assets/img/check-out-img/pyment2.svg"
+                        alt=""
+                      />
+                    </label>
+                    <input type="radio" name="payment-method" id="method-3" />
+                    <label for="method-3" class="payment-method-item">
+                      <img
+                        src="./assets/img/check-out-img/pyment2.svg"
+                        alt=""
+                      />
+                    </label>
+                  </div>
+                </form>
               </div>
+
+              <!-- <div class="payment-methode">
+                <div class="heading">
+                  <h2>Select Payment Method</h2>
+                </div>
+                <div class="payment-item">
+                  <div class="payment-img">
+                    <input
+                      type="radio"
+                      name="payment-method"
+                      id="method-1"
+                      checked
+                    />
+                    <label for="method-1" class="payment-method-item">
+                      <img
+                        src="./assets/img/check-out-img/pyment1.svg"
+                        alt=""
+                      />
+                    </label>
+                    <input
+                      type="radio"
+                      name="payment-method"
+                      id="method-2"
+                      checked
+                    />
+                    <label for="method-1" class="payment-method-item">
+                      <img
+                        src="./assets/img/check-out-img/pyment1.svg"
+                        alt=""
+                      />
+                    </label>
+                    <input
+                      type="radio"
+                      name="payment-method"
+                      id="method-2"
+                      checked
+                    />
+                    <label for="method-3" class="payment-method-item">
+                      <img
+                        src="./assets/img/check-out-img/pyment1.svg"
+                        alt=""
+                      />
+                    </label>
+                  </div>
+                  <div class="payment-img">
+                    <input
+                      type="radio"
+                      name="payment-method"
+                      id="method-3"
+                      checked
+                    />
+                    <label for="method-1" class="payment-method-item">
+                      <img
+                        src="./assets/img/check-out-img/pyment1.svg"
+                        alt=""
+                      />
+                    </label>
+                    <input
+                      type="radio"
+                      name="payment-method"
+                      id="method-1"
+                      checked
+                    />
+                    <label for="method-1" class="payment-method-item">
+                      <img
+                        src="./assets/img/check-out-img/pyment1.svg"
+                        alt=""
+                      />
+                    </label>
+                    <input
+                      type="radio"
+                      name="payment-method"
+                      id="method-1"
+                      checked
+                    />
+                    <label for="method-1" class="payment-method-item">
+                      <img
+                        src="./assets/img/check-out-img/pyment1.svg"
+                        alt=""
+                      />
+                    </label>
+                  </div>
+                  <div class="payment-img">
+                    <input
+                      type="radio"
+                      name="payment-method"
+                      id="method-1"
+                      checked
+                    />
+                    <label for="method-1" class="payment-method-item">
+                      <img
+                        src="./assets/img/check-out-img/pyment1.svg"
+                        alt=""
+                      />
+                    </label>
+                    <input
+                      type="radio"
+                      name="payment-method"
+                      id="method-1"
+                      checked
+                    />
+                    <label for="method-1" class="payment-method-item">
+                      <img
+                        src="./assets/img/check-out-img/pyment1.svg"
+                        alt=""
+                      />
+                    </label>
+                    <input
+                      type="radio"
+                      name="payment-method"
+                      id="method-1"
+                      checked
+                    />
+                    <label for="method-1" class="payment-method-item">
+                      <img
+                        src="./assets/img/check-out-img/pyment1.svg"
+                        alt=""
+                      />
+                    </label>
+                  </div>
+                  <div class="payment-img">
+                    <input
+                      type="radio"
+                      name="payment-method"
+                      id="method-1"
+                      checked
+                    />
+                    <label for="method-1" class="payment-method-item">
+                      <img
+                        src="./assets/img/check-out-img/pyment1.svg"
+                        alt=""
+                      />
+                    </label>
+                    <input
+                      type="radio"
+                      name="payment-method"
+                      id="method-1"
+                      checked
+                    />
+                    <label for="method-1" class="payment-method-item">
+                      <img
+                        src="./assets/img/check-out-img/pyment1.svg"
+                        alt=""
+                      />
+                    </label>
+                    <input
+                      type="radio"
+                      name="payment-method"
+                      id="method-1"
+                      checked
+                    />
+                    <label for="method-1" class="payment-method-item">
+                      <img
+                        src="./assets/img/check-out-img/pyment1.svg"
+                        alt=""
+                      />
+                    </label>
+                  </div>
+                  
+                </div>
+              </div> -->
             </div>
           </div>
         </div>

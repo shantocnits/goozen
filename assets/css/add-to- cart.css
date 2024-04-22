@@ -322,8 +322,18 @@ html {
   gap: 10px;
   margin-top: 115px;
 }
+#cart .product-quantity2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-top: 250px;
+}
 
 #cart .quantity_count {
+  display: flex;
+  justify-content: center;
+  width: 15px;
   font-weight: 800;
 }
 
@@ -338,6 +348,34 @@ html {
   border: none;
   padding: 5px 10px;
 }
+
+#cart .product-quantity {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-top: 115px;
+}
+
+#cart .quantity_count1 {
+  display: flex;
+  justify-content: center;
+  width: 15px;
+  font-weight: 800;
+}
+
+#cart .product-quantity2 .decrement1 {
+  background: #bbe5ff;
+  border: none;
+  padding: 5px 10px;
+}
+
+#cart .product-quantity2 .increment1 {
+  background: #f2f2f2;
+  border: none;
+  padding: 5px 10px;
+}
+
 #cart .submit-button {
   display: flex;
   justify-content: end;
