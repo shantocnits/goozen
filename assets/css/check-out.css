@@ -393,10 +393,23 @@ html {
   color: #000000;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
 #check-out .order-summery {
   background: #f2f2f2;
   padding: 25px;
   border-radius: 6px;
+
 }
 #check-out .order-summery .apply-cuppon {
   margin-top: 45px;
@@ -468,37 +481,123 @@ html {
 
 
 
-.payment-method-item {
-  width: 80px;
-  height: 80px;
-  padding: 8px;
-  border: 1px solid var(--gray-200);
-  border-radius: 8px;
-  margin-right: 12px;
+
+
+
+
+
+
+
+
+
+
+
+
+.payments form input{
+  display: none;
+}
+
+
+
+.category label{
+  /* width: 100%; */
+  /* height: 65px; */
+  
+  padding: 20px;
+  box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.2);
+  display: flex;
+  /* justify-content: space-between; */
+  justify-content: center;
+  align-items: center;
   cursor: pointer;
+  border-radius: 5px;
   position: relative;
-  flex-shrink: 0;
+}
+
+/* label:nth-child(2), label:nth-child(3){
+  margin: 15px 0;
+} */
+
+
+#visa:checked ~ .category .visaMethod,
+#mastercard:checked ~ .category .mastercardMethod,
+#paypal:checked ~ .category .paypalMethod,
+#AMEX:checked ~ .category .amexMethod{
+  box-shadow: 0px 0px 0px 1px #6064b6;
 }
 
 
-.payment-method-item > img {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
+#visa:checked ~ .category .visaMethod .check,
+#mastercard:checked ~ .category .mastercardMethod .check,
+#paypal:checked ~ .category .paypalMethod .check,
+#AMEX:checked ~ .category .amexMethod .check{
+  display: block;
 }
 
 
+label .imgName{
+  display: flex;
+  /* justify-content: space-between;
+   */
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 10px;
+}
 
+.imgName span{
+  /* margin-left: 20px; */
+  font-family: Arial, Helvetica, sans-serif;
 
+  position: absolute;
+  top: 72%;
+  transform: translateY(-72%);
+}
 
+.imgName .imgContainer{
+  width: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
+  position: absolute;
+  top: 35%;
+  transform: translateY(-35%);
+}
 
+img{
+  width: 50px;
+  height: auto;
+}
 
+.visa img{
+  width: 80px;
+  /* margin-left: 5px; */
+}
 
+.mastercard img{
+  width: 65px;
+}
 
+.paypal img{
+  width: 80px;
+}
 
+.AMEX img{
+  width: 50px;
+}
 
+.check{
+  display: none;
+  position: absolute;
+  top: -4px;
+  right: -4px;
+}
 
+.check i{
+  font-size: 18px;
+}
 
 /* #check-out .payment-methode .payment-item {
   padding: 25px;
