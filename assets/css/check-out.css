@@ -281,16 +281,17 @@ html {
 #check-out .check-out-system form .form-check {
   display: flex;
   align-items: center;
-  margin: 20px 0px 0px 10px;
+  margin: 20px 0px 0px 0px;
+  font-size: 22px;
+  font-family: var(--secondary-font);
 }
 
 #check-out .check-out-system form .form-check-input {
-  font-size: 22px;
-  font-family: var(--secondary-font);
   border-radius: 4px;
   padding: 8px;
   margin-top: 20px;
   margin-right: 10px;
+  margin-left: -34px;
 }
 
 #check-out .check-out-system .product .product-item {
@@ -393,23 +394,10 @@ html {
   color: #000000;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
 #check-out .order-summery {
   background: #f2f2f2;
   padding: 25px;
   border-radius: 6px;
-
 }
 #check-out .order-summery .apply-cuppon {
   margin-top: 45px;
@@ -435,19 +423,21 @@ html {
   text-decoration: none;
 }
 
-#check-out .payment-methode .heading {
+#check-out .payments .heading {
   position: relative;
   display: flex;
   justify-content: center;
+  margin-top: 40px;
 }
-#check-out .payment-methode .heading h2 {
+#check-out .payments .heading h2 {
   position: relative;
   font-size: 22px;
+  padding-bottom: 10px;
   font-family: var(--primary-font);
   border-bottom: var(--border-and-color);
 }
 
-#check-out .payment-methode .heading h2::before {
+#check-out .payments .heading h2::before {
   content: "";
   position: absolute;
   bottom: -5px;
@@ -459,187 +449,140 @@ html {
   background: var(--background-color);
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.payments form input{
-  display: none;
-}
-
-
-
-.category label{
-  /* width: 100%; */
-  /* height: 65px; */
-  
-  padding: 20px;
-  box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.2);
+#check-out .payments .category {
   display: flex;
-  /* justify-content: space-between; */
-  justify-content: center;
-  align-items: center;
-  cursor: pointer;
-  border-radius: 5px;
-  position: relative;
-}
-
-/* label:nth-child(2), label:nth-child(3){
-  margin: 15px 0;
-} */
-
-
-#visa:checked ~ .category .visaMethod,
-#mastercard:checked ~ .category .mastercardMethod,
-#paypal:checked ~ .category .paypalMethod,
-#AMEX:checked ~ .category .amexMethod{
-  box-shadow: 0px 0px 0px 1px #6064b6;
-}
-
-
-#visa:checked ~ .category .visaMethod .check,
-#mastercard:checked ~ .category .mastercardMethod .check,
-#paypal:checked ~ .category .paypalMethod .check,
-#AMEX:checked ~ .category .amexMethod .check{
-  display: block;
-}
-
-
-label .imgName{
-  display: flex;
-  /* justify-content: space-between;
-   */
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  flex-direction: column;
+  justify-content: space-between;
   gap: 10px;
 }
 
-.imgName span{
-  /* margin-left: 20px; */
-  font-family: Arial, Helvetica, sans-serif;
-
-  position: absolute;
-  top: 72%;
-  transform: translateY(-72%);
+#check-out .payments form input {
+  display: none;
 }
 
-.imgName .imgContainer{
+#check-out .category label {
+  width: 100%;
+  height: 60px;
+  padding: 10px;
+  display: flex;
+  background: var(--text-color-white);
+  justify-content: center !important;
+  align-items: center !important;
+  cursor: pointer;
+  border-radius: 5px;
+  border: 1px solid #a8bbc7;
+  position: relative;
+  margin-top: 10px;
+}
+
+#paypal:checked ~ .category .paypalMethod,
+#paytm:checked ~ .category .paytmMethod,
+#stripe:checked ~ .category .stripeMethod,
+#bkash:checked ~ .category .bkashMethod,
+#nagad:checked ~ .category .nagadMethod,
+#rocket:checked ~ .category .rocketMethod,
+#cash:checked ~ .category .cashMethod,
+#pay:checked ~ .category .payMethod,
+#bank:checked ~ .category .bankMethod,
+#visa:checked ~ .category .visaMethod,
+#mastercard:checked ~ .category .mastercardMethod,
+#express:checked ~ .category .expressMethod {
+  box-shadow: 0px 0px 0px 1px #26a0da;
+}
+
+#paypal:checked ~ .category .paypalMethod .check,
+#paytm:checked ~ .category .paytmMethod .check,
+#stripe:checked ~ .category .stripeMethod .check,
+#bkash:checked ~ .category .bkashMethod .check,
+#nagad:checked ~ .category .nagadMethod .check,
+#rocket:checked ~ .category .rocketMethod .check,
+#cash:checked ~ .category .cashMethod .check,
+#pay:checked ~ .category .payMethod .check,
+#bank:checked ~ .category .bankMethod .check,
+#visa:checked ~ .category .visaMethod .check,
+#mastercard:checked ~ .category .mastercardMethod .check,
+#express:checked ~ .category .expressMethod .check {
+  display: block;
+}
+
+#check-out .imgName .imgContainer {
   width: 50px;
   display: flex;
   justify-content: center;
   align-items: center;
-
-  position: absolute;
-  top: 35%;
-  transform: translateY(-35%);
 }
 
-img{
+#check-out img {
   width: 50px;
   height: auto;
 }
 
-.visa img{
+#check-out .visa img {
   width: 80px;
-  /* margin-left: 5px; */
 }
 
-.mastercard img{
+#check-out .mastercard img {
   width: 65px;
 }
 
-.paypal img{
+#check-out .paypal img {
   width: 80px;
 }
 
-.AMEX img{
+#check-out .AMEX img {
   width: 50px;
 }
 
-.check{
+#check-out .check {
   display: none;
   position: absolute;
-  top: -4px;
-  right: -4px;
+  top: -9px !important;
+  left: -1px !important;
 }
 
-.check i{
+#check-out .check i {
+  font-size: 20px;
+  color: #26a0da !important;
+}
+#check-out .form-checks {
+  display: flex;
+  margin: 30px 0;
+}
+#check-out .form-checks input {
+  width: 20px !important;
+  height: 20px !important;
+}
+#check-out .form-checks h1 {
   font-size: 18px;
+  padding-left: 10px;
+  font-family: var(--secondary-font);
 }
-
-/* #check-out .payment-methode .payment-item {
-  padding: 25px;
+#check-out .payment-button {
+  text-align: center;
 }
-#check-out .payment-methode .payment-item .payment-img {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  gap: 10px 10px;
-}
-#check-out .payment-methode .payment-item .payment-img .image {
-  position: relative;
-  width: 33.33%;
-  padding: 10px;
-  margin: 5px 0;
-  display: flex;
-  justify-content: center;
-  border: 1px solid #a8bbc7;
+#check-out .payment-button .confirm-btn h1 {
+  background: var(--background-color);
+  font-size: 22px;
+  padding: 10px 0;
   border-radius: 4px;
 }
-#check-out .payment-methode .payment-item .payment-img .form-check {
-  position: absolute;
-  top: 0px;
-  left: -24px;
-  
-  
+#check-out .payment-button .confirm-btn a {
+  background: var(--background-color);
+  text-decoration: none;
+  color: var(--text-color-white);
+  font-family: var(--secondary-font);
 }
-#check-out .payment-methode .payment-item .payment-img .image .form-check-input{
- width: 20px ;
- height: 20px;
- outline: none;
- outline-color: none;
- outline-offset: none;
-
-  
+#check-out .payment-button .return-btn h1 {
+  border: var(--border-and-color);
+  background: white;
+  font-size: 22px;
+  padding: 10px 0;
+  border-radius: 4px;
 }
-
-#check-out .payment-methode .payment-item .payment-img img {
-  width: 80%;
-  height: 40px;
-  background-size: cover;
-} */
+#check-out .payment-button .return-btn a {
+  text-decoration: none;
+  color: var(--text-color-blue);
+  font-family: var(--secondary-font);
+}
 
 @media screen and (max-width: 1400px) {
   #check-out .order-summery .apply-cuppon input {
@@ -648,9 +591,20 @@ img{
     font-size: 16px;
   }
   #check-out .order-summery .apply-cuppon a {
-    padding: 12px 8px;
+    padding: 12px 40px;
     text-wrap: nowrap;
     font-size: 16px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  #check-out .order-summery .apply-cuppon input {
+    padding: 2px 0px 2px 8px;
+    font-size: 14px;
+  }
+  #check-out .order-summery .apply-cuppon a {
+    padding: 12px 20px;
+    text-wrap: nowrap;
+    font-size: 14px;
   }
 }
 @media screen and (max-width: 992px) {
@@ -663,14 +617,32 @@ img{
   }
   #check-out .order-summery .apply-cuppon {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     gap: 10px;
+  }
+  #check-out .order-summery .apply-cuppon input {
+    padding: 2px 0px 2px 8px;
+    font-size: 16px;
+  }
+  #check-out .order-summery .apply-cuppon a {
+    padding: 12px 8px;
+    text-wrap: nowrap;
+    font-size: 16px;
   }
 }
 
 @media screen and (max-width: 576px) {
+  #check-out .order-summery .apply-cuppon input {
+    padding: 2px 0px 2px 8px;
+    font-size: 12px;
+  }
+  #check-out .order-summery .apply-cuppon a {
+    padding: 12px 20px;
+    text-wrap: nowrap;
+    font-size: 12px;
+  }
   #check-out .returning-option h1 {
-    font-size: 16px;
+    font-size: 12px;
   }
 
   #check-out .returning-option .fa-info {
@@ -694,6 +666,13 @@ img{
   }
   #check-out .check-out-system .chipping-cost .heading {
     font-size: 24px;
+  }
+
+  #check-out .payment-button .confirm-btn h1 {
+    font-size: 18px;
+  }
+  #check-out .payment-button .return-btn h1 {
+    font-size: 18px;
   }
 }
 /* Check Out End */
