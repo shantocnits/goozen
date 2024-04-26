@@ -448,8 +448,8 @@ html {
   top: 93% !important;
 }
 
-#blog-post .categories-next:hover svg path {
-  fill: var(--background-color) !important;
+#blog-post .swiper-button-next:hover svg path{
+  fill: #26A0DA !important;
 }
 
 #blog-post .swiper {

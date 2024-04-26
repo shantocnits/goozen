@@ -936,8 +936,8 @@ html {
   top: 93% !important;
 }
 
-#blog-explore .categories-next:hover svg path {
-  fill: #26a0da;
+#blog-explore .swiper-button-next:hover svg path {
+  fill: #26a0da !important;
 }
 
 #blog-explore .swiper {
