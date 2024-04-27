@@ -1929,7 +1929,6 @@ html {
     left: 50%;
     transform: translate(-50%, -50%);
   }
-
 }
 
 @media screen and (max-width: 768px) {
@@ -2041,7 +2040,6 @@ html {
     left: 8%;
     transform: translate(-50%, -50%);
   }
-
 }
 
 @media screen and (max-width: 575px) {
@@ -2278,13 +2276,13 @@ html {
 
   #deals .slider-item .deals-prev {
     top: 105px;
-    left: 20%;
+    left: 18%;
     transform: translate(-50%, -50%);
   }
-  
+
   #deals .slider-item .deals-next {
     top: 320px;
-    left: 20%;
+    left: 18%;
     transform: translate(-50%, -50%);
   }
 }
